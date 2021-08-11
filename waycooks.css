@@ -248,3 +248,13 @@ ol {
     height: 400px;
     padding: 5px 10px;
 }
+
+@media only screen and (min-device-width: 375px) {
+    h1.title {
+        text-align: center;
+        font-size: 40px;
+        margin-right: 5px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+}
