@@ -1,0 +1,29 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    background-image: url("./images/background.jpeg");
+    color: whitesmoke;
+    text-shadow: -1px -1px rgb(30, 60, 29), 1px -1px black, -1px 1px rgb(30, 60, 29), 1px 1px black;
+    height: auto;
+    width: 60%;
+    margin-left: 8%;
+}
+
+h1 {
+    text-shadow: -2px -2px rgb(30, 60, 29), 1px -1px black, -2px 2px rgb(30, 60, 29), 1px 1px black;
+    font-size: 5.5rem;
+    font-family: 'Berkshire Swash', cursive;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.5rem;
+    color: rgb(30, 60, 29);
+    height: 40px;
+    font-family: 'Berkshire Swash', cursive;
+    border:rgb(30, 60, 29) 2px;
+    border-radius: 5px;
+}
