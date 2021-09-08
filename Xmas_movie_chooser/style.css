@@ -24,6 +24,30 @@ button {
     color: rgb(30, 60, 29);
     height: 40px;
     font-family: 'Berkshire Swash', cursive;
-    border:rgb(30, 60, 29) 2px;
+    border: 2px solid rgb(30, 60, 29);
     border-radius: 5px;
 }
+
+button:hover {
+    color: rgb(172, 48, 48);
+    border: 4px solid rgb(172, 48, 48);
+  }
+  
+  #landingPage {
+    opacity: 100%;
+    transition: opacity 1s ease-out 15ms;
+  }
+  
+  #movieChooser {
+    opacity: 0%;
+    transition: opacity 1s ease-in 1s;
+    position: absolute;
+    top: 0;
+    
+  }
+  
+  #booleans {
+    font-size: 2rem;
+    display: grid;
+    grid-template: 5 / 3;
+  }
