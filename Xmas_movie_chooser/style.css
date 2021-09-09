@@ -36,6 +36,7 @@ button:hover {
   #landingPage {
     opacity: 100%;
     transition: opacity 1s ease-out 15ms;
+    visibility: visible;
   }
   
   #movieChooser {
@@ -43,6 +44,7 @@ button:hover {
     transition: opacity 1s ease-in 1s;
     position: absolute;
     top: 0;
+    visibility: hidden;
     
   }
   
