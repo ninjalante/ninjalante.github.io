@@ -1,0 +1,300 @@
+body {
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+
+h1.title {
+    color: #f5f5f5;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #3c1361;
+    text-align: center;
+    font-size: 70px;
+    margin-right: 5px;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding-top: 100px;
+    padding-bottom: 20px;
+
+}
+h2 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 30px;
+    color: #3c1361;
+    text-align: center;
+    border: 3px solid  #3c1361;
+    border-radius: 20px;
+    padding: 15px 30px;
+    justify-content: center;
+
+}
+
+.nicknames {
+    font-family: 'Dosis', sans-serif;
+    font-size: 24px;
+    color:  #3c1361;
+}
+
+hr {
+    border: 3px solid  #3c1361;
+}
+
+.faces {
+    margin: 5px 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+img.profiles {
+    padding: 10px 10px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    max-width: 100%;
+    min-width: 100px;
+}
+
+p,
+ label {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 25px;
+    margin: 1px 15px;
+}
+
+.holiday img {
+    width: 250px;
+    padding: 5px 10px;
+    grid-template-columns: 6;
+    grid-template-rows: 1;
+    margin: 10px 5px;
+}
+
+.holiday li {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 24px;
+}
+
+/*.holiday h3, .vday h3 {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361; 
+    padding-left: 15px;
+}*/
+
+aside.date {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361; 
+    font-size: 18px;
+    padding-left: 15px;
+}
+
+h3 {
+    font-family: 'Dosis', sans-serif;
+    color: #f5f5f5;
+    background-color: #3c1361;
+    font-size: 32px;
+    margin-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+    width: 1100px;
+    padding-left: 10px;
+}
+
+.recipes p, 
+    ul{
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 25px;
+    margin: 5px 15px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    border-radius: 8px;
+}
+
+.foodpics {
+    display: inline-flex;
+    justify-content: center;
+}
+
+
+body {
+    background-color: linear-gradient(-45deg, #ebefe7, #7d6d8c);
+    background-image: url(./worldmap.svg);
+}
+
+aside {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.card {
+    border: 2px solid #3c1361;
+    border-radius: 8px;
+    margin-right: 50px;
+    margin-left: 10px;
+    width: 1000px;
+
+}
+
+.recipes img {
+    width: 400px;
+    padding-left: 10px;
+}
+
+nav {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 30px;
+    padding: 10px 20px;
+    background: #7d6d8c;
+    width: 18%;
+    margin-left: 50px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: solid 3px #ebefe7;
+    float: right;
+}
+
+/*How do I get the other nav box to sit under the other one? */
+
+/*nav.homepage {
+    width: 18%;
+    font-size: 18px;
+}*/
+
+#jump, #commentPage, #recipePage, #blogs {
+    font-family: 'Dosis', sans-serif;
+    background: #3c1361;
+    font-size: 40px;
+    border: none;
+    color: #ebefe7;
+}
+
+ul {
+    list-style-type: circle;
+    padding-top: 5px;
+}
+
+#katiexmas .foodpics, 
+    #gretaxmas .foodpics, 
+        #andreaxmas .foodpics,
+            #katbnew .foodpics {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+#food2020 {
+    display: grid;
+}
+
+a.link {
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-style: bold;
+}
+
+.recipeIntro {
+    font-style: italic;
+}
+
+#backtotop {
+    float: right;
+    font-family: 'Dosis', sans-serif;
+    font-size: 32px;
+    font-style: bold;
+    margin-bottom: 20px;
+}
+
+#navigation {
+    align-items: flex-start;
+}
+
+/*#hover > img:hover {
+    width: 200%;
+    height: 200%;
+}*/
+
+.katbchallenge img {
+    width: 200px;
+    height: 200px;
+    padding: 5px 10px;
+    grid-template-columns: 6;
+    grid-template-rows: 1;
+    margin: 10px 5px;
+    transition: transform 0.25s ease;
+}
+
+.katbchallenge img:hover {
+    -webkit-transform:scale(2);
+    transform:scale(2);
+}
+ol {
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 25px;
+    margin: 1px 15px;
+}
+
+.nugs {
+    width: 400px;
+    height: 400px;
+    padding: 5px 10px;
+}
+
+/*EDIT guest stuff */
+#post {
+    width: 100px;
+    height: 30px;
+    margin: 2px 15px;
+    font-family: 'Dosis', sans-serif;
+    color: #3c1361;
+    font-size: 16px;
+}
+
+ #comment {
+     width: 500px;
+     height: 200px;
+     margin: 1px 15px;
+     font-size: 20px;
+     resize: none;
+ }
+
+ #userName {
+     height: 25px;
+     margin: 2px 15px;
+     font-size: 20px;
+     resize: none;
+ }
+
+#theUser {
+    font-size: 24px;
+    font-style: bold;
+
+}
+
+#thePost {
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+/*EDIT: media queries*/
+
+@media only screen and (min-device-width: 375px) {
+    h1.title {
+        text-align: center;
+        font-size: 40px;
+        margin-right: 5px;
+        margin-top: 15px;
+        border-radius: 10px;
+    }
+}

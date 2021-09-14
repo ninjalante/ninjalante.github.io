@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <link href="./waycooks.css" type="text/CSS" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&family=Orbitron&display=swap" rel="stylesheet">
+    <title>Leave a comment for the Waycooks</title>
+ </head>
+ <body>
+    <h1 class="title">Sign our guestbook</h1>
+    <h2>Remember when websites had guestbooks?<br><a href="#entries"class="link">Jump to Guestbook<a></h2>
+    <!--EDIT nav bar-->
+    <section id="navigation">
+      <nav class="homepage">
+          <h2 id="blogs">Blogs</h2>
+          <p class="link"><a href="./waycooks.html" class="link">Take me to the blogs</a></p>
+          <h2 id="recipePage">Wanna get cookin'?</h2>
+          <p class="link"><a href="./recipes.html" class="link">Browse our favorite recipes!</a></p>
+      </nav>
+  </section>
+    <!--EDIT Make a guestbook
+   the action is not correct-->
+    <form id="guestbook" action="./guestbook.js" method="post">
+      <label>Your name</label><br><textarea id="userName" maxlength="100" required></textarea><br><br>
+      <label>Your comment</label><br><textarea id="comment" maxlength="500" spellcheck="true">Max 500 characters
+         </textarea><br>
+      <button type="submit" name="post" id="post" onclick="postComment()">Post</button>
+   </form><br>
+   <section>
+      <p id="theUser">user</p>
+      <p id="thePost">comment</p>
+   </section>
+
+    <script type="text/javascript" src="./guestbook.js"></script> 
+</body>  

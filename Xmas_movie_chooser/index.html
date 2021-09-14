@@ -1,0 +1,110 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <link href="./style.css" type="text/CSS" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <title>What Christmas Movie Should I Watch?</title>
+ </head>
+ <body>
+    <div id="landingPage">
+      <br><h1>What Christmas Movie Should I Watch?</h1>
+      <h2>Looking for a good Christmas movie?</h2>
+      <h2>Looking for a <em>bad</em> Christmas movie?</h2>
+      <h2>You're in the right place.</h2>
+      <button id="goToBooleans" onclick="clickTheButton()">Find a Christmas movie</button>
+    </div>
+    <div id="movieChooser">
+      <h1>Select the elements you want to see in a Christmas movie.</h1>
+     <div id="booleans" class="grid-container">
+       <div class="grid-item">
+          <input type="checkbox" id="romance" name="romance" value="romance" onclick="chooseRomance()"></input>
+          <label for="romance">A love story</label></div>
+       <div class="grid-item">
+          <input type="checkbox" id="musical" name="musical" value="romance" onclick="chooseMusical()"></input>
+          <label for="musical">Singing and dancing</label></div>
+       <div class="grid-item">
+          <input type="checkbox" id="mistakenId" name="mistakenId" value="mistakenId" onclick="chooseMistakenId()"></input>
+          <label for="mistakenId">A case of mistaken identity</label></div>
+       <div class="grid-item">
+          <input type="checkbox" id="inn" name="inn" value="inn" onclick="chooseInn()"></input>
+          <label for="inn">A charming rural inn</label></div>
+          <div class="grid-item">
+            <input type="checkbox" id="royal" name="royal" value="royal" onclick="chooseRoyal()"></input>
+            <label for="royal">A royal fairy tale</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="family" name="family" value="family" onclick="chooseFamily()"></input>
+            <label for="family">A lesson about the importance of family</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="country" name="country" value="country" onclick="chooseCountry()"></input>
+            <label for="country">A city fish out of water</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="corp" name="corp" value="corp" onclick="chooseCorp()"></input>
+            <label for="corp">A corporate employee with ulterior motives</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="wish" name="wish" value="wish" onclick="chooseWish()"></input>
+            <label for="wish">A wish come true</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="santa" name="santa" value="santa" onclick="chooseSanta()"></input>
+            <label for="santa">The REAL Santa Claus</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="adaptation" name="adaptation" value="adaptation" onclick="chooseAdaptation()"></input>
+            <label for="adaptation">An adaptation</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="freshStart" name="freshStart" value="freshStart" onclick="chooseFresh()"></input>
+            <label for="freshStart">Someone looking for a fresh start</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="precocious" name="precocious" value="precocious" onclick="choosePrecociousChild()"></input>
+            <label for="precocious">A precocious child</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="baker" name="baker" value="baker" onclick="chooseBaker()"></input>
+            <label for="baker">A charming baker</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="deadParent" name="deadParent" value="deadParent" onclick="chooseDeadParent()"></input>
+            <label for="deadParent">A protagonist with one or more deceased parents</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="famousActor" name="famousActor" value="famousActor" onclick="chooseFamousActor()"></input>
+            <label for="famousActor">A well-known but aging actor</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="childStar" name="childStar" value="childStar" onclick="chooseChildStar()"></input>
+            <label for="childStar">A former child star grown up OR a grown-up star as a child</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="familyFriendly" name="familyFriendly" value="familyFriendly" onclick="chooseFamilyFriendly()"></input>
+            <label for="familyFriendly">A story the whole family can enjoy</label>
+        </div>
+        <div class="grid-item">
+            <input type="checkbox" id="pilf" name="pilf" value="pilf" onclick="choosePilf()"></input>
+            <label for="pilf">A good-looking and charistmatic protagonist</label>
+        </div>
+  
+        <div class="grid-item">
+            <br><input type="checkbox" id="inColor" name="inColor" value="inColor" onclick="chooseColor()"></input>
+            <label for="inColor"><em>I hate to be *that* person, but I'd prefer if the movie weren't in B&W.</em></label>
+        </div>
+      </div><br>
+     </div><br>
+      <button id="makeChoice" onclick="chooseMovie()">What Christmas Movie Should I Watch?</button>
+   </div>
+   <div id="movieRecommendations">
+     <!--create h2s here-->
+   </div>
+    <script src="./movie_objects.js"></script>
+    <script src="./moviechooser.js"></script>
+ </body>
+ </html>
