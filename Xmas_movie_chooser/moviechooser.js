@@ -1,11 +1,11 @@
-   function clickTheButton() { 
+function clickTheButton() { 
     document.querySelector("#landingPage").style.opacity = "0%";
     document.querySelector("#movieChooser").style.opacity = "100%";
     document.querySelector("#movieChooser").style.visibility = "visible";
     
    };
 
-   let booleanChoices = []
+let booleanChoices = [];
 
 function chooseColor() {
   booleanChoices.push(document.querySelector("#inColor").value);
@@ -223,7 +223,7 @@ function chooseMovie() {
  }
   
 //filter movie titles so that only the ones that are mentioned as many times as booleanChoices.length are published
-  let finalChoices = []
+let finalChoices = [];
   
  //publish movie titles 
  
@@ -236,3 +236,7 @@ function chooseMovie() {
   console.log(partialMatches);
 
 } //end of the movie chooser function
+
+/*export { clickTheButton, chooseColor, chooseRomance, chooseMusical, chooseMistakenId, chooseInn, chooseRoyal, chooseFamily, chooseCountry,
+  chooseCorp, chooseWish, chooseSanta, chooseAdaptation, chooseFresh, choosePrecociousChild, chooseBaker, chooseDeadParent,
+  chooseFamousActor, chooseChildStar, chooseFamilyFriendly, choosePilf, chooseMovie };*/
