@@ -95,15 +95,16 @@
   
         <div class="grid-item">
             <input type="checkbox" id="inColor" name="inColor" value="inColor" onclick="chooseColor()"></input>
-            <label for="inColor"><em>I hate to be *that* person, but I'd prefer if the movie weren't in B&W.</em></label>
+            <label for="inColor" id="snark">I'd prefer if the movie is in color.</label>
         </div>
       </div><br>
-      <button id="makeChoice" onclick="chooseMovie()">What Christmas Movie Should I Watch?</button>
+      <button id="makeChoice" onclick="chooseMovie()">Find me a Christmas movie!</button>
+      <button id="perfectMovie" onclick="choosePerfectMovie()">I'll watch anything, as long as it's perfect</button>
      </div><br>
       
    </div>
    <div id="movieRecommendations">
-     <!--create h2s here-->
+     <!--create h1s here-->
    </div>
     <script src="./movie_objects.js"></script>
     <script src="./moviechooser.js"></script>
