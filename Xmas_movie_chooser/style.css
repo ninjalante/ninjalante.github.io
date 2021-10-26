@@ -59,3 +59,10 @@ button:hover {
   label {
     font-size: 1.33rem;
   }
+
+  #movieRecommendations h1 {
+    font-size: 3rem;
+    width: 50%;
+    transition: opacity 1s ease-in 1s;
+    
+  }
