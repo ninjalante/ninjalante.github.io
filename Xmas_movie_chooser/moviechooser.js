@@ -5,10 +5,28 @@ function clickTheButton() {
     
    };
 
+function choosePerfectMovie() {
+  let perfectMovies = [];
+  for (i = 0; i < XmasMovies.length; i++){
+    if (XmasMovies[i].myScore == 100) {
+     perfectMovies.push(XmasMovies[i].title);
+      }
+  }
+  let movieOutput = document.querySelector("#movieRecommendations");
+  console.log(perfectMovies);
+  for (let movie of perfectMovies) {
+      movieOutput.innerHTML += '<h1>' + movie + '</h1>'
+    }
+    document.querySelector("#movieChooser").style.opacity = "0%";
+    document.querySelector("#movieChooser").style.visibility = "hidden";
+};
+
 let booleanChoices = [];
 
 function chooseColor() {
   booleanChoices.push(document.querySelector("#inColor").value);
+  let snark = document.querySelector("#snark")
+     snark.innerHTML += '<em> Seriously?</em>'
 }
 
 function chooseRomance() {
@@ -103,6 +121,9 @@ function chooseMovie() {
  let summaries = [];
  let myScores = [];
  let myComments = [];
+ //test code in console
+ console.log(partialMatches)
+ console.log(chosenElementsUniq);
  
  for (i = 0; i < XmasMovies.length; i++){
    if (XmasMovies[i].romance == true && chosenElementsUniq.includes("romance")) {
@@ -220,23 +241,32 @@ function chooseMovie() {
      myScores.push(XmasMovies[i].myScore);
      myComments.push(XmasMovies[i].comments);
    }
+   if (XmasMovies[i].inColor == true && chosenElementsUniq.includes("inColor")) {
+     partialMatches.push(XmasMovies[i].title);
+     summaries.push(XmasMovies[i].summary);
+     myScores.push(XmasMovies[i].myScore);
+     myComments.push(XmasMovies[i].comments);
+   }
  }
   
 //filter movie titles so that only the ones that are mentioned as many times as booleanChoices.length are published
 let finalChoices = [];
   
  //publish movie titles 
- 
+ let movieOutput = document.querySelector("#movieRecommendations");
+ document.querySelector("#movieChooser").style.opacity = "0%";
+ document.querySelector("#movieChooser").style.visibility = "hidden";
+ if (partialMatches.length == 0) {
+  movieOutput.innerHTML += '<h1>There is no movie that matches your search results. Please try again.</h1>'
+} else {
+ for (let movie of partialMatches) {
+  movieOutput.innerHTML += '<h1>' + movie + '</h1>'
+  }
+ }
+}
    
- //publish some details too?
+//publish some details too?
+//have those pop up when you hover over the title?
 
-  
-  //console test code
-  console.log(chosenElementsUniq);
-  console.log(partialMatches);
-
-} //end of the movie chooser function
-
-/*export { clickTheButton, chooseColor, chooseRomance, chooseMusical, chooseMistakenId, chooseInn, chooseRoyal, chooseFamily, chooseCountry,
-  chooseCorp, chooseWish, chooseSanta, chooseAdaptation, chooseFresh, choosePrecociousChild, chooseBaker, chooseDeadParent,
-  chooseFamousActor, chooseChildStar, chooseFamilyFriendly, choosePilf, chooseMovie };*/
+ 
+//end of the movie chooser function
