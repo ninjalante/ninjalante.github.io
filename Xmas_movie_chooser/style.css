@@ -49,6 +49,15 @@ button:hover {
     visibility: hidden;
     
   }
+
+#movieRec {
+    opacity: 0%;
+    transition: opacity 1s ease-in 1s;
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    
+}
   
 #booleans {
     font-size: 2rem;
@@ -60,9 +69,7 @@ button:hover {
     font-size: 1.33rem;
   }
 
-  #movieRecommendations h1 {
+  #movieRecommendations h1{
     font-size: 3rem;
-    width: 50%;
-    transition: opacity 1s ease-in 1s;
-    
+    width: 70%;
   }
