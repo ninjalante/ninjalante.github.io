@@ -65,18 +65,6 @@
             <label for="freshStart">Someone looking for a fresh start</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="precocious" name="precocious" value="precocious" onclick="choosePrecociousChild()"></input>
-            <label for="precocious">A precocious child</label>
-        </div>
-        <div class="grid-item">
-            <input type="checkbox" id="baker" name="baker" value="baker" onclick="chooseBaker()"></input>
-            <label for="baker">A charming baker</label>
-        </div>
-        <div class="grid-item">
-            <input type="checkbox" id="deadParent" name="deadParent" value="deadParent" onclick="chooseDeadParent()"></input>
-            <label for="deadParent">A protagonist with one or more deceased parents</label>
-        </div>
-        <div class="grid-item">
             <input type="checkbox" id="famousActor" name="famousActor" value="famousActor" onclick="chooseFamousActor()"></input>
             <label for="famousActor">A well-known but aging actor</label>
         </div>
@@ -92,20 +80,18 @@
             <input type="checkbox" id="pilf" name="pilf" value="pilf" onclick="choosePilf()"></input>
             <label for="pilf">A good-looking and charistmatic protagonist</label>
         </div>
-  
-        <div class="grid-item">
-            <input type="checkbox" id="inColor" name="inColor" value="inColor" onclick="chooseColor()"></input>
-            <label for="inColor" id="snark">I'd prefer if the movie is in color.</label>
-        </div>
       </div><br>
       <button id="makeChoice" onclick="chooseMovie()">Find me a Christmas movie!</button>
       <button id="perfectMovie" onclick="choosePerfectMovie()">I'll watch anything, as long as it's perfect</button>
      </div><br>
-      
    </div>
-   <div id="movieRecommendations">
-     <!--create h1s here-->
-   </div>
+<div id="movieRec">
+    <h1>These movies are sure to fill you with holiday cheer.</h1>
+    <div id="movieRecommendations" class="movies">
+        <!-- movie titles here -->
+    </div>
+ </div> 
+ 
     <script src="./movie_objects.js"></script>
     <script src="./moviechooser.js"></script>
  </body>
