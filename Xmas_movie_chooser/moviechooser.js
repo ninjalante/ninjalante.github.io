@@ -98,7 +98,7 @@ function choosePilf() {
   booleanChoices.push(document.querySelector("#pilf").value);
 }
 
-//------------- choosing movie function -------------
+//------------- choosing movie recommendations -------------
 
 function chooseMovie() {
   //make sure each element is only listed once. this part is done!
@@ -111,9 +111,7 @@ function chooseMovie() {
      );
   //make arrays for movie scores, titles, etc.
  let partialMatches = [];
- let summaries = [];
- let myScores = [];
- let myComments = [];
+ 
  //test code in console
  console.log(partialMatches)
  console.log(chosenElementsUniq);
@@ -121,101 +119,69 @@ function chooseMovie() {
  for (i = 0; i < XmasMovies.length; i++){
    if (XmasMovies[i].romance == true && chosenElementsUniq.includes("romance")) {
     partialMatches.push(XmasMovies[i].title);
-    summaries.push(XmasMovies[i].summary);
-    myScores.push(XmasMovies[i].myScore);
-    myComments.push(XmasMovies[i].comments);
+    
      
     }
    if (XmasMovies[i].mistakenIdentity == true && chosenElementsUniq.includes("mistakenId")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].realSanta == true && chosenElementsUniq.includes("santa")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].musical == true && chosenElementsUniq.includes("musical")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].charmingInn == true && chosenElementsUniq.includes("inn")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].royalFairyTale == true && chosenElementsUniq.includes("royal")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].familyIsNumber1 == true && chosenElementsUniq.includes("family")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].countryVsCity == true && chosenElementsUniq.includes("country")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].corporateLemming == true && chosenElementsUniq.includes("corp")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].wishFulfillment == true && chosenElementsUniq.includes("wish")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].adaptation == true && chosenElementsUniq.includes("adaptation")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].freshStart == true && chosenElementsUniq.includes("freshStart")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
   
    if (XmasMovies[i].famousActor == true && chosenElementsUniq.includes("famousActor")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].childActor == true && chosenElementsUniq.includes("childStar")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].familyFriendly == true && chosenElementsUniq.includes("familyFriendly")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
    if (XmasMovies[i].pilf == true && chosenElementsUniq.includes("pilf")) {
      partialMatches.push(XmasMovies[i].title);
-     summaries.push(XmasMovies[i].summary);
-     myScores.push(XmasMovies[i].myScore);
-     myComments.push(XmasMovies[i].comments);
+     
    }
  }
   
