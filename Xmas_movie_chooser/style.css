@@ -14,6 +14,7 @@ h1 {
     font-size: 5.5rem;
     font-family: 'Berkshire Swash', cursive;
     margin-bottom: 5px;
+    padding-right: 200px;
 }
 
 h2 {
@@ -63,13 +64,58 @@ button:hover {
     font-size: 2rem;
     display: grid;
     grid-template: 5 / 3;
-  }
+}
 
-  label {
+label {
     font-size: 1.33rem;
-  }
+}
 
-  #movieRecommendations h1{
+#movieRecommendations h1{
     font-size: 3rem;
     width: 70%;
-  }
+}
+
+nav {
+    padding: 10px 20px;
+    background: #ebefe7;
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    border: solid 3px #ebefe7;
+    color: rgb(172, 48, 48);
+    font-size: 1.5rem;
+}
+
+li {
+    display: inline;
+}
+
+a:hover {
+    color: rgb(30, 60, 29);
+}
+
+#movies h2 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 2rem;
+}
+
+.movieCard {
+    background-color: #ebefe7;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+    color:rgb(172, 48, 48);
+    text-shadow: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+aside,
+    .gretastake {
+    font-size: 1rem;
+}
+
+.myscore {
+    font-family: 'Berkshire Swash', cursive;
+}
