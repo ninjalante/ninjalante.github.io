@@ -110,89 +110,118 @@ function chooseMovie() {
         }
      );
   //make arrays for movie scores, titles, etc.
- let partialMatches = [];
+ let romantic = [];
+ let mistakenic = [];
+ let santaic = [];
+ let musically = [];
+ let charminn = [];
+ let princely = [];
+ let familyy = [];
+ let countryy = [];
+ let corpinc = [];
+ let iwish = [];
+ let adapt = [];
+ let anustart = [];
+ let famous = [];
+ let child = [];
+ let allages = [];
+ let pilfme = [];
+
  
  //test code in console
- console.log(partialMatches)
  console.log(chosenElementsUniq);
  //push titles into "partialMatches", same number of times they have been chosen
  for (i = 0; i < XmasMovies.length; i++){
    if (XmasMovies[i].romance == true && chosenElementsUniq.includes("romance")) {
-    partialMatches.push(XmasMovies[i].title);
+    romantic.push(XmasMovies[i].title);
     
      
     }
    if (XmasMovies[i].mistakenIdentity == true && chosenElementsUniq.includes("mistakenId")) {
-     partialMatches.push(XmasMovies[i].title);
+     mistakenic.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].realSanta == true && chosenElementsUniq.includes("santa")) {
-     partialMatches.push(XmasMovies[i].title);
+     santaic.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].musical == true && chosenElementsUniq.includes("musical")) {
-     partialMatches.push(XmasMovies[i].title);
+     musically.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].charmingInn == true && chosenElementsUniq.includes("inn")) {
-     partialMatches.push(XmasMovies[i].title);
+     charminn.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].royalFairyTale == true && chosenElementsUniq.includes("royal")) {
-     partialMatches.push(XmasMovies[i].title);
+     princely.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].familyIsNumber1 == true && chosenElementsUniq.includes("family")) {
-     partialMatches.push(XmasMovies[i].title);
+     familyy.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].countryVsCity == true && chosenElementsUniq.includes("country")) {
-     partialMatches.push(XmasMovies[i].title);
+     countryy.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].corporateLemming == true && chosenElementsUniq.includes("corp")) {
-     partialMatches.push(XmasMovies[i].title);
+     corpinc.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].wishFulfillment == true && chosenElementsUniq.includes("wish")) {
-     partialMatches.push(XmasMovies[i].title);
+     iwish.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].adaptation == true && chosenElementsUniq.includes("adaptation")) {
-     partialMatches.push(XmasMovies[i].title);
+     adapt.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].freshStart == true && chosenElementsUniq.includes("freshStart")) {
-     partialMatches.push(XmasMovies[i].title);
+     anustart.push(XmasMovies[i].title);
      
    }
   
    if (XmasMovies[i].famousActor == true && chosenElementsUniq.includes("famousActor")) {
-     partialMatches.push(XmasMovies[i].title);
+     famous.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].childActor == true && chosenElementsUniq.includes("childStar")) {
-     partialMatches.push(XmasMovies[i].title);
+     child.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].familyFriendly == true && chosenElementsUniq.includes("familyFriendly")) {
-     partialMatches.push(XmasMovies[i].title);
+     allages.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].pilf == true && chosenElementsUniq.includes("pilf")) {
-     partialMatches.push(XmasMovies[i].title);
+     pilfme.push(XmasMovies[i].title);
      
    }
- }
+ };
   
 //filter movie titles so that only the ones that are mentioned as many times as booleanChoices.length are published
 //This is the tricky part. We need: if partialMatches.count("title") === booleanChoices.length { finalChoices.push("title")}
 let finalChoices = [];
 
-//-------------- get the final recommendations from the partial matches array -------------
+//-------------- get the final recommendations from the partial matches arrays -------------
 
+let allMovies = [romantic, mistakenic, santaic, musically, charminn, princely, familyy, countryy, corpinc, iwish, adapt, anustart, famous, child, allages, pilfme];
+//remove categories from array if they're empty?
 
-
+for (let category of allMovies) {
+  for (let i = 0; i < category.length; i++){
+    console.log(category[i]);
+    for (let movie in category) {
+      if (category[i] === movie) {
+        finalChoices.push(category[i]);
+      }
+     }
+    };
+  };
+//^^ this doesn't quite work yet. we'll get there  
+console.log(allMovies);
+console.log(finalChoices);
   
  //publish movie titles 
  
@@ -205,15 +234,17 @@ let finalChoices = [];
   let movieOutput = document.querySelector("#movieRecommendations");
 
  //------when you're done this needs to change to finalChoices---------
- if (partialMatches.length == 0) {
-  movieOutput.innerHTML += '<h1>There is no movie that matches your search results. Please try again.</h1>'
+ if (finalChoices.length === 0) {
+  movieOutput.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Maybe try choosing fewer options. Or, follow <a href="./allmovies.html">this link</a> to see all movies in the database.</p>'
 } else {
- for (let movie of partialMatches) {
+ for (let movie of finalChoices) {
   movieOutput.innerHTML += '<h1>' + movie + '</h1>'
   }
  }
  //--------- END of the movie chooser function: final curly brace below ------------ END OF FUNCTION END OF FUNCTION
-}
+ //___________maybe i should define the final movie chooser function outside this function and call it inside?____________//
+
    
 //publish some details too?
 //have those pop up when you hover over the title?
+}
