@@ -209,6 +209,7 @@ console.log(partialMatches);
  if (finalChoices.length === 0) {
   movieOutput.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Try choosing fewer options!</p>'
 } else {
+   movieOutput.innerHTML += '<h2>Your choices: ' + chosenElementsUniq + '</h2>'
  for (let movie of finalChoices) {
   movieOutput.innerHTML += '<h1>' + movie + '</h1>';
   }
