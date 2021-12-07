@@ -31,39 +31,23 @@
           <input type="checkbox" id="mistakenId" name="mistakenId" value="mistakenId" onclick="chooseMistakenId()"></input>
           <label for="mistakenId">A case of mistaken identity</label></div>
        <div class="grid-item">
-          <input type="checkbox" id="inn" name="inn" value="inn" onclick="chooseInn()"></input>
-          <label for="inn">A charming rural inn</label></div>
-          <div class="grid-item">
+          <input type="checkbox" id="charmingInn" name="charmingInn" value="charmingInn" onclick="chooseInn()"></input>
+          <label for="charmingInn">A charming rural inn or bakery</label></div>
+       <div class="grid-item">
             <input type="checkbox" id="royal" name="royal" value="royal" onclick="chooseRoyal()"></input>
             <label for="royal">A royal fairy tale</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="family" name="family" value="family" onclick="chooseFamily()"></input>
-            <label for="family">A lesson about the importance of family</label>
+            <input type="checkbox" id="familyIsNumber1" name="familyIsNumber1" value="familyIsNumber1" onclick="chooseFamily()"></input>
+            <label for="familyIsNumber1">A lesson about the importance of family</label>
         </div>
         <div class="grid-item">
             <input type="checkbox" id="country" name="country" value="country" onclick="chooseCountry()"></input>
             <label for="country">A city fish out of water</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="corp" name="corp" value="corp" onclick="chooseCorp()"></input>
-            <label for="corp">A corporate employee with ulterior motives</label>
-        </div>
-        <div class="grid-item">
-            <input type="checkbox" id="wish" name="wish" value="wish" onclick="chooseWish()"></input>
-            <label for="wish">A wish come true</label>
-        </div>
-        <div class="grid-item">
-            <input type="checkbox" id="santa" name="santa" value="santa" onclick="chooseSanta()"></input>
-            <label for="santa">The REAL Santa Claus</label>
-        </div>
-        <div class="grid-item">
-            <input type="checkbox" id="adaptation" name="adaptation" value="adaptation" onclick="chooseAdaptation()"></input>
-            <label for="adaptation">An adaptation</label>
-        </div>
-        <div class="grid-item">
-            <input type="checkbox" id="freshStart" name="freshStart" value="freshStart" onclick="chooseFresh()"></input>
-            <label for="freshStart">Someone looking for a fresh start</label>
+            <input type="checkbox" id="magic" name="magic" value="magic" onclick="chooseMagic()"></input>
+            <label for="magic">Christmas magic</label>
         </div>
         <div class="grid-item">
             <input type="checkbox" id="famousActor" name="famousActor" value="famousActor" onclick="chooseFamousActor()"></input>
@@ -77,20 +61,20 @@
             <input type="checkbox" id="familyFriendly" name="familyFriendly" value="familyFriendly" onclick="chooseFamilyFriendly()"></input>
             <label for="familyFriendly">A story the whole family can enjoy</label>
         </div>
-        <div class="grid-item">
-            <input type="checkbox" id="pilf" name="pilf" value="pilf" onclick="choosePilf()"></input>
-            <label for="pilf">A good-looking and charistmatic protagonist</label>
-        </div>
       </div><br>
       <button id="makeChoice" onclick="chooseMovie()">Find me a Christmas movie!</button>
-      <button id="perfectMovie" onclick="choosePerfectMovie()">I'll watch anything, as long as it's perfect</button>
+      <button id="perfectMovie" onclick="choosePerfectMovie()">Nothing but the best for me</button>
+      <button id="worstMovie" onclick="chooseWorstMovie()">GIVE ME YOUR WORST.</button>
      </div><br>
    </div>
 <div id="movieRec">
     <h1>These movies are sure to fill you with holiday cheer!</h1>
+    
     <div id="movieRecommendations" class="movies">
         <!-- movie titles here -->
     </div>
+    <br><aside>Find out more! This <a href="./allmovies.html">alphabetical list</a> includes all the movies I've seen, with scores, summaries, comments, and stars!</aside>
+    <br><button onclick="window.location.reload()">Start over</button>
  </div> 
  
     <script src="./movie_objects.js"></script>
