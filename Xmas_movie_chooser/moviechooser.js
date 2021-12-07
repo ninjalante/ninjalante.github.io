@@ -26,6 +26,35 @@ function choosePerfectMovie() {
       movieOutput.innerHTML += '<h1>' + movie + '</h1>'
     }
 };
+//---------recommend one of the WORST movies------------------
+
+function chooseWorstMovie(){
+  let worstMovies = [];
+  for (i = 0; i < XmasMovies.length; i++){
+    if (XmasMovies[i].myScore <= 50) {
+      worstMovies.push(XmasMovies[i].title);
+    }
+  }
+    console.log(worstMovies);
+    
+    let numOfMovies = worstMovies.length;
+    
+    let number = Math.floor(Math.random() * numOfMovies);
+
+    let worstMovie = worstMovies[number];
+
+    document.querySelector("#movieChooser").style.opacity = "0%";
+    document.querySelector("#movieChooser").style.visibility = "hidden";
+    document.querySelector("#movieRec").style.opacity = "100%";
+    document.querySelector("#movieRec").style.visibility = "visible";
+
+  let movieOutput = document.querySelector("#movieRecommendations");
+
+  console.log(worstMovie);//check code in console
+
+  movieOutput.innerHTML += '<h1> "' + worstMovie + '" is really one of the worst I\'ve ever seen.</h1>'
+    
+}
 //end of perfect movie function 
 
 //---------------- choosing elements ----------------------
@@ -47,7 +76,7 @@ function chooseMistakenId() {
 };
 
 function chooseInn() {
-  booleanChoices.push(document.querySelector("#inn").value);
+  booleanChoices.push(document.querySelector("#charmingInn").value);
 };
 
 function chooseRoyal() {
@@ -55,32 +84,16 @@ function chooseRoyal() {
 };
 
 function chooseFamily() {
-  booleanChoices.push(document.querySelector("#family").value);
+  booleanChoices.push(document.querySelector("#familyIsNumber1").value);
 };
 
 function chooseCountry() {
   booleanChoices.push(document.querySelector("#country").value);
 };
 
-function chooseCorp() {
-  booleanChoices.push(document.querySelector("#corp").value);
+function chooseMagic() {
+  booleanChoices.push(document.querySelector("#magic").value);
 };
-
-function chooseWish() {
-  booleanChoices.push(document.querySelector("#wish").value);
-};
-
-function chooseSanta() {
-  booleanChoices.push(document.querySelector("#santa").value);
-};
-
-function chooseAdaptation() {
-  booleanChoices.push(document.querySelector("#adaptation").value);
-};
-
-function chooseFresh() {
-  booleanChoices.push(document.querySelector("#freshStart").value);
-}
 
 function chooseFamousActor() {
   booleanChoices.push(document.querySelector("#famousActor").value);
@@ -94,10 +107,6 @@ function chooseFamilyFriendly() {
   booleanChoices.push(document.querySelector("#familyFriendly").value);
 }
 
-function choosePilf() {
-  booleanChoices.push(document.querySelector("#pilf").value);
-}
-
 //------------- choosing movie recommendations -------------
 
 function chooseMovie() {
@@ -109,93 +118,54 @@ function chooseMovie() {
             }
         }
      );
-  //make arrays for movie scores, titles, etc.
- let romantic = [];
- let mistakenic = [];
- let santaic = [];
- let musically = [];
- let charminn = [];
- let princely = [];
- let familyy = [];
- let countryy = [];
- let corpinc = [];
- let iwish = [];
- let adapt = [];
- let anustart = [];
- let famous = [];
- let child = [];
- let allages = [];
- let pilfme = [];
 
- 
  //test code in console
  console.log(chosenElementsUniq);
  //push titles into "partialMatches", same number of times they have been chosen
+ let partialMatches = [];
+
  for (i = 0; i < XmasMovies.length; i++){
    if (XmasMovies[i].romance == true && chosenElementsUniq.includes("romance")) {
-    romantic.push(XmasMovies[i].title);
-    
-     
+    partialMatches.push(XmasMovies[i].title);  
     }
    if (XmasMovies[i].mistakenIdentity == true && chosenElementsUniq.includes("mistakenId")) {
-     mistakenic.push(XmasMovies[i].title);
+     partialMatches.push(XmasMovies[i].title);
      
    }
-   if (XmasMovies[i].realSanta == true && chosenElementsUniq.includes("santa")) {
-     santaic.push(XmasMovies[i].title);
+   if (XmasMovies[i].realMagic == true && chosenElementsUniq.includes("magic")) {
+     partialMatches.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].musical == true && chosenElementsUniq.includes("musical")) {
-     musically.push(XmasMovies[i].title);
+     partialMatches.push(XmasMovies[i].title);
      
    }
-   if (XmasMovies[i].charmingInn == true && chosenElementsUniq.includes("inn")) {
-     charminn.push(XmasMovies[i].title);
+   if (XmasMovies[i].charmingInn == true && chosenElementsUniq.includes("charmingInn")) {
+     partialMatches.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].royalFairyTale == true && chosenElementsUniq.includes("royal")) {
-     princely.push(XmasMovies[i].title);
+     partialMatches.push(XmasMovies[i].title);
      
    }
-   if (XmasMovies[i].familyIsNumber1 == true && chosenElementsUniq.includes("family")) {
-     familyy.push(XmasMovies[i].title);
+   if (XmasMovies[i].familyIsNumber1 == true && chosenElementsUniq.includes("familyIsNumber1")) {
+     partialMatches.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].countryVsCity == true && chosenElementsUniq.includes("country")) {
-     countryy.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].corporateLemming == true && chosenElementsUniq.includes("corp")) {
-     corpinc.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].wishFulfillment == true && chosenElementsUniq.includes("wish")) {
-     iwish.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].adaptation == true && chosenElementsUniq.includes("adaptation")) {
-     adapt.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].freshStart == true && chosenElementsUniq.includes("freshStart")) {
-     anustart.push(XmasMovies[i].title);
-     
+     partialMatches.push(XmasMovies[i].title);
    }
   
    if (XmasMovies[i].famousActor == true && chosenElementsUniq.includes("famousActor")) {
-     famous.push(XmasMovies[i].title);
+     partialMatches.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].childActor == true && chosenElementsUniq.includes("childStar")) {
-     child.push(XmasMovies[i].title);
+     partialMatches.push(XmasMovies[i].title);
      
    }
    if (XmasMovies[i].familyFriendly == true && chosenElementsUniq.includes("familyFriendly")) {
-     allages.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].pilf == true && chosenElementsUniq.includes("pilf")) {
-     pilfme.push(XmasMovies[i].title);
+     partialMatches.push(XmasMovies[i].title);
      
    }
  };
@@ -205,25 +175,27 @@ function chooseMovie() {
 let finalChoices = [];
 
 //-------------- get the final recommendations from the partial matches arrays -------------
-
-let allMovies = [romantic, mistakenic, santaic, musically, charminn, princely, familyy, countryy, corpinc, iwish, adapt, anustart, famous, child, allages, pilfme];
-//remove categories from array if they're empty?
-
-for (let category of allMovies) {
-  for (let i = 0; i < category.length; i++){
-    console.log(category[i]);
-    for (let movie in category) {
-      if (category[i] === movie) {
-        finalChoices.push(category[i]);
-      }
-     }
+console.log(partialMatches);
+  
+  let magicNumber = chosenElementsUniq.length;
+  
+  const counts = {};
+  partialMatches.forEach((x) => {
+    counts[x] = (counts[x] || 0) + 1;
+  });
+  console.log(counts)
+  
+  let movieNumberCounts = Object.entries(counts);
+  console.log(movieNumberCounts);
+  
+  for (let m = 0; m < movieNumberCounts.length; m++) {
+    if (movieNumberCounts[m][1] === magicNumber) {
+      finalChoices.push(movieNumberCounts[m][0]);
     };
   };
-//^^ this doesn't quite work yet. we'll get there  
-console.log(allMovies);
-console.log(finalChoices);
   
- //publish movie titles 
+  console.log(finalChoices);
+
  
  
   document.querySelector("#movieChooser").style.opacity = "0%";
@@ -235,10 +207,10 @@ console.log(finalChoices);
 
  //------when you're done this needs to change to finalChoices---------
  if (finalChoices.length === 0) {
-  movieOutput.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Maybe try choosing fewer options. Or, follow <a href="./allmovies.html">this link</a> to see all movies in the database.</p>'
+  movieOutput.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Try choosing fewer options!</p>'
 } else {
  for (let movie of finalChoices) {
-  movieOutput.innerHTML += '<h1>' + movie + '</h1>'
+  movieOutput.innerHTML += '<h1>' + movie + '</h1>';
   }
  }
  //--------- END of the movie chooser function: final curly brace below ------------ END OF FUNCTION END OF FUNCTION
