@@ -9,7 +9,10 @@ body {
     margin-left: 8%;
 }
 
-h1 {
+h1, 
+    #introToPage,
+        #really
+     {
     text-shadow: -2px -2px rgb(30, 60, 29), 1px -1px black, -2px 2px rgb(30, 60, 29), 1px 1px black;
     font-size: 5.5rem;
     font-family: 'Berkshire Swash', cursive;
@@ -101,7 +104,8 @@ a:hover {
 
 .movieCard {
     background-color: #ebefe7;
-    padding-left: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 1.7rem;
@@ -124,3 +128,31 @@ a {
     color:rgb(30, 60, 29);
     text-shadow: -1px -1px whitesmoke, 1px -1px whitesmoke, -1px 1px whitesmoke, 1px 1px whitesmoke;
 }
+
+#worstButton {
+    visibility: hidden;
+    opacity: 0%;
+}
+
+#contact {
+    font-size: 1.25rem;
+    color: whitesmoke;
+    height: 4rem;
+}
+    
+
+    @media only screen and (max-width: 480px) {
+        body {
+            font-size: 8px;
+        }
+    
+        h2 {
+            width: 90%;
+            margin-right: 5%;
+            margin-left: 5%;
+        }
+
+        h1 {
+            font-size: 16px;
+        }
+    }
