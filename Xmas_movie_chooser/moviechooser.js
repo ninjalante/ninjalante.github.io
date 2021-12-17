@@ -21,9 +21,12 @@ function choosePerfectMovie() {
   
   let movieOutput = document.querySelector("#movieRecommendations");
 
+  let intro = document.querySelector("#introToMovies");
+
   console.log(perfectMovies);//check code in console
+  introToMovies.innerHTML += '<h1>These movies all get a perfect score in my book.</h1>';
   for (let movie of perfectMovies) {
-      movieOutput.innerHTML += '<h1>' + movie + '</h1>'
+      movieOutput.innerHTML += '<h1>' + movie + '</h1>';
     }
 };
 //---------recommend one of the WORST movies------------------
@@ -47,15 +50,38 @@ function chooseWorstMovie(){
     document.querySelector("#movieChooser").style.visibility = "hidden";
     document.querySelector("#movieRec").style.opacity = "100%";
     document.querySelector("#movieRec").style.visibility = "visible";
+    document.querySelector("#worstButton").style.opacity = "100%";
+    document.querySelector("#worstButton").style.visibility = "visible";
 
   let movieOutput = document.querySelector("#movieRecommendations");
 
-  console.log(worstMovie);//check code in console
+  let intro = document.querySelector("#introToMovies");
 
+  console.log(worstMovie);//check code in console
+  intro.innerHTML += '<h1>Don\'t say I didn\'t warn you...</h1>';
   movieOutput.innerHTML += '<h1> "' + worstMovie + '" is really one of the worst I\'ve ever seen.</h1>'
     
 }
-//end of perfect movie function 
+
+function oneMore() {
+  let worstMovies = [];
+  for (i = 0; i < XmasMovies.length; i++){
+    if (XmasMovies[i].myScore <= 50) {
+      worstMovies.push(XmasMovies[i].title);
+    }
+  }
+    console.log(worstMovies);
+    
+    let numOfMovies = worstMovies.length;
+    
+    let number = Math.floor(Math.random() * numOfMovies);
+
+    let worstMovie = worstMovies[number];
+  let movieOutput = document.querySelector("#movieRecommendations");
+  movieOutput.innerHTML += '<h1>..."' + worstMovie + '"?'
+
+}
+//end of perfect/worst movie function 
 
 //---------------- choosing elements ----------------------
 //make an array for the choices
@@ -204,12 +230,14 @@ console.log(partialMatches);
   document.querySelector("#movieRec").style.visibility = "visible";
 
   let movieOutput = document.querySelector("#movieRecommendations");
+  let intro = document.querySelector("#introToMovies");
 
  //------when you're done this needs to change to finalChoices---------
  if (finalChoices.length === 0) {
-  movieOutput.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Try choosing fewer options!</p>'
+  intro.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Try choosing fewer options!</p>'
 } else {
-   movieOutput.innerHTML += '<h2>Your choices: ' + chosenElementsUniq + '</h2>'
+  intro.innerHTML += '<h1>These movies are sure to fill you with holiday cheer!</h1>';
+  movieOutput.innerHTML += '<h2>Your choices: ' + chosenElementsUniq + '</h2>';
  for (let movie of finalChoices) {
   movieOutput.innerHTML += '<h1>' + movie + '</h1>';
   }
