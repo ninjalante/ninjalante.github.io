@@ -210,7 +210,7 @@ let XmasMovies = [
         title: "Angels in the Snow",
         myScore: 50,
         summary: "A bickering, privileged family stranded in a snowstorm provides a warm home to a less fortunate family stranded in the snowstorm.",
-        comments: "They were dead the whole time. The movie title 'ruins' it, if there was anything to be ruined. Also, the Black familiy serves as a vehicle to teach them, instead of having their own character development.",
+        comments: "They were dead the whole time. The movie title 'ruins' it, if there was anything to be ruined. Also, the Black family serves as a vehicle to teach them, instead of having their own character development.",
         romance: false,
         musical: false,
         mistakenIdentity: false, 
@@ -513,6 +513,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Father Christmas Is Back",
+        myScore: 53,
+        summary: "Four bickering sisters are thrown for a loop when they learn the youngest and wildest among them has invited their long-estranged father over for Christmas.",
+        comments: "Hooooooo boyyyyyyyy.",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: false
+    }
+    {
         title: "Four Christmases",
         myScore: 78,
         summary: "A couple with divorced parents is forced to spend time with all four of their extended families after their self-serving vacation plans are exposed.",
@@ -547,7 +564,7 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
-        title: "Happy Merry Whatever",
+        title: "Merry Happy Whatever",
         myScore: 75,
         summary: "A man hoping to propose to his girlfriend over the holidays undergoes scrunity from her widowed, overprotective, ex-cop father when he joins her for the Christmas holiday.",
         comments: "The sitcomization of it brings its quality down a bit, but it's a solid sitcom. The well-worn concept is given new life by excellent performances and actual comedy.",
@@ -1142,6 +1159,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "The Christmas Contest",
+        myScore: 70,
+        summary: "A pair of exes whose relationship failed because of their competitiveness face off in a series of Christmas-based challenges.",
+        comments: "There have been a serious uptick in female writers and directors at Hallmark the past two years! Excellent to see. As far as the story goes, I've noticed that the B plots often have more depth to them than the main romance (here, the grandmother's journey to embrace life again after her husband's death, the child being raised by his grandmother, the senior center being an important and underfunded part of the community), but making them the main plot would be too much conflict for one of these all-smiles-stories. Still - not bad.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "The Christmas Chronicles: Part Two",
         myScore: 75,
         summary: "A young girl runs away from home to the North Pole, where a disgruntled former elf is trying to take down Santa Claus.",
@@ -1312,6 +1346,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "The Santa Box",
+        myScore: 64,
+        summary: "A teen hates Christmas because of the many tragedies that have befallen her family then -- until a seemingly magic box appears on her doorstep, promising her Christmas wishes will come true.",
+        comments: "This came out in 2020, but it looks like it came out way longer ago than that. Also, the director insists on including 'Spanky' as part of his credited name. There's some eyebrow-raising allusions to Otto possibly being a pedophile, which probably had to be included so children around the world wouldn't suddenly befriend the Nazi pedo next door in the hopes of their Christmas wishes coming true. I have to admit, I was really hoping he would be the real Santa Claus. Also, bullies in movies stress me out. Bigtime. Dislike.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "The Santa Clause",
         myScore: 71,
         summary: "After accidentally killing Santa, a divorced dad is forced to take up the mantle.",
@@ -1364,7 +1415,7 @@ let XmasMovies = [
     },
     {
         title: "While You Were Sleeping",
-        myScore: 74,
+        myScore: 81,
         summary: "A lonely young woman finds herself in the middle of a raucous, loving family when she accidentally tricks them into believing that she's engaged to their comatose son.",
         comments: "A rare entry as Christmas Day happens at the inciting incident, instead of the climax. And I certainly don't always cry at the end. You cry at the end",
         romance: true,
@@ -1381,7 +1432,7 @@ let XmasMovies = [
     },
     {
         title: "White Christmas",
-        myScore: 86,
+        myScore: 87,
         summary: "Two successful song-and-dance men help their former commanding officer bring business to his struggling Connecticut inn.",
         comments: "Another minstrel routine...oops. At least they didn't do black face for this one. I'm sure you don't tear up at the end when the general sees all his men because WHO WOULD DO THAT",
         romance: true,
