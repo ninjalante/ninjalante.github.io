@@ -2,8 +2,8 @@
     chooseCorp, chooseWish, chooseSanta, chooseAdaptation, chooseFresh, choosePrecociousChild, chooseBaker, chooseDeadParent,
     chooseFamousActor, chooseChildStar, chooseFamilyFriendly, choosePilf, chooseMovie } from './moviechooser.js';*/
 
-
-export const XmasMovies = [
+//this is backup. Everything is in movie_chooser.js
+const XmasMovies = [
     {
         title: "A Bad Moms Christmas",
         myScore: 100,
