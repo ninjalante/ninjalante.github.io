@@ -1,5 +1,5 @@
 //import movie objects so it will frigging work
-import { Xmas_movies } from './movie_objects.js';
+import { XmasMovies } from './movie_objects.js';
 
 //click the button on the landing page to open the quiz
 function clickTheButton() { 
