@@ -1466,6 +1466,8 @@ let XmasMovies = [
     }
 ]
 
+export { XmasMovies };
+
     /*  title:
         myScore:
         summary:
