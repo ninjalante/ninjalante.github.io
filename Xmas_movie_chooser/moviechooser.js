@@ -2,12 +2,12 @@
 import { XmasMovies } from './movie_objects.js';
 
 //click the button on the landing page to open the quiz
-function clickTheButton() { 
+/*function clickTheButton() { 
     document.querySelector("#landingPage").style.opacity = "0%";
     document.querySelector("#movieChooser").style.opacity = "100%";
     document.querySelector("#movieChooser").style.visibility = "visible";
     
-   };
+   };*/
 
 // -------------------- choose a movie with a perfect score only -----------------
 function choosePerfectMovie() {
