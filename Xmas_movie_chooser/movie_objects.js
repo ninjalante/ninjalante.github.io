@@ -3,7 +3,7 @@
     chooseFamousActor, chooseChildStar, chooseFamilyFriendly, choosePilf, chooseMovie } from './moviechooser.js';*/
 
 
-let XmasMovies = [
+export const XmasMovies = [
     {
         title: "A Bad Moms Christmas",
         myScore: 100,
@@ -1465,8 +1465,6 @@ let XmasMovies = [
         familyFriendly: true
     }
 ]
-
-export { XmasMovies };
 
     /*  title:
         myScore:
