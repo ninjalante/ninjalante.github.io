@@ -528,7 +528,7 @@ let XmasMovies = [
         famousActor: true,
         childActor: false,
         familyFriendly: false
-    }
+    },
     {
         title: "Four Christmases",
         myScore: 78,
