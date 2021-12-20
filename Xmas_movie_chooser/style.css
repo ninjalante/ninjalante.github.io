@@ -151,9 +151,12 @@ a {
         }
         
         h1 {
-            font-size: 3.75rem;
-            padding-right: 10px;
+            font-size: 6rem;
+            
         }
+        
+        h2 {
+            font-size 5rem;
         
         button {
             background-color: white;
