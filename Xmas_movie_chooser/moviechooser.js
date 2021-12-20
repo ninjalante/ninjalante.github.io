@@ -34,6 +34,23 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "A California Christmas 2: City Lights",
+        myScore: 37,
+        summary: "After getting engaged, a young couple's lives are upended when they have to leave their dairy farm and winery in the country to settle unfinished business of all kinds in San Francisco.",
+        comments: "Buckle in, I got a lot of rant to get out. I started this movie and was so bored ten minutes in that I just stopped it and continued baking in total silence, as that was more enjoyable. I put it back on a couple days later, and got *literally* another five minutes in before I guessed what all the plot problems and points were going to be, closed my eyes, and slept through the rest. And guess what? I was 100% right on all counts. There's so, so many slow-motion montages that add nothing - someone doesn't grasp that 'visual storytelling' means you should be telling a story instead of just showing visuals - and some of the sound editing and character moments are actually the things you would see in a child's cartoon. Plus, the acting is terrible. You'd think 2020 would have, at least, reinvigorated some of these actors to make them happy to be alive, but maybe they're all just as exhausted as I am. *Mostly family-friendly except for one sad attempt at a romantic love scene that I actually fast-forwarded through.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "A Christmas Carol",
         myScore: 73,
         summary: "A rich old man learns the meaning of Christmas from four ghosts.",
@@ -815,6 +832,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Just Friends",
+        myScore: 58,
+        summary: "A successful music producer returns to his hometown for Christmas to try to win back the girl next door, but she's only ever seen him as a friend.",
+        comments: "This was the first Ryan Reynolds movie I saw, and I found him so insufferable that I skipped his other purile comedies for years. In retrospect, it may be a suble send-up of movies like this where intolerable male protagonists try to woo women who've clearly stated their feelings against it, but it's a bit too cartoonish for me. The IMDB summary makes him out to be an incel, calling Amy Smart's character the 'woman whose rejection of him turned him into a ferocious womanizer.' Yeah, you can't control other people, but you can control your own actions, dude. Barf. *Extremely family-UNfriendly.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: false
+    },
+    {
         title: "Let It Snow",
         myScore: 77,
         summary: "A group of teens in a snowed-in small town struggle to find themselves as Christmas descends.",
@@ -1136,6 +1170,22 @@ let XmasMovies = [
         famousActor: false,
         childActor: false,
         familyFriendly: true
+    },
+    {   title: "The Apartment",
+        myScore: 100,
+        summary: "A low-level insurance company employee finds his career prospects improving after he lends his bachelor pad to a powerful executive to use for his extramarital affair.",
+        comments: "Does that summary sound like the least Christmassy thing ever? Then I'm happy for you. The fact is, Christmas isn't a happy time for everyone, and this film uses it as a centerpiece of loneliness -- so it's extremely Christmassy, but in a negative way. I *LOVE* this movie (it's perfect, obvs) and watched it approximately once a week my sophomore year of college. Billy Wilder, once again, knocks it out of the park. I'm so glad that, as far as I've read, Jack Lemmon was one of the nicest people in Hollywood. CW: attempted suicide.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: false
     },
     {
         title: "The Christmas Chronicles",
