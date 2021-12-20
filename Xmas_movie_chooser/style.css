@@ -151,19 +151,34 @@ a {
             margin-left: 8%;
         }
         
-        h1 {
+        h1 #landingPage {
             font-size: 6rem;
-            
+            width: 85%;
         }
         
-        h2 {
+        h2 #landingPage {
             font-size 5rem;
         
+        }
+        
         button {
+            font-size: 3rem;
             background-color: white;
             width: 80%;
             height: auto;
         }
+            
+        aside,
+            .gretastake {
+            font-size: 3rem;
+        }
         
+        #movies h2 {
+            font-size: 4rem;
+        }
+        
+        .grid-item {
+            font-size: 3rem;
+        }
     }
     
