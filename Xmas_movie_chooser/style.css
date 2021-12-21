@@ -79,21 +79,6 @@ label {
     width: 70%;
 }
 
-nav {
-    padding: 10px 20px;
-    background: #ebefe7;
-    width: 80%;
-    border-radius: 10px;
-    margin-bottom: 50px;
-    border: solid 3px #ebefe7;
-    color: rgb(172, 48, 48);
-    font-size: 1.5rem;
-}
-
-li {
-    display: inline;
-}
-
 a:hover {
     color: rgb(172, 48, 48);
 }
@@ -151,18 +136,20 @@ a {
             margin-left: 8%;
         }
         
-        #landingPage h1 {
-            font-size: 8rem;
-            width: 85%;
+       .landing {
+           width: 85%;
         }
         
-        #landingPage h2 {
-            font-size 6rem;
+        .landing h1 {
+            font-size: 8rem;
+        }
         
+        .landing h2 {
+            font-size: 6rem;
         }
         
         button {
-            font-size: 3.5rem;
+            font-size: 3.25rem;
             background-color: white;
             width: 80%;
             height: auto;
@@ -175,14 +162,18 @@ a {
         }
         
         #contact {
-            padding-bottom: 5px;
+            padding-bottom: 10px;
+        }
+        
+        #more, #contact {
+            background-color: rgb(172, 48, 48);
         }
         
         #movies h2 {
             font-size: 4rem;
         }
         
-        li {
+        label {
             font-size: 5rem;
         }
         
