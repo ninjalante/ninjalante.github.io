@@ -152,24 +152,25 @@ a {
         }
         
         h1 #landingPage {
-            font-size: 6rem;
+            font-size: 8rem;
             width: 85%;
         }
         
         h2 #landingPage {
-            font-size 5rem;
+            font-size 6rem;
         
         }
         
         button {
-            font-size: 3rem;
+            font-size: 4rem;
             background-color: white;
             width: 80%;
             height: auto;
         }
             
         aside,
-            .gretastake {
+            .gretastake, 
+                    #contact {
             font-size: 3rem;
         }
         
@@ -178,7 +179,7 @@ a {
         }
         
         .grid-item {
-            font-size: 3rem;
+            font-size: 5rem;
         }
     }
     
