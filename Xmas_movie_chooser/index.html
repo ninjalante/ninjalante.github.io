@@ -11,14 +11,14 @@
     <title>What Christmas Movie Should I Watch?</title>
  </head>
  <body>
-    <div id="landingPage">
+    <header id="landingPage">
       <br><h1 class="landing">What Christmas Movie Should I Watch?</h1>
       <h2 class="landing">Looking for a good Christmas movie?</h2>
       <h2 class="landing">Looking for a <em>bad</em> Christmas movie?</h2>
       <h2 class="landing">You're in the right place.</h2>
       <button id="goToBooleans" onclick="clickTheButton()">Find a Christmas movie</button>
-    </div>
-    <div id="movieChooser">
+    </header>
+    <main id="movieChooser">
       <h1>Select the elements you want to see in a Christmas movie.</h1>
      <div id="booleans" class="grid-container">
        <div class="grid-item">
@@ -65,22 +65,21 @@
       <button id="makeChoice" onclick="chooseMovie()">Find me a Christmas movie!</button>
       <button id="perfectMovie" onclick="choosePerfectMovie()">Nothing but the best for me</button>
       <button id="worstMovie" onclick="chooseWorstMovie()">GIVE ME YOUR WORST.</button>
-     </div><br>
-   </div>
-<div id="movieRec">
+    </main><br>
+ <main id="movieRec">
     <div id="introToMovies">
     <!-- movie intro piece here -->
     </div>
-    <div id="movieRecommendations" class="movies">
+    <section id="movieRecommendations" class="movies">
         <!-- movie titles here -->
-    </div>
+    </section>
     <br><button id="worstButton" onclick="oneMore()">I've seen that one.</button>
     <br><button onclick="window.location.reload()">Start over</button>
+<footer>
     <br><br><aside id="more">Find out more! This <a href="./allmovies.html">alphabetical list</a> includes all the movies I've seen, with scores, summaries, comments, and stars!</aside>
-    <div id="contact">
-        <br><span>Want to talk about Christmas movies? Or my original Christmas screenplays? Or a programming job? <br> @ me: <a href="mailto:gretacwink@gmail.com">gretacwink@gmail.com</a></span>
-     </div>
- </div>
+    <br><span id="contact">Want to talk about Christmas movies? Or my original Christmas screenplays? Or a programming job? <br> @ me: <a href="mailto:gretacwink@gmail.com">gretacwink@gmail.com</a></span>
+</footer>
+</main>
  
     <script src="./moviechooser.js"></script>
  </body>
