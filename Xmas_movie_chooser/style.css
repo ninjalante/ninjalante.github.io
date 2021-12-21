@@ -140,11 +140,11 @@ a {
            width: 85%;
         }
         
-        .landing h1 {
+        h1 .landing {
             font-size: 8rem;
         }
         
-        .landing h2 {
+        h2 .landing {
             font-size: 6rem;
         }
         
@@ -161,12 +161,9 @@ a {
             font-size: 3rem;
         }
         
-        #contact {
-            padding-bottom: 10px;
-        }
-        
-        #more, #contact {
+        footer {
             background-color: rgb(172, 48, 48);
+            padding: 10px;
         }
         
         #movies h2 {
@@ -174,7 +171,20 @@ a {
         }
         
         label {
-            font-size: 5rem;
+            font-size: 3.5rem;
+        }
+        
+        input[type='checkbox'] {
+            -webkit-appearance:none;
+            width:30px;
+            height:30px;
+            background:white;
+            border-radius:5px;
+            border:2px solid #555;
+        }
+        
+        input[type='checkbox']:checked {
+            background: #abd;
         }
         
         #movieRecommendations h1 {
