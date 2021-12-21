@@ -151,18 +151,18 @@ a {
             margin-left: 8%;
         }
         
-        h1 #landingPage {
+        #landingPage h1 {
             font-size: 8rem;
             width: 85%;
         }
         
-        h2 #landingPage {
+        #landingPage h2 {
             font-size 6rem;
         
         }
         
         button {
-            font-size: 4rem;
+            font-size: 3.5rem;
             background-color: white;
             width: 80%;
             height: auto;
@@ -174,12 +174,20 @@ a {
             font-size: 3rem;
         }
         
+        #contact {
+            padding-bottom: 5px;
+        }
+        
         #movies h2 {
             font-size: 4rem;
         }
         
-        .grid-item {
+        li {
             font-size: 5rem;
+        }
+        
+        #movieRecommendations h1 {
+            font-size: 4rem;    
         }
     }
     
