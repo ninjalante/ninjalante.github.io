@@ -12,10 +12,10 @@
  </head>
  <body>
     <div id="landingPage">
-      <br><h1>What Christmas Movie Should I Watch?</h1>
-      <h2>Looking for a good Christmas movie?</h2>
-      <h2>Looking for a <em>bad</em> Christmas movie?</h2>
-      <h2>You're in the right place.</h2>
+      <br><h1 class="landing">What Christmas Movie Should I Watch?</h1>
+      <h2 class="landing">Looking for a good Christmas movie?</h2>
+      <h2 class="landing">Looking for a <em>bad</em> Christmas movie?</h2>
+      <h2 class="landing">You're in the right place.</h2>
       <button id="goToBooleans" onclick="clickTheButton()">Find a Christmas movie</button>
     </div>
     <div id="movieChooser">
@@ -76,11 +76,13 @@
     </div>
     <br><button id="worstButton" onclick="oneMore()">I've seen that one.</button>
     <br><button onclick="window.location.reload()">Start over</button>
-    <br><br><aside>Find out more! This <a href="./allmovies.html">alphabetical list</a> includes all the movies I've seen, with scores, summaries, comments, and stars!</aside>
+    <br><br><aside id="more">Find out more! This <a href="./allmovies.html">alphabetical list</a> includes all the movies I've seen, with scores, summaries, comments, and stars!</aside>
     <div id="contact">
         <br><span>Want to talk about Christmas movies? Or my original Christmas screenplays? Or a programming job? <br> @ me: <a href="mailto:gretacwink@gmail.com">gretacwink@gmail.com</a></span>
      </div>
  </div>
-  <script src="./moviechooser.js"></script>  
+ 
+    <script src="./movie_objects.js"></script>
+    <script src="./moviechooser.js"></script>
  </body>
  </html>
