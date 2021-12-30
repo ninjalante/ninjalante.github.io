@@ -615,6 +615,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Happiest Season",
+        myScore: 85,
+        summary: "A young woman is invited to her girlfriend's home for Christmas, hoping to propose - only to discover that her girlfriend's family thinks they're 'roommates.'",
+        comments: "For being one of the first LGBTQ-centered Christmas movies, it features a lot of the usual Christmas movie shenanigans: a grown-up child star (Kristen Stewart), a quirky dysfunctional family, TWO hometown exes (Aubrey Plaza and that guy), deception and mistaken identity, and a bunch of slapstick. I am a *bit* annoyed that no one confronted Sloane about her clearly evil children, and would have loved to see more overt conflict there with Abby. Also Kristen Stewart is totally swoon-worthy and it was great to see her in a role so unlike what she's usually in. Also, she does have some really great jackets throughout. Re: family friendly...there's not a ton of bad language, but there is some mild innuendo (including a fully-dressed man in a ball gag). It says PG-13 but I don't remember that at all. ",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Holidate",
         myScore: 85,
         summary: "Acquaintances agree to be each other's holiday dates for a year to avoid questions from their family and from any potential dates who might take things too seriously.",
@@ -1156,6 +1173,23 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: true,
+        familyFriendly: true
+    },
+    {
+        title: "Sherlock Holmes: The Case of the Chrismtas Pudding",
+        myScore: 81,
+        summary: "Dr. Watson is concerned after a death row inmate who's threatened Sherlock Holmes escapes from prison without leaving any clues behind.",
+        comments: "This was great fun - the chemistry between Holmes & Watson is perfect, and Watson is both capable and emotional. I won't spoil how the convict escapes, but it's very satisfying.",
+        romance: false,
+        musical: false,
+        mistakenIdentity: true,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
         familyFriendly: true
     },
     {
