@@ -1,31 +1,126 @@
 html {
     font-size: 16px;
+    text-align: center;
 }
 
 body {
-    font-style: 'Times New Roman';
-    background-image: url("");
     font-family: 'Montserrat', sans-serif;
-    background-color: rgba(61, 118, 38, 0.8);
+    background-color: rgba(4, 82, 26, 0.8);
 }
 
 h1 {
     font-family: 'Montserrat Alternates', sans-serif;
-    font-size: 4rem;
+    font-size: 5rem;
+    
 }
 
-header {
+header,
+    footer {
+    background-color:rgba(243, 249, 246, 0.845);
+    width: 90%;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    padding: 10px 20px 15px 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+button {
+    font-size: 1.75rem;
+    font-family: 'Montserrat Alternates', sans-serif;
     display: inline-block;
-    background-color:rgba(185, 218, 172, 0.8);
-    width: 100%;
+    padding: 10px 20px 10px 20px;
+    align-items: center;
+    margin: 10px 30px;
+    background-color: rgba(4, 82, 26, 0.8);
+    color:rgba(243, 249, 246, 0.845);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    transition: 0.25s;
+    width: auto;
+    height: auto;
+}  
+
+button:hover, 
+    a:hover {
+    background-color: rgba(243, 249, 246, 0.845);
+    color:rgba(0, 0, 0, 0.8);
 }
 
 main {
-    padding-left: 20px;
-    padding-right: 20px;
+    width: 60%;
+    background-color:rgba(243, 249, 246, 0.845);
+    align-items: center;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin: 20px auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
-footer {
-    background-color:rgba(185, 218, 172, 0.8);
-    width: 100%;
+h2 {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    text-align: center;
+    font-size: 1.25rem;
+    
+}
+
+#profile {
+    width: 20%;
+    float: left;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    
+}
+
+section {
+    background-color:rgba(4, 82, 26, 0.8);
+    color:rgba(243, 249, 246, 0.845);
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#left {
+    grid-column: 1 / 2;
+    grid-row: 1;
+    padding: 10px;
+}
+
+#left h1 {
+    font-size: 2rem;
+}
+
+#right {
+    grid-column: 2 / 3;
+    grid-row: 1;
+    padding: 10px;
+    text-align: left;
+}
+
+img {
+    content: url("http://gretacwink.com/images/GretaWink_350x498_Purple.jpg");
+    width: 80%;
+    height: auto;
+}
+
+li {
+    margin: 8px;
+    font-size: 1.5rem;
 }
