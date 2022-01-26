@@ -7,23 +7,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/f12f8ac6ae.js" crossorigin="anonymous"></script>
-    <title>Greta C. Wink</title>
+    <title>Greta C. Wink | Developer | Content Creator | Script Witch</title>
  </head>
  <body>
    <header>
       <h1>Greta C. Wink</h1>
-      <h2>Content Creator</h2>
-      <h2>Developer</h2>
-      <h2>Script Witch</h2>
+      <nav>
+         <button onclick="goHome()">Home</button>
+         <button onclick="aboutMe()">About Me</button>
+         <button onclick="openDevelop()">Developer</button>
+         <button onclick="openCreate()">Content Creator</button>
+         <button onclick="openWitch()">Script Witch</button>
+      </nav>
    </header>
    
 
-   <main>
-    <p>Hello. I'm still working on this. In the meantime, email me with any questions.</p>
-
+   <main id="mainContent">
+      <h2 id="greeting">Come in!</h2>
+      <h3 id="followUp">Howdy. It's great to meet you.</h3>
+      <div id="grid">
+         <section id="left">
+            <h2>I'm an educator, developer, content creator, and script fixer.</h2>
+            <h3>Choose one of the tabs above to learn more.</h3> 
+         </section>
+         <section id="right">
+            <p>I have 25 years of professional experience in multiple fields, including customer service, restaurant management, production, and education.</p>
+            <p>In the past two years I've been studying for a career pivot into programming and digital transformation. I'm also an experienced screenplay analyst and writer.</p>
+         </section>
+      </div>
+      <div id="bottom">
+         
+      </div>
 
    </main>
     
-    
+   <script>
+      let greeting = document.getElementById("greeting");
+      let followUp = document.getElementById("followUp");
+      let left = document.getElementById("left");
+      let right = document.getElementById("right");
+      let bottom = document.getElementById("bottom");
+      function openDevelop() {
+         console.log("developer");
+         greeting.innerHTML = "I spent 2021 learning how to code.";
+         followUp.innerHTML = 'As a junior developer, I know I still have a lot to learn -- but I\'m ready to hit the ground running.'
+         left.innerHTML = "<h2>Education is the kindling of a flame, not the filling of a vessel.<br><small>Socrates</small></h2><p>In the last eighteen months, I\'ve learned several programming languages as well as become a Service Now Certified System Administrator.</p><p>As a team leader at my kindergarten, and as a former cafe manager, I know how important communication, diplomacy, and collaboration are to every business and project.</p><p>When you teach young children, especially children who don't speak your language, you learn to adapt and pivot in real time, and you see the results immediately.</p>";
+         right.innerHTML = "<h3>Technical Skills</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Command Line</li><li>MS Office</li></ul><h3>Soft Skills</h3><ul><li>Time Management</li><li>Team Management</li><li>Outside-the-box thinking</li><li>Clear & Effective Communication</li><li>Documentation</li></ul>";
+         bottom.innerHTML = "<h4>My developer education is ongoing - in programming languages, computer science knowledge, and ServiceNow- and Salesforce-specific skills. If you need someone who knows a specific software or language, contact me so we can discuss it <a href='mailto:gretacwink@gmail.com'>gretacwink@gmail.com</a></h4>";
+      }
+      function goHome() {
+         console.log("home");
+         greeting.innerHTML = "Welcome back!";
+         followUp.innerHTML = "Nice to see you again.";
+         left.innerHTML = "<h2>I'm an educator, developer, content creator, and script fixer.</h2>"
+         right.innerHTML = "<p>I have 25 years of professional experience in multiple fields, including customer service, restaurant management, production, and education.</p><p>In the past two years I've been studying for a career pivot into programming and digital transformation. I'm also an experienced screenplay analyst and writer.</p>";
+         bottom.innerHTML = "<p>I also LOVE Christmas movies. Check out my Christmas movie chooser <a href='https://ninjalante.github.io/Xmas_movie_chooser/index.html'>here</a></p>"
+      }
+      function aboutMe() {
+         console.log("me");
+         greeting.innerHTML = "I'm Greta.";
+         followUp.innerHTML = "I'm an educator who specializes in gamefication and creative problem-solving."
+         left.innerHTML = '<img><aside>This portrait of me was done by the incredible <a href="http://www.lizlaribee.com/">Liz Laribee</a>.</aside>';
+         right.innerHTML = '<p>My first job was at 10 years old: raking blueberries in rural Maine. I\'ve had a lot of jobs since then, mostly in food service, team management, and child care. My passions have always lay performance and creative arts, but in recent years I have found myself drawn to science and tech as well.</p><p>I began my career in education in 2009, and moved to South Korea in 2014 to teach preschool English. Teaching young children a second language brought forward new strengths and skills, and taught me what I\'m really capable of.</p><p>But teaching ESL full-time to young children is a lot, and I burned out mid-2019, and left my job at the end of the Korean school year in February 2020 to pursue a career in programming and digital transformation.</p><p>I spend a lot of my free time being creative, whether that\'s on a page, on the stage, or with a muffin tin. If you ask me about my D&D character or Animal Crossing island, I\'ll talk as long as you want. I still teach English part-time, to both children and adults, but the rest of my workday is spent improving my coding skills.</p>'
+         bottom.innerHTML = "<h2>I'd love to speak with you more! Contact me about a job, or ACNH <a href='mailto:gretacwink@gmail.com'>gretacawink@gmail.com</a></h2>"
+      }
+      function openCreate() {
+         console.log("create");
+         greeting.innerHTML = "My greatest dream has been to create and tell stories with my friends.";
+         followUp.innerHTML = "And I've been lucky enough to do that.";
+         left.innerHTML = '<h2>As an entertainer, I\'ve hosted theater festivals, acted on stage and film, performed stand-up comedy, and most recently, written, directed, produced, and edited a fiction podcast called <a href="https://soundcloud.com/tightstheshow">TIGHTS</a>.</h2>';
+         right.innerHTML = "<p>TIGHTS was a culmination of dreams between myself and Barri Tsavaris (Pink Fong, 'Dali and the Cocky Prince', 2018 Olympics, 'Chimera'), Korea's leading American female voiceover artist. Voice-directed and produced by Barri in her home studio, we cast two dozen professional and amateur actors including Josh Kroot ('Swing Kids'), Daniel Kennedy ('Squid Game', 'The Silent Sea', 'Doom at Your Service'), and John D. Michaels ('Squid Game', 'Mr. Sunshine', 'Designated Survivor: 60 Days'). <p>The incredible talent we assembled brought my story to life. I have more ideas for further chapters in the TIGHTS story - both as a podcast and an animated series. I'm also available to write first drafts of story ideas that YOU have.</p>"
+         bottom.innerHTML = "<h3>Contact me to hear more about BADGES, MASKS, and TIGHTS: The Animated Series. <a href='mailto:gretacwink@gmail.com'>gretacwink@gmail.com</a></h3>"
+      }
+      function openWitch() {
+         console.log("witch")
+         greeting.innerHTML = "I have twenty years of experience reading, writing, and analyzing screenplays."
+         followUp.innerHTML = "What does that mean for you?"
+         left.innerHTML = "<h1>It means I can fix your script.</h1><p>After weeks or months of living in a project, it's difficult to recognize what needs to be fixed, except to know that something is broken. I provide clear, actionable steps to optimize your story for narrative cohesion and marketability.</p><p>Having a friend read your screenplay is a good place to start. The next step is hiring a professional reader who's evaluated thousands of screenplays of various lengths and genres give you critical feedback on what's working and what isn't.</p>"
+         right.innerHTML = "<h2>Script & Story Analysis Experience</h2><ul><li>NYC Midnight, 2013-present</li><li>Nantucket Film Festival, 2006-2020</li><li>The Gotham Film & Media Institute (formerly IFC), 2017-2020</li><li>B.A. in Communications (with a Film & Screenwriting Emphasis), Messiah College, Summa Cum Laude, 2005</li></ul>";
+         bottom.innerHTML = "<h3>Curious but not convinced? Send me an email and we can talk <a href='mailto:gretacwink@gmail.com'>gretacwink@gmail.com</a></h3>";
+      }
+   </script>   
  </body>
  <br><footer>Contact me: <a href="mailto:gretacwink@gmail.com">gretacwink@gmail.com</a></footer>
