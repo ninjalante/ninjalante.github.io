@@ -153,7 +153,11 @@ li {
         display: block;
         font-size: 3rem;
         width: 80%;
-        text-align: center;
+     
+    }
+    
+    header {
+        align-items: center;
     }
 
     main {
