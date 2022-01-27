@@ -124,3 +124,47 @@ li {
     margin: 8px;
     font-size: 1.5rem;
 }
+
+.links {
+    width: 20%;
+    text-align: center;
+    padding: 12px;
+}
+
+/* optimize for mobile */
+
+/*tablet*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+
+
+}
+
+/*smartphone*/
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    h1 {
+        font-size: 6rem;  
+    }
+
+    button {
+        display: block;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .links {
+        float: none;
+        display: block;
+        width: 80%;
+        text-align: left;
+    }
+
+    #grid {
+        display: block;
+    }
+
+}
