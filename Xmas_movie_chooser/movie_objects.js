@@ -1193,7 +1193,7 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
-        title: "Sherlock Holmes: The Case of the Chrismtas Pudding",
+        title: "Sherlock Holmes: The Case of the Christmas Pudding",
         myScore: 81,
         summary: "Dr. Watson is concerned after a death row inmate who's threatened Sherlock Holmes escapes from prison without leaving any clues behind.",
         comments: "This was great fun - the chemistry between Holmes & Watson is perfect, and Watson is both capable and emotional. I won't spoil how the convict escapes, but it's very satisfying.",
