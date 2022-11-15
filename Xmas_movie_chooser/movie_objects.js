@@ -547,6 +547,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Falling for Christmas",
+        myScore: 73,
+        summary: "A hotel heiress rediscovers who she is after waking up with amnesia at a struggling country ski lodge owned by a handsome widower.",
+        comments: "I expected this to be awful, but honestly, it was pretty decent. It's nice to see Lindsay Lohan again, and in a grown-up role; though there is a little Mean Girls Easter egg when she starts to sing 'Jingle Bell Rock'.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true,
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Father Christmas Is Back",
         myScore: 53,
         summary: "Four bickering sisters are thrown for a loop when they learn the youngest and wildest among them has invited their long-estranged father over for Christmas.",
