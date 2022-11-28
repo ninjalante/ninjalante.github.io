@@ -1380,6 +1380,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: 'Spencer',
+        myScore: 81,
+        summary: "Surrounded by the entirety of the stiff royal family at Christmas, isolated at Sandringham, the Princess of Wales worries that she's losing her mind.",
+        comments: "Whatever you think this movie is going to be, you're wrong. Though the entire royal family is visible here and there, Charles and the Queen only get a few moments of focus; for a dinner scene, everyone but Diana is blurred as she hallucinates eating her necklace. The help at the palace get some great moments, but the most devastating and emotional scenes are between Diana and her sons. Imagine Di took Harry and Wills to the Overlook for Christmas, and this is the movie you'd get. The ending is a total turnaround and feels out of place until you realize, this is what Diana WANTED her life to be like, but instead, she got a pscyhological thriller. Oh and is it Christmassy? If you have a toxic family situation, sure. CW: bulimia and suicide",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: true,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: false
+    },
+    {
         title: "Spider-Man: No Way Home",
         myScore: 85,
         summary: "After his identity is revealed to the world, Peter Parker turns to Dr. Strange to erase the past - but a botched spell unleashes a multiverse of villains...and heroes.",
