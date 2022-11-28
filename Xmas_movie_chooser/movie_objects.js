@@ -292,6 +292,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Christmas at the Palace",
+        myScore: 53, 
+        summary: "Two travelling figure skaters delay their plans to return home for Christmas in order to help the princess of a small European country produce a holiday spectacular on ice.",
+        comments: "After watching this, I believe now, more than ever, that the element that will almost *certainly* sink any Christmas movie, is the presence of a Christmas prince. Every prince is SO bland that I genuinely struggle to remember what each one looks like from one movie to the next. If a prince -- or a KING -- isn't married yet, there is something SO wrong with him that not even a 19-year-old with abandonment issues could be manipulated into marrying him. RUN.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: true,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "Christmas by Starlight",
         myScore: 77,
         summary: "A young lawyer agrees to help a young real estate developer impress his boss-dad in exchange for him not tearing down her family's cute little diner.",
@@ -1159,6 +1176,23 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "Return to Christmas Creek",
+        myScore: 77,
+        summary: "An app developer who always spends the holidays alone on a tropical beach is told her newest creation is lacking in Christmas spirit - so she returns to her hometown of Christmas Creek to rekindle her Christmassyness and reopen a can of family worms.",
+        comments: "I'm not sure why I love Steven Weber so much, but he's great. Also, he MUST have learned to fly for real because of WINGS, right? Anyhow, I enjoyed this quite a bit. The romantic lead was genuinely hunky, and there was some good family drama in the mix. The name of the town is ridiculous, of course, but that's much less ridiculous than an entire country whose sole identity is based on Christmas (re: CHRISTMAS AT THE PALACE.)",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "Santa Claus Conquers the Martians",
         myScore: 49,
         summary: "When a Martian father is disturbed by how much Earthling TV his children are watching, he kidnaps Santa Claus - and, inadvertently, two human children.",
@@ -1346,6 +1380,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Spider-Man: No Way Home",
+        myScore: 85,
+        summary: "After his identity is revealed to the world, Peter Parker turns to Dr. Strange to erase the past - but a botched spell unleashes a multiverse of villains...and heroes.",
+        comments: "A roller coaster of nostalgia, with a few eye-rolly fan feeds, but, still, lots of frigging fun. And, yes, in case you've forgotten, the whole thing takes place over Christmas - when Hawkeye also happens to be around. (Do you see this cast? Come on.)",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Star Wars Holiday Special",
         myScore: 41,
         summary: "Chewie and Han run into trouble as they head back to Kashyyyk for Life Day.",
@@ -1528,6 +1579,23 @@ let XmasMovies = [
         countryVsCity: false,
         realMagic: true,
         famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
+        title: "The Noel Diary",
+        myScore: 81,
+        summary: "A successful author returns to his childhood home to clean out the hoarding mess left by his estranged mother, and is approached by a young woman looking for her birth mother, who was his nanny when tragedy struck their family.",
+        comments: "Right, so, this logline sounds like way too much, right? Because it's filled with actual childhood trauma that sticks with the characters until adulthood? Does that have any place in a Christmas movie? As it turns out - yes, it does. I have to wonder if Netflix pushed the original script into the Christmas movie mold so they could figure out what to do with it, because it's genuinely good. (**edit: Actually, it's based on a book, so I guess not.) Going through my list of Christmas movie tropes, this one doesn't really hit any of them, except for being an adaptation, and having an aging well-known actor in it (James Remar.) Slight spoiler, but not really: the ending is a bit of a cop-out, and feels more like what Jake would have written as the ending if he were writing the story himself, or, something shoehorned in by Netflix because it's Christmas. Other than that, recommend! **I have rated this PG but still family-friendly because it blurrily depicts the death of a child.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
         childActor: false,
         familyFriendly: true
     },
