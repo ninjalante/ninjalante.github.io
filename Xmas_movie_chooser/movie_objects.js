@@ -207,6 +207,23 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "A Very Nutty Christmas",
+        myScore: 40,
+        summary: "A workaholic baker learns about the magic of Christmas when a cursed Nutcracker transforms into a flesh-and-blood man the week before Christmas.",
+        comments: "Listen, listen, listen, listen. Listen to me. Just don't watch this movie, k? It doesn't make any sense. Props to MJH's character for the horrific realization that she's trying to bang a toy, and ending it before it...goes too far? Goes nowhere because he's like a Ken doll under there? Each moment of this movie was more unbelievable than the last. It did actually surprise me for how unpredictable its bad decisions were. My (least?) favorite part is that the Nutcracker's constant insane behavior makes everyone else in town think he's NUTS (wordplay intended), but his incredible nut-cracking ability endears him to MJH. I could go on about this movie forever, but I won't. If you ever see me in person, like, at a bar, when I've had half a glass of wine, feel free to ask me about it and I'll give you an earful.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "A Wish for Christmas",
         myScore: 75,
         summary: "A young woman fed up with being walked all over at work is given the chance to change her life when a magical Santa gives her 48 hours to be assertive.",
@@ -700,6 +717,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Hats Off to Christmas!",
+        myScore: 51,
+        summary: "The longtime manager of a Christmas hat store thinks she's about to be promoted, but instead her boss asks her to show his son around so he can take the job she wants. But at least he's single",
+        comments: "Listen - most of the Hallmark movies made in the last 4-5 years are at least watchable, even if they're somewhat dumb. FIrst of all? There's a store that only sells Christmas hats. They make the hats in their own factory, but they don't make any of the other cheap junk they sell? HOW HAVE THEY BEEN IN BUSINESS FOR TEN YEARS? I winced hearing the rich owner say that the employees are family, but was delighted at the end when he said he was giving the company to the employees. How did this film not get investigated by the FBI for being pinko? The only other standout is that it starts in OCTOBER, and covers two months (kind of.) It's pretty bad though. One of the worst. Maybe the absolute worst.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: false, 
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Hawkeye",
         myScore: 85,
         summary: "Clint Barton is just trying to enjoy the holidays with his family, but when his biggest fan unearths his darkest secret, they have to team up to stop one of the MCU's largest villains.",
@@ -1139,6 +1173,23 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: true,
+        familyFriendly: true
+    },
+    {
+        title: "Noelle",
+        myScore: 82,
+        summary: "When Santa dies, it's up to his son to continue his legacy - but when the newly-appointed Santa flees, his little sister has to find him in order to save Christmas.",
+        comments: "This is a fun movie with some unfortunate CGI animals. Like ELF it has some fish-out-of-water moments, but Noelle is way more world-wise than Buddy, so it's more about not knowing about heat or money, but she has applicable real-lief skills that make her a little more endearing than if she was a carbon copy of someone raised by elves. Some great acting and funny moments, and it's always fun to see Shirley MacClaine go from elf to Arizona chic. Lastly, Shirley MacClaine is the PILF here. Just so you know.",
+        romance: false,
+        musical: false,
+        mistakenIdentity: true,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: true,
+        famousActor: true,
+        childActor: false,
         familyFriendly: true
     },
     {
