@@ -547,6 +547,23 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "Destined at Christmas",
+        myScore: 75,
+        summary: "After meeting and getting separated on Black Friday, Kim and Theo spend the Christmas season trying to find each other again.",
+        comments: "It's Serendipity Lite, but, let's be real, I love this kind of crap. The acting is wooden, the dialogue is on-the-nose ('But how do you feel about that?'), but it's still entertaining enough to watch. Bonus points for a male romantic lead with red hair. Is this the first one?!",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "Die Hard",
         myScore: 95,
         summary: "A vacationing NYPD officer flies to L.A. to reconcile with his estranged wife, only to find her workplace Christmas party overrun by terrorists.",
@@ -1290,6 +1307,23 @@ let XmasMovies = [
         familyIsNumber1: false,
         countryVsCity: false,
         realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
+        title: "Scrooge: A Christmas Carol",
+        myScore: 81,
+        summary: "A rich old man with a dog who lives in a diverse 1840s London learns the meaning of Christmas from four ghosts who perform upbeat musical numbers.",
+        comments: "Full disclosure, I had no intention of watching this -- since A Christmas Carol is my favorite story, I'm not usually up for traditional adaptations, as they disappointment me because they either stay SO true to the book that they're dry as hell (the Patrick Stewart one), or they get a little too goofy (the Jim Carrey one). But, I was awake and sobering up from a all-you-can-drink brunch, so, I put it on. It deliberately changes things from the book, which I think Dickens would be all right with, as this version seems aimed specifically at children who aren't familiar with the story, given Netflix's global reach. Scrooge, like Dickens, was forced to work as a child because his father was in debtors' prison, and Isabel dumps Scrooge after watching him and Marley (who's much older than Scrooge) evict Bob Cratchit's parents from their bakery. The film also caught me off-guard because I realized partway through that it was a remake of the 1970 Albert Finney musical, but with a lot of the dryness cut out, and the best songs kept in. Unlike that version, Scrooge doesn't go to hell to meet Marley post-Christmas Future -- but he is dragged into his grave by chains and then hurled through hell, seeing his past, present, and future blended together as he's forcibly wrapped in the same death cloth you see Marley in. The Ghost of Christmas Past is a wax figurine who can transform into any person, AND, she openly mocks Fezziwig's name (if you're not a hardcore Dickensstan like myself, you should know that his characters always have ridiculous names, which is one of the reasons I'm a hardcore Dickensstan.) And the part I REALLY loved! At the end, when Scrooge traditionally gives Cratchit a raise, instead, he makes Cratchit his full partner - Scrooge & Cratchit. It's appropriately scary - it is a ghost story, after all - but I think still appropriate for most children. A great introduction to this story with a lot of pomp and color for kids who can't sit through the George C. Scott version.",
+        romance: false,
+        musical: true,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: true,
         famousActor: true,
         childActor: false,
         familyFriendly: true
