@@ -36,7 +36,7 @@ function choosePerfectMovie() {
 
 let worstMovies = [];
 for (i = 0; i < XmasMovies.length; i++){
-  if (XmasMovies[i].myScore <= 50) {
+  if (XmasMovies[i].myScore < 60) {
     worstMovies.push(XmasMovies[i].title);
   }
 }
