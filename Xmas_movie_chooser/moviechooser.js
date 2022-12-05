@@ -34,13 +34,15 @@ function choosePerfectMovie() {
 };
 //---------recommend one of the WORST movies------------------
 
-function chooseWorstMovie(){
-  let worstMovies = [];
-  for (i = 0; i < XmasMovies.length; i++){
-    if (XmasMovies[i].myScore <= 50) {
-      worstMovies.push(XmasMovies[i].title);
-    }
+let worstMovies = [];
+for (i = 0; i < XmasMovies.length; i++){
+  if (XmasMovies[i].myScore <= 50) {
+    worstMovies.push(XmasMovies[i].title);
   }
+}
+
+function chooseWorstMovie(){
+ 
     console.log(worstMovies);
     
     let numOfMovies = worstMovies.length;
@@ -63,16 +65,12 @@ function chooseWorstMovie(){
   console.log(worstMovie);//check code in console
   intro.innerHTML += '<h1>Don\'t say I didn\'t warn you...</h1>';
   movieOutput.innerHTML += '<h1> "' + worstMovie + '" is really one of the worst I\'ve ever seen.</h1>'
+  worstMovies.splice(number, 1);
     
 }
 
 function oneMore() {
-  let worstMovies = [];
-  for (i = 0; i < XmasMovies.length; i++){
-    if (XmasMovies[i].myScore <= 50) {
-      worstMovies.push(XmasMovies[i].title);
-    }
-  }
+  if (worstMovies.length > 0) {
     console.log(worstMovies);
     
     let numOfMovies = worstMovies.length;
@@ -80,9 +78,14 @@ function oneMore() {
     let number = Math.floor(Math.random() * numOfMovies);
 
     let worstMovie = worstMovies[number];
+    //make sure the movies don't repeat
   let movieOutput = document.querySelector("#movieRecommendations");
-  movieOutput.innerHTML += '<h1>..."' + worstMovie + '"?'
-
+  movieOutput.innerHTML += '<h1>..."' + worstMovie + '"?</h1>'
+  worstMovies.splice(number, 1);
+  } else {
+    let movieOutput = document.querySelector("#movieRecommendations");
+    movieOutput.innerHTML += '<h1>That\'s all I got, girl. Pick something, for crying out loud</h1>'
+  };
 }
 //end of perfect/worst movie function 
 
