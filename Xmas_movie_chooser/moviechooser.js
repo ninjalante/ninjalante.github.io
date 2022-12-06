@@ -16,7 +16,7 @@ function choosePerfectMovie() {
   let perfectMovies = [];
   for (i = 0; i < XmasMovies.length; i++){
     if (XmasMovies[i].myScore == 100) {
-     perfectMovies.push(XmasMovies[i].title);
+     perfectMovies.push(XmasMovies[i]);
       }
   }
   document.querySelector("#movieChooser").style.opacity = "0%";
@@ -31,15 +31,18 @@ function choosePerfectMovie() {
   console.log(perfectMovies);//check code in console
   introToMovies.innerHTML += '<h1>These movies all get a perfect score in my book.</h1>';
   for (let movie of perfectMovies) {
-      movieOutput.innerHTML += '<h1>' + movie + '</h1>';
-    }
-};
+          movieOutput.innerHTML += '<h1>' + movie.title + '</h1>';
+          movieOutput.innerHTML += '<h2>My score: ' + movie.myScore + '/100</h2>';
+          movieOutput.innerHTML += '<h2>Summary: ' + movie.summary + '</h2>';
+        
+      } 
+    };
 //---------recommend one of the WORST movies------------------
 
 let worstMovies = [];
 for (i = 0; i < XmasMovies.length; i++){
   if (XmasMovies[i].myScore < 60) {
-    worstMovies.push(XmasMovies[i].title);
+    worstMovies.push(XmasMovies[i]);
   }
 }
 
@@ -64,9 +67,12 @@ function chooseWorstMovie(){
 
   let intro = document.querySelector("#introToMovies");
 
-  console.log(worstMovie);//check code in console
+  console.log(worstMovie.title);//check code in console
   intro.innerHTML += '<h1>Don\'t say I didn\'t warn you...</h1>';
-  movieOutput.innerHTML += '<h1> "' + worstMovie + '" is really one of the worst I\'ve ever seen.</h1>'
+  movieOutput.innerHTML += '<h1> "' + worstMovie.title + '" is really one of the worst I\'ve ever seen.</h1>'
+  movieOutput.innerHTML += '<h2>My score: ' + worstMovie.myScore + '/100</h2>';
+  movieOutput.innerHTML += '<h2>Summary: ' + worstMovie.summary + '</h2>';
+
   worstMovies.splice(number, 1);
     
 }
@@ -82,7 +88,9 @@ function oneMore() {
     let worstMovie = worstMovies[number];
     //make sure the movies don't repeat
   let movieOutput = document.querySelector("#movieRecommendations");
-  movieOutput.innerHTML += '<h1>..."' + worstMovie + '"?</h1>'
+  movieOutput.innerHTML += '<h1>..."' + worstMovie.title + '"?</h1>'
+  movieOutput.innerHTML += '<h2>My score: ' + worstMovie.myScore + '/100</h2>';
+  movieOutput.innerHTML += '<h2>Summary: ' + worstMovie.summary + '</h2>';
   worstMovies.splice(number, 1);
   } else {
     let movieOutput = document.querySelector("#movieRecommendations");
@@ -249,7 +257,7 @@ console.log(partialMatches);
   intro.innerHTML += '<h1>These movies are sure to fill you with holiday cheer!</h1>';
   
   movieOutput.innerHTML += '<h2>Your choices: ' + chosenElementsUniq + '</h2>';
-//this is where you make the table -----> could you even do it within the for loop? that's silly
+//output movie title and details
     for (let movie of finalChoices){
       for (let mv of XmasMovies) {
         if (movie === mv.title) {
