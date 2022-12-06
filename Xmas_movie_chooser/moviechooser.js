@@ -2,6 +2,8 @@
 
 
 //click the button on the landing page to open the quiz
+ 
+
 function clickTheButton() { 
     document.querySelector("#landingPage").style.opacity = "0%";
     document.querySelector("#movieChooser").style.opacity = "100%";
@@ -42,7 +44,7 @@ for (i = 0; i < XmasMovies.length; i++){
 }
 
 function chooseWorstMovie(){
- 
+  
     console.log(worstMovies);
     
     let numOfMovies = worstMovies.length;
@@ -245,15 +247,20 @@ console.log(partialMatches);
   intro.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Try choosing fewer options!</p>'
 } else {
   intro.innerHTML += '<h1>These movies are sure to fill you with holiday cheer!</h1>';
+  
   movieOutput.innerHTML += '<h2>Your choices: ' + chosenElementsUniq + '</h2>';
- for (let movie of finalChoices) {
-  movieOutput.innerHTML += '<h1>' + movie + '</h1>';
-  }
+//this is where you make the table -----> could you even do it within the for loop? that's silly
+    for (let movie of finalChoices){
+      for (let mv of XmasMovies) {
+        if (movie === mv.title) {
+          movieOutput.innerHTML += '<h1>' + movie + '</h1>';
+          movieOutput.innerHTML += '<h2>My score: ' + mv.myScore + '/100</h2>';
+          movieOutput.innerHTML += '<h2>Summary: ' + mv.summary + '</h2>';
+        }
+      }
+    } 
  }
- //___________maybe i should define the final movie chooser function outside this function and call it inside?____________//
 
-   
-//publish some details too?
-//have those pop up when you hover over the title?
+  
 }
 //end of movie chooser function
