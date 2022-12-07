@@ -52,10 +52,10 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: false
     },
     {
-        title: "A Christmas Carol",
+        title: "A Christmas Carol (1984)",
         myScore: 73,
         summary: "A rich old man learns the meaning of Christmas from four ghosts.",
         comments: "Tied for fourth, pretty boring to watch as an adult. Fun fact: this was a made-for-TV movie, which is why it's not exactly the most dynamic thing ever.",
@@ -66,7 +66,24 @@ let XmasMovies = [
         royalFairyTale: false,
         familyIsNumber1: false,
         countryVsCity: false,
-        realMagic: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
+        title: "A Christmas Carol (1999)",
+        myScore: 77,
+        summary: "A rich old man learns the meaning of Christmas from four ghosts played by classically-trained actors.",
+        comments: "This cast is insane. I remember reading that this was Sir Patrick's attempt to TV-ize his one-man Christmas Carol show, which Wil Wheaton and other friends have raved about. It's not bad but certainly the least re-watchable; especially the part where he sits down and laughs harder and harder for a full minute, alone in his chambers. I think that would have been much more powerful on stage. But, he's still a total PILF, and the P there stands for Patrick. Joel Grey does a great little gender-fluid Ghost of Christmas Past tho",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
         famousActor: true,
         childActor: false,
         familyFriendly: true
@@ -136,7 +153,7 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: false,
-        familyFriendly: false
+        familyFriendly: true
     },
     {
         title: "A Cinderella Story: Christmas Wish",
@@ -269,7 +286,7 @@ let XmasMovies = [
         royalFairyTale: false,
         familyIsNumber1: true,
         countryVsCity: true,
-        realMagic: false,
+        realMagic: true,
         famousActor: true,
         childActor: false,
         familyFriendly: true
@@ -356,7 +373,7 @@ let XmasMovies = [
         countryVsCity: false,
         realMagic: true,
         famousActor: false,
-        childActor: false,
+        childActor: true,
         familyFriendly: true
     },
     {
@@ -407,7 +424,7 @@ let XmasMovies = [
         countryVsCity: false,
         realMagic: false,
         famousActor: false,
-        childActor: false,
+        childActor: true,
         familyFriendly: true
     },
     {
@@ -575,7 +592,7 @@ let XmasMovies = [
         royalFairyTale: false,
         familyIsNumber1: true,
         countryVsCity: false,
-        realMagic: true,
+        realMagic: false,
         famousActor: true,
         childActor: false,
         familyFriendly: false
@@ -611,7 +628,7 @@ let XmasMovies = [
         countryVsCity: false,
         realMagic: false,
         famousActor: true,
-        childActor: false,
+        childActor: true,
         familyFriendly: false
     },
     {
@@ -679,7 +696,7 @@ let XmasMovies = [
         countryVsCity: true,
         realMagic: false,
         famousActor: true,
-        childActor: false,
+        childActor: true,
         familyFriendly: false
     },
     {
@@ -833,7 +850,7 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: true,
-        familyFriendly: true
+        familyFriendly: false
     },
     {
         title: "Holiday in the Wild",
@@ -849,7 +866,7 @@ let XmasMovies = [
         countryVsCity: true,
         realMagic: false,
         famousActor: true,
-        childActor: false,
+        childActor: true,
         familyFriendly: false
     },
     {
@@ -1306,7 +1323,7 @@ let XmasMovies = [
         royalFairyTale: false,
         familyIsNumber1: false,
         countryVsCity: false,
-        realMagic: false,
+        realMagic: true,
         famousActor: true,
         childActor: false,
         familyFriendly: true
@@ -1377,7 +1394,7 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: true,
-        familyFriendly: true
+        familyFriendly: false
     },
     {
         title: "Sherlock Holmes: The Case of the Chrismtas Pudding",
@@ -1583,6 +1600,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: 'The Christmas House',
+        myScore: 70,
+        summary: "Two competitive brothers return early for the holidays to help their parents set up their childhood home as a 'Christmas house' one more time before they sell it.",
+        comments: "The child isn't annoying, which is a huge accomplishment. So glad Jonathan Bennett can be gay onscreen. The problems are all solved pretty quickly and no one gets upset very much or for very long, so despite upsetting all kinds of people for featuring an openly gay married couple, it's still standard sugar cookie Christmas fare.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "The Family Stone",
         myScore: 67,
         summary: "A snooty Manhattanite travels to the boonies to meet her fiance's large, judgemental family on Christmas.",
@@ -1699,7 +1733,7 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: false
     },
     {
         title: "The Princess Switch",
