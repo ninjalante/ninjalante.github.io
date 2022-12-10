@@ -127,73 +127,92 @@ a {
     height: 4rem;
 }
     
-/* -------- mobile optimization changed 12/21/2021 ------------*/
+/* -------- mobile optimization changed 12/10/2022 ------------*/
     @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     
-        body {
-            background-image: url("https://wallpaperaccess.com/full/1879518.jpg");
-            background-size: 1200px;
-            width: 85%;
-            margin-left: 8%;
-        }
-        
-       .landing {
-           width: 85%;
-        }
-        
-        h1 .landing {
-            font-size: 8rem;
-        }
-        
-        h2 .landing {
-            font-size: 6rem;
-        }
-        
-        button {
-            font-size: 3.25rem;
-            background-color: white;
-            width: 80%;
-            height: auto;
-        }
-            
-        aside,
-            .gretastake, 
-                    #contact {
-            font-size: 3rem;
-        }
-        
-        footer {
-            width: 100%;
-            padding-bottom: 10px;
-            padding-top: 5px;
-            padding-left: 5px;
-            padding-right: 5px;
-            margin-right: 8%;
-        }
-        
-        #movies h2 {
-            font-size: 4rem;
-        }
-        
-        label {
-            font-size: 3.5rem;
-        }
-        
-        input[type='checkbox'] {
-            -webkit-appearance:none;
-            width:30px;
-            height:30px;
-            background:white;
-            border-radius:5px;
-            border:2px solid #555;
-        }
-        
-        input[type='checkbox']:checked {
-        background: rgb(172, 48, 48);
-        }
-        
-        #movieRecommendations h1 {
-            font-size: 4rem;    
-        }
+    body {
+        background-image: url("./images/mobback3.jpeg");
+        background-size: 800px;
+        width: 100%;
+        margin-left: 8%;
     }
+    
+   .landing {
+       width: 85%;
+    }
+    
+    h1 .landing {
+        font-size: 8rem;
+    }
+    
+    h2 .landing {
+        font-size: 6rem;
+    }
+    
+    button {
+        font-size: 3.25rem;
+        background-color: white;
+        width: 80%;
+        height: auto;
+    }
+        
+    aside,
+        .gretastake, 
+                #contact {
+        font-size: 3rem;
+    }
+    
+    footer {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-right: 8%;
+    }
+    
+    #movies h2 {
+        font-size: 4rem;
+    }
+    
+    label {
+        font-size: 3rem;
+    }
+    
+    input[type='checkbox'] {
+        -webkit-appearance:none;
+        width:30px;
+        height:30px;
+        background:white;
+        border-radius:5px;
+        border:2px solid #555;
+    }
+    
+    input[type='checkbox']:checked {
+    background: rgb(172, 48, 48);
+    }
+    
+    #movieRec h1 {
+        font-size: 5rem;
+        width: 85%;    
+    }
+
+    #movieChooser {
+        width: 85%;
+    }
+
+
+    #movieChooser h1 {
+        width: 90%;
+        font-size: 3.5rem;
+    }
+
+    #movieChooser h2 {
+        font-size: 4rem;
+    }
+
+    .movieCard h2 {
+        width: 85%;
+    }
+ }
     
