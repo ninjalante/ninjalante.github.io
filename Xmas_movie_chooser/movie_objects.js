@@ -55,6 +55,23 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "A Christmas Carol (1951)",
+        myScore: 75,
+        summary: "A rich old man learns the meaning of Christmas from four ghosts, in black and white.",
+        comments: "This early version isn't even the earliest, but it's one of the most famous. If you can find a remastered version that's still in black and white, it's worth a watch. (BTW the earliest known adaptation on film is 'Marley's Ghost,' a short film from 1901. On stage, Charles Dickens himself used to read the book and do all the voices and bring the story to life. It's said that his one-man-show could not be matched.)",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: true,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "A Christmas Carol (1984)",
         myScore: 73,
         summary: "A rich old man learns the meaning of Christmas from four ghosts.",
@@ -65,7 +82,7 @@ let XmasMovies = [
         charmingInn: false,
         royalFairyTale: false,
         familyIsNumber1: false,
-        countryVsCity: false,
+        countryVsCity: true,
         realMagic: true,
         famousActor: true,
         childActor: false,
@@ -82,9 +99,26 @@ let XmasMovies = [
         charmingInn: false,
         royalFairyTale: false,
         familyIsNumber1: false,
-        countryVsCity: false,
+        countryVsCity: true,
         realMagic: true,
         famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
+        title: "A Christmas Miracle for Daisy",
+        myScore: 52,
+        summary: "An interior designer in a small town lands a millionaire client - who happens to be her ex-boyfriend.",
+        comments: "Daisy isn't sick. She's technically an orphan, but is being raised by her second cousin. Her 'miracle' is getting a mom so that she can have a 'normal' family like in the magazines. The leads have zero chemistry, and the dialogue from everyone feels Stepford-forced. If smiling while you talk is your natural state, something is wrong with you. My biggest problem? We're Santa-baited from the get-go, and then Daisy doesn't even make her 'wish' until the last 30 minutes. It appears that the Santa IS the real Santa, but he doesn't really do anything magical to bring them together. It's some hot heteronormative garbage and boring AF. ",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: true,
+        famousActor: false,
         childActor: false,
         familyFriendly: true
     },
@@ -326,6 +360,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: 'Christmas at Castle Hart',
+        myScore: 78,
+        summary: "Two unemployed American sisters land a gig planning the most important event of the year at a struggling castle/inn in their father's hometown in Ireland.",
+        comments: "I really enjoyed this one? Despite it technically being a royal romance? If you have to go royal, go lesser and don't go to a made-up country",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: true,
+        royalFairyTale: true,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Christmas at the Palace",
         myScore: 53, 
         summary: "Two travelling figure skaters delay their plans to return home for Christmas in order to help the princess of a small European country produce a holiday spectacular on ice.",
@@ -342,7 +393,7 @@ let XmasMovies = [
         childActor: false,
         familyFriendly: true
     },
-    {
+    { 
         title: "Christmas by Starlight",
         myScore: 77,
         summary: "A young lawyer agrees to help a young real estate developer impress his boss-dad in exchange for him not tearing down her family's cute little diner.",
@@ -425,6 +476,23 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: true,
+        familyFriendly: true
+    },
+    {
+        title: "Christmas Time is Here",
+        myScore: 57,
+        summary: "A real estate agent is tasked with a big sale to a major corporation - but the corporation wants to buy her family's historic inn and turn it into a resort.",
+        comments: "This movie was so bland, I literally couldn't remember the title. The actors are working HARD. I have to commend them on doing their best with some really stale dialogue and story. I genuinely love that Nia rocks braids the whole movie. Even the eventual 'betrayal' feels blown out of proportion. Oh and the magical watch thing? Be the central conceit, or don't.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: true,
+        famousActor: false,
+        childActor: false,
         familyFriendly: true
     },
     {
@@ -1057,6 +1125,23 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "Klaus",
+        myScore: 88,
+        summary: "An exiled postal worker is sent to a village in the Arctic Circle, where he meets a reclusive toymaker and creates a legend.",
+        comments: "An absolute delight. A lovely story with real conflict, character growth, and beautiful animation. You don't need any other Santa origin story",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: true,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Let It Snow",
         myScore: 77,
         summary: "A group of teens in a snowed-in small town struggle to find themselves as Christmas descends.",
@@ -1322,7 +1407,7 @@ let XmasMovies = [
         charmingInn: false,
         royalFairyTale: false,
         familyIsNumber1: false,
-        countryVsCity: false,
+        countryVsCity: true,
         realMagic: true,
         famousActor: true,
         childActor: false,
@@ -1356,7 +1441,7 @@ let XmasMovies = [
         charmingInn: false,
         royalFairyTale: false,
         familyIsNumber1: false,
-        countryVsCity: false,
+        countryVsCity: true,
         realMagic: true,
         famousActor: true,
         childActor: false,
@@ -1695,7 +1780,7 @@ let XmasMovies = [
         charmingInn: false,
         royalFairyTale: false,
         familyIsNumber1: false,
-        countryVsCity: false,
+        countryVsCity: true,
         realMagic: true,
         famousActor: true,
         childActor: false,
@@ -1922,5 +2007,12 @@ let XmasMovies = [
         famousActor: 
         childActor: 
         familyFriendly:
+        //
+        cinema:
+        made4Tv:
+        series:
+        dickens:
+        classic:
+        technical:
         */
 
