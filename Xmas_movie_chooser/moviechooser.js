@@ -1,5 +1,3 @@
-/*import movie objects*/
-
 
 //click the button on the landing page to open the quiz
  
@@ -14,7 +12,7 @@ function clickTheButton() {
 // -------------------- choose a movie with a perfect score only -----------------
 function choosePerfectMovie() {
   let perfectMovies = [];
-  for (i = 0; i < XmasMovies.length; i++){
+  for (let i = 0; i < XmasMovies.length; i++){
     if (XmasMovies[i].myScore == 100) {
      perfectMovies.push(XmasMovies[i]);
       }
@@ -40,7 +38,7 @@ function choosePerfectMovie() {
 //---------recommend one of the WORST movies------------------
 
 let worstMovies = [];
-for (i = 0; i < XmasMovies.length; i++){
+for (let i = 0; i < XmasMovies.length; i++){
   if (XmasMovies[i].myScore < 60) {
     worstMovies.push(XmasMovies[i]);
   }
@@ -99,8 +97,79 @@ function oneMore() {
 }
 //end of perfect/worst movie function 
 
+
+
+//new code 12/14/2022
 //---------------- choosing elements ----------------------
 //make an array for the choices
+
+let chosenElements = [];
+
+//choosing the checkbox adds that element to the chosenElements array
+
+function chooseElement(elementId) {
+  let element = document.querySelector(elementId).name;
+  if (!chosenElements.includes(element)) {
+  chosenElements.push(element);
+  console.log(chosenElements);
+  };
+};
+
+
+//create an array to hold the final movies
+let finalMovies = [];
+
+
+function chooseMovie(){
+  if (chosenElements.length === 0) {
+    window.alert("Choose some elements first!");
+  } else {
+    for (let m = 0; m < XmasMovies.length; m++) {
+      let count = 0;
+      for (let e = 0; e < chosenElements.length; e++) {
+        if (XmasMovies[m][chosenElements[e]] === true) {
+          count += 1;
+          console.log(XmasMovies[m].title)
+          console.log(count);
+        };
+      if (count === chosenElements.length) {
+        finalMovies.push(XmasMovies[m]);
+       };
+      };
+    };
+    console.log(finalMovies);
+  };
+  document.querySelector("#movieChooser").style.opacity = "0%";
+  document.querySelector("#movieChooser").style.visibility = "hidden";
+  document.querySelector("#movieRec").style.opacity = "100%";
+  document.querySelector("#movieRec").style.visibility = "visible";
+
+  let movieOutput = document.querySelector("#movieRecommendations");
+  let intro = document.querySelector("#introToMovies");
+
+ //------when you're done this needs to change to finalMovies---------
+ if (finalMovies.length === 0) {
+  intro.innerHTML += '<h1>There is no movie that matches your search results.</h1><h2>Try refining your search.</h2>'
+  intro.innerHTML += '<h2>Or, view <a href="./allmovies.html">all movies</a> and pick one that looks good.</h2>'
+  //put the buttons here, but they need to be in their own container.
+} else {
+  intro.innerHTML += '<h1>These movies are sure to fill you with holiday cheer!</h1>';
+  
+  movieOutput.innerHTML += '<h2>Your choices: ' + chosenElements + '</h2>';
+//output movie title and details
+    for (let movie of finalMovies){
+      
+          movieOutput.innerHTML += '<h1>' + movie.title + '</h1>';
+          movieOutput.innerHTML += '<h2>My score: ' + movie.myScore + '/100</h2>';
+          movieOutput.innerHTML += '<h2>Summary: ' + movie.summary + '</h2>';
+    } 
+ } 
+}
+//end of movie chooser function
+
+
+//deprecated code
+/*
 let booleanChoices = [];
 
 //make a function for each choice; will push the movie element to the array
@@ -239,36 +308,5 @@ console.log(partialMatches);
   };
   
   console.log(finalChoices);
-
- 
- 
-  document.querySelector("#movieChooser").style.opacity = "0%";
-  document.querySelector("#movieChooser").style.visibility = "hidden";
-  document.querySelector("#movieRec").style.opacity = "100%";
-  document.querySelector("#movieRec").style.visibility = "visible";
-
-  let movieOutput = document.querySelector("#movieRecommendations");
-  let intro = document.querySelector("#introToMovies");
-
- //------when you're done this needs to change to finalChoices---------
- if (finalChoices.length === 0) {
-  intro.innerHTML += '<h1>There is no movie that matches your search results.</h1><p>Try choosing fewer options!</p>'
-} else {
-  intro.innerHTML += '<h1>These movies are sure to fill you with holiday cheer!</h1>';
-  
-  movieOutput.innerHTML += '<h2>Your choices: ' + chosenElementsUniq + '</h2>';
-//output movie title and details
-    for (let movie of finalChoices){
-      for (let mv of XmasMovies) {
-        if (movie === mv.title) {
-          movieOutput.innerHTML += '<h1>' + movie + '</h1>';
-          movieOutput.innerHTML += '<h2>My score: ' + mv.myScore + '/100</h2>';
-          movieOutput.innerHTML += '<h2>Summary: ' + mv.summary + '</h2>';
-        }
-      }
-    } 
- }
-
-  
 }
-//end of movie chooser function
+*/
