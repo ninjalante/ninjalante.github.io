@@ -22,43 +22,47 @@
       <h1>Select the elements you want to see in a Christmas movie.</h1>
      <div id="booleans" class="grid-container">
        <div class="grid-item">
-          <input type="checkbox" id="romance" name="romance" value="romance" onclick="chooseRomance()"></input>
-          <label for="romance">A love story</label></div>
+            <input type="checkbox" id="romance" name="romance" value="false" onclick="chooseElement('#romance')"></input>
+            <label>A love story</label>
+       </div>
        <div class="grid-item">
-          <input type="checkbox" id="musical" name="musical" value="musical" onclick="chooseMusical()"></input>
-          <label for="musical">Singing and dancing</label></div>
+            <input type="checkbox" id="musical" name="musical" value="musical" onclick="chooseElement('#musical')"></input>
+            <label for="musical">Singing and dancing</label>
+        </div>
        <div class="grid-item">
-          <input type="checkbox" id="mistakenId" name="mistakenId" value="mistakenId" onclick="chooseMistakenId()"></input>
-          <label for="mistakenId">A case of mistaken identity</label></div>
+            <input type="checkbox" id="mistakenIdentity" name="mistakenIdentity" value="false" onclick="chooseElement('#mistakenIdentity')"></input>
+            <label for="mistakenIdentity">A case of mistaken identity</label>
+        </div>
        <div class="grid-item">
-          <input type="checkbox" id="charmingInn" name="charmingInn" value="charmingInn" onclick="chooseInn()"></input>
-          <label for="charmingInn">A charming rural inn or bakery</label></div>
+            <input type="checkbox" id="charmingInn" name="charmingInn" value="charmingInn" onclick="chooseElement('#charmingInn')"></input>
+            <label for="charmingInn">A charming rural inn or bakery</label>
+        </div>
        <div class="grid-item">
-            <input type="checkbox" id="royal" name="royal" value="royal" onclick="chooseRoyal()"></input>
-            <label for="royal">A royal fairy tale</label>
+            <input type="checkbox" id="royalFairyTale" name="royalFairyTale" value="royalFairyTale" onclick="chooseElement('#royalFairyTale')"></input>
+            <label for="royalFairyTale">A royal fairy tale</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="familyIsNumber1" name="familyIsNumber1" value="familyIsNumber1" onclick="chooseFamily()"></input>
+            <input type="checkbox" id="familyIsNumber1" name="familyIsNumber1" value="familyIsNumber1" onclick="chooseElement('#familyIsNumber1')"></input>
             <label for="familyIsNumber1">A lesson about the importance of family</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="country" name="country" value="country" onclick="chooseCountry()"></input>
-            <label for="country">A city fish out of water</label>
+            <input type="checkbox" id="countryVsCity" name="countryVsCity" value="countryVsCity" onclick="chooseElement('#countryVsCity')"></input>
+            <label for="countryVsCity">A city fish out of water</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="magic" name="magic" value="magic" onclick="chooseMagic()"></input>
-            <label for="magic">Christmas magic</label>
+            <input type="checkbox" id="realMagic" name="realMagic" value="realMagic" onclick="chooseElement('#realMagic')"></input>
+            <label for="realMagic">Christmas magic</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="famousActor" name="famousActor" value="famousActor" onclick="chooseFamousActor()"></input>
+            <input type="checkbox" id="famousActor" name="famousActor" value="famousActor" onclick="chooseElement('#famousActor')"></input>
             <label for="famousActor">A well-known but aging actor</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="childStar" name="childStar" value="childStar" onclick="chooseChildStar()"></input>
-            <label for="childStar">A former child star grown up OR a grown-up star as a child</label>
+            <input type="checkbox" id="childActor" name="childActor" value="childActor" onclick="chooseElement('#childActor')"></input>
+            <label for="childActor">A former child star grown up OR a grown-up star as a child</label>
         </div>
         <div class="grid-item">
-            <input type="checkbox" id="familyFriendly" name="familyFriendly" value="familyFriendly" onclick="chooseFamilyFriendly()"></input>
+            <input type="checkbox" id="familyFriendly" name="familyFriendly" value="familyFriendly" onclick="chooseElement('#familyFriendly')"></input>
             <label for="familyFriendly">A story the whole family can enjoy</label>
         </div>
       </div><br>
@@ -79,7 +83,7 @@
     <br>
     <aside id="recommend">Do you have a Christmas movie to recommend to me? Please do so <a href="./recommend.html">here!</a></aside>
     <br><aside id="more">Find out more! This <a href="./allmovies.html">alphabetical list</a> includes all the movies I've seen, with scores, summaries, comments, and stars!</aside>
-    <br><span id="contact"><a href="http://ninjalante.github.io/resume.html">Like what you see</a>? I'm open to work! <a href="mailto:gretacwink@gmail.com">gretacwink@gmail.com</a></span>
+    <br><span id="contact"><a href="http://ninjalante.github.io/resume.html">Like what you see</a>? I'm open to work! <a href="mailto:gretacwink@gmail.com">gretacwink@gmail.com</a></span><br>
 </footer>
 </main>
 
