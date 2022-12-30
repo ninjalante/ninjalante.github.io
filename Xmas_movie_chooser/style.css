@@ -144,15 +144,15 @@ a {
     }
     
     h1 .landing {
-        font-size: 8rem;
+        font-size: 10rem;
     }
     
     h2 .landing {
-        font-size: 6rem;
+        font-size: 8rem;
     }
     
     button {
-        font-size: 3.25rem;
+        font-size: 6rem;
         background-color: white;
         width: 80%;
         height: auto;
