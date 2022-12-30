@@ -241,6 +241,23 @@ let XmasMovies = [
         familyFriendly: true,
     },
     {
+        title: 'A Kindhearted Christmas',
+        myScore: 70,
+        summary: "An affluent widow's acts of seasonal kindness attract the attention of an attractive morning show host.",
+        comments: "Jennie Garth is cute as h*ck and actually close to the male lead's age. It's very corny, but at least they don't fall down in the snow or sing a song together. Scott Morris is suspiciously well-off for a local morning show host, like, they can't make that much, right? I don't understand how Jennie Garth is so well-off either, since she owns a tour guide company that helps people find local stuff to do, not provide local stuff to do, in a town that's falling apart. How is anyone making money here? My dumb heart liked the Christmassyness, but my smart brain rolled my eyes at the bad dialogue. And the obligatory best friend/coworker gives REALLY bad advice.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "A Very Harold and Kumar Christmas",
         myScore: 74,
         summary: "Two stoners have to replace a Christmas tree they destroyed, but shenanigans stand in their way.",
@@ -326,6 +343,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Angel Falls Christmas",
+        myScore: 51,
+        summary: "A pair of frustrated exes makes Christmas wishes about how they want the other to change - wishes that are overheard by two angels visiting town for the holidays.",
+        comments: "They're real angels. That's about all you need to know. BUT ALSO: who is the protagonist? Chad Michael Murray gets top billing because handsome && executive producer, but we spend a lot of time with the exes. I'll say this: you can do chores around your apartment as it plays in another room and not really miss anything. ALSO ALSO: this is the second movie I've watched in 24 hours where an actor's portrayal of a really 'nice' guy has intense serial killer vibes.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "Bridget Jones's Diary",
         myScore: 80,
         summary: "Finding herself single on another Christmas, a young woman who specializes in making a fool of herself finds that things start to go her way once she embraces it.",
@@ -341,6 +375,23 @@ let XmasMovies = [
         famousActor: true,
         childActor: false,
         familyFriendly: false
+    },
+    {
+        title: "Candlenights 2022",
+        myScore: 74,
+        summary: "The stars of MY BROTHER, MY BROTHER, AND ME bring together a bevy of celebrity guest stars to sing songs, tell tales, and showcase sketches - with all proceeds going to a local charity.",
+        comments: "I'm a hardcore McElroy stan, so paying $5 to watch them and their friends mess around for two hours was just fine with me. The brothers are, as usual, hliarious when thrown all together, and the sketches they've written based purely on stock video footage is pretty funny. A lot of the other stuff is hit-or-miss. But: the minutes we spend with the benefactors and benefittees of Harmony House left me in tears. Not only are there people out there who want to change, there are people out there FIGHTING for change, and there's nothing more Christmassy than that.",
+        romance: false,
+        musical: true,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
     },
     {
         title: "Check Inn to Christmas",
@@ -1023,6 +1074,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: 'How the Grinch Stole Christmas',
+        myScore: 60,
+        summary: 'A grumbly green monster who hates Christmas decides to steal it from the Christmas-loving village below his cave.',
+        comments: "I *love* 'Where Are You, Christmas', it's a killer song. Did not know until RIGHT NOW that Mariah Carey wrote it, because of course she did. And there's two child stars: Taylor Momsen, who is all grown up now, and Clint Howard, who was a cute child for a few months in the 1960s. I've seen all of this movie, but never in one sitting, and not starting from beginning to end. Because, like Jim Carrey in the makeup chair, I find it to be absolute torture.",
+        romance: false,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "I'll Be Home For Christmas",
         myScore: 48,
         summary: "A single mother learns to trust her estranged father when he passes through town before Christmas.",
@@ -1037,6 +1105,23 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: true,
+        familyFriendly: true
+    },
+    {
+        title: "I Believe in Santa",
+        myScore: 40,
+        summary: "A holiday columnist is horrified to learn that her new boyfriend takes time off from his demanding job to prepare for Santa's arrival.",
+        comments: 'She\'s horrified to find out that he still believes in Santa because his entire personality SCREAMS serial killer. It is NOT helped by its goofy sound effects, Zoom-quality green screens, and the last voice-overed line, "do YOU believe?" It had big "God\'s not dead" vibes. Where is Netflix finding these? (Ah: the two leads are also married in real life, and he wrote the screenplay. I can\'t believe Netflix is paying production fees on these. They must be buying them cheap AF off the rack at some kind of screenwriters\' warehouse.) It\'s a bad sign when the only actor I recognize is the kid.',
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: false,
+        childActor: false,
         familyFriendly: true
     },
     {
@@ -1055,6 +1140,23 @@ let XmasMovies = [
         famousActor: true,
         childActor: false,
         familyFriendly: true
+    },
+    {
+        title: "Jack Whitehall: Christmas with my Father",
+        myScore: 77,
+        summary: "Jack Whitehall tries to bring attention back on himself after his successful series with his father, by heading to the stage...with his father.",
+        comments: "I appreciate that Jack Whitehall doesn't try to take himself seriously, to the point that he lets his father ruthlessly pick on him on episode after episode of Netflixes. He is a bit of a doofus, and Michael is the perfect foil. Seeing them together shows how different two people can be, but still have (hopefully) real love and affection for each other. The ending number is a bit over-the-top, but it doesn't undo the rest of the fun. Kudos for bringing in the real Andrew Lloyd Webber and Tim Rice for two short scenes of pure deadpan. I can only imagine that they weren't acting.",
+        romance: false,
+        musical: true,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: false
     },
     {
         title: "Jingle All the Way",
@@ -1239,6 +1341,23 @@ let XmasMovies = [
         familyIsNumber1: false,
         countryVsCity: false,
         realMagic: true,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
+        title: "Midnight at the Magnolia",
+        myScore: 69,
+        summary: "Two morning radio show hosts lie about their relationship in order to save their parents' struggling jazz club. ",
+        comments: "It's only been a week, but I had forgotten I watched this. It's perfectly fine, and the two leads do have remarkably chemistry, but other than that? Meh. I also had a lot of trouble believing that two morning-show RADIO hosts could...not have second and third jobs? When they live in CHICAGO? At least give me a D plot about how poor they are please. NOTE: This is more of a New Year's Eve movie than a Christmas movie, but I'm expanding my definition of the holiday season, and you're all gonna have to deal with it.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: false,
         famousActor: false,
         childActor: false,
         familyFriendly: true
@@ -1972,6 +2091,23 @@ let XmasMovies = [
         famousActor: false,
         childActor: false,
         familyFriendly: true
+    },
+    {
+        title: "Who Killed Santa Claus?: A Murderville Murder Mystery",
+        myScore: 77,
+        summary: "Two Hollywood actors are pulled into a holiday-themed murder mystery, but they aren't given a script.",
+        comments: "Jason Bateman brings strong Michael Bluth energy, and Maya Rudolph is, as always, a delight. The chaotic neutral ending is so unexpected, Will Arnett actually breaks a couple times. It's great fun",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: false
     },
     {
         title: "You Can't Fight Christmas",
