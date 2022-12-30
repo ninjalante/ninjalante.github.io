@@ -143,11 +143,11 @@ a {
        width: 85%;
     }
     
-    h1 .landing {
+    .landing h1 {
         font-size: 10rem;
     }
     
-    h2 .landing {
+    .landing h2 {
         font-size: 8rem;
     }
     
