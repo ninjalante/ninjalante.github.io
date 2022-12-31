@@ -148,9 +148,14 @@ a {
     }
     
     button {
-        font-size: 6rem;
+        font-size: 5rem;
         background-color: white;
         height: auto;
+        width: 85%;
+    }
+        
+   .grid-item {
+        padding-bottom: 5px;
     }
         
     aside,
@@ -200,7 +205,7 @@ a {
 
     #movieChooser h1 {
         width: 90%;
-        font-size: 3.5rem;
+        font-size: 5rem;
     }
 
     #movieChooser h2 {
