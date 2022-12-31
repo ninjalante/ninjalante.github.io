@@ -140,11 +140,11 @@ a {
     }
     
     #landingPage h1 {
-        font-size: 10rem;
+        font-size: 7rem;
     }
     
     #landingPage h2 {
-        font-size: 8rem;
+        font-size: 5rem;
     }
     
     button, #goToBooleans {
@@ -154,8 +154,9 @@ a {
         width: 90%;
     }
         
-   .grid-item {
-        padding-bottom: 5px;
+   #booleans .grid-item {
+       padding-bottom: 2.5px;
+       padding-top: 2.5px;
     }
         
     aside,
@@ -172,7 +173,7 @@ a {
         margin-right: 8%;
     }
     
-    #movies h2 {
+    .movies h2 {
         font-size: 4rem;
     }
     
