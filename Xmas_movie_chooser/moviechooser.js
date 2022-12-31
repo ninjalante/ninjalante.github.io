@@ -123,6 +123,7 @@ let finalMovies = [];
 function chooseMovie(){
   if (chosenElements.length === 0) {
     window.alert("Choose some elements first!");
+    return;
   } else {
     for (let m = 0; m < XmasMovies.length; m++) {
       let count = 0;
@@ -147,7 +148,6 @@ function chooseMovie(){
   let movieOutput = document.querySelector("#movieRecommendations");
   let intro = document.querySelector("#introToMovies");
 
- //------when you're done this needs to change to finalMovies---------
  if (finalMovies.length === 0) {
   intro.innerHTML += '<h1>There is no movie that matches your search results.</h1><h2>Try refining your search.</h2>'
   intro.innerHTML += '<h2>Or, view <a href="./allmovies.html">all movies</a> and pick one that looks good.</h2>'
@@ -166,147 +166,3 @@ function chooseMovie(){
  } 
 }
 //end of movie chooser function
-
-
-//deprecated code
-/*
-let booleanChoices = [];
-
-//make a function for each choice; will push the movie element to the array
-
-function chooseRomance() {
-  booleanChoices.push(document.querySelector("#romance").value);
-};
-
-function chooseMusical() {
-  booleanChoices.push(document.querySelector("#musical").value);
-};
-
-function chooseMistakenId() {
-  booleanChoices.push(document.querySelector("#mistakenId").value);
-};
-
-function chooseInn() {
-  booleanChoices.push(document.querySelector("#charmingInn").value);
-};
-
-function chooseRoyal() {
-  booleanChoices.push(document.querySelector("#royal").value);
-};
-
-function chooseFamily() {
-  booleanChoices.push(document.querySelector("#familyIsNumber1").value);
-};
-
-function chooseCountry() {
-  booleanChoices.push(document.querySelector("#country").value);
-};
-
-function chooseMagic() {
-  booleanChoices.push(document.querySelector("#magic").value);
-};
-
-function chooseFamousActor() {
-  booleanChoices.push(document.querySelector("#famousActor").value);
-}
-
-function chooseChildStar() {
-  booleanChoices.push(document.querySelector("#childStar").value);
-}
-
-function chooseFamilyFriendly() {
-  booleanChoices.push(document.querySelector("#familyFriendly").value);
-}
-
-//------------- choosing movie recommendations -------------
-
-function chooseMovie() {
-  //make sure each element is only listed once. this part is done!
-  let chosenElementsUniq = [];
-  booleanChoices.forEach((e) => {
-        if(!chosenElementsUniq.includes(e)) {
-              chosenElementsUniq.push(e);
-            }
-        }
-     );
-
- //test code in console
- console.log(chosenElementsUniq);
- //push titles into "partialMatches", same number of times they have been chosen
- let partialMatches = [];
-
- for (i = 0; i < XmasMovies.length; i++){
-   if (XmasMovies[i].romance == true && chosenElementsUniq.includes("romance")) {
-    partialMatches.push(XmasMovies[i].title);  
-    }
-   if (XmasMovies[i].mistakenIdentity == true && chosenElementsUniq.includes("mistakenId")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].realMagic == true && chosenElementsUniq.includes("magic")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].musical == true && chosenElementsUniq.includes("musical")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].charmingInn == true && chosenElementsUniq.includes("charmingInn")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].royalFairyTale == true && chosenElementsUniq.includes("royal")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].familyIsNumber1 == true && chosenElementsUniq.includes("familyIsNumber1")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].countryVsCity == true && chosenElementsUniq.includes("country")) {
-     partialMatches.push(XmasMovies[i].title);
-   }
-  
-   if (XmasMovies[i].famousActor == true && chosenElementsUniq.includes("famousActor")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].childActor == true && chosenElementsUniq.includes("childStar")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
-   if (XmasMovies[i].familyFriendly == true && chosenElementsUniq.includes("familyFriendly")) {
-     partialMatches.push(XmasMovies[i].title);
-     
-   }
- };
-  
-//filter movie titles so that only the ones that are mentioned as many times as booleanChoices.length are published
-//This is the tricky part. We need: if partialMatches.count("title") === booleanChoices.length { finalChoices.push("title")}
-
-//what if the elements are counted first, before the movies are pushed? wouldn't that save time and space?
-let finalChoices = [];
-
-//-------------- get the final recommendations from the partial matches arrays -------------
-console.log(partialMatches);
-  
-  let magicNumber = chosenElementsUniq.length;
-  
-  const counts = {};
-  partialMatches.forEach((x) => {
-    counts[x] = (counts[x] || 0) + 1;
-  });
-  console.log(counts)
-  
-  let movieNumberCounts = Object.entries(counts);
-  console.log(movieNumberCounts);
-  
-  for (let m = 0; m < movieNumberCounts.length; m++) {
-    if (movieNumberCounts[m][1] === magicNumber) {
-      finalChoices.push(movieNumberCounts[m][0]);
-    };
-  };
-  
-  console.log(finalChoices);
-}
-*/
