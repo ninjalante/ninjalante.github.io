@@ -126,6 +126,10 @@ a {
     color: whitesmoke;
     height: 4rem;
 }
+
+#blogList h1 {
+    font-size: 3rem;
+}
     
 /* -------- mobile optimization changed 12/10/2022 ------------*/
     @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
@@ -185,9 +189,8 @@ a {
         padding-top: 5px;
         padding-left: 5px;
         padding-right: 5px;
-    }
-    
-    /*this DOESN'T work.*/    
+        font-size: 2rem;
+    }   
         
     main #movieRec {
         width: 90%;
@@ -195,10 +198,12 @@ a {
         
     #movieRecommendations h1 {
         font-size: 6rem;
+        width: 90%;
     }
     
     #movieRecommendations h2 {
         font-size: 4rem;
+        width: 90%;
     }
     
     /*this works*/    
