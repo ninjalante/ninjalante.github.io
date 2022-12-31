@@ -139,10 +139,6 @@ a {
         font-size: 16px;
     }
     
-   .landing {
-       width: 85%;
-    }
-    
     .landing h1 {
         font-size: 10rem;
     }
@@ -154,7 +150,6 @@ a {
     button {
         font-size: 6rem;
         background-color: white;
-        width: 80%;
         height: auto;
     }
         
@@ -165,7 +160,6 @@ a {
     }
     
     footer {
-        width: 100%;
         padding-bottom: 10px;
         padding-top: 5px;
         padding-left: 5px;
