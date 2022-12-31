@@ -140,7 +140,7 @@ a {
     }
     
     #landingPage h1 {
-        font-size: 7rem;
+        font-size: 8rem;
         width: 100%;
     }
     
@@ -148,8 +148,18 @@ a {
         font-size: 5rem;
         width: 100%;
     }
+        
+    button #worstMovie {
+        visibility: hidden;
+        opacity: 0%;
+    }
     
-    #goToBooleans, #makeChoice, #perfectMovie, worstMovie {
+   button #perfectMovie {
+       visibility: hidden;
+       opacity: 0%;
+   }
+    
+    #goToBooleans, #makeChoice {
         font-size: 5rem;
         background-color: white;
         height: auto;
@@ -174,8 +184,16 @@ a {
         padding-right: 5px;
         margin-right: 8%;
     }
+        
+    #movieRec {
+        width: 90%;
+    }
+        
+    #movieRecommendations .movies h1 {
+        font-size: 6rem;
+    }
     
-    .movies h2 {
+    #movieRecommendations .movies h2 {
         font-size: 4rem;
     }
     
@@ -196,10 +214,6 @@ a {
     background: rgb(172, 48, 48);
     }
     
-    #movieRec h1 {
-        font-size: 5rem;
-        width: 85%;    
-    }
 
     #movieChooser h1 {
         width: 90%;
