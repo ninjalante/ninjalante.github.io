@@ -140,15 +140,18 @@ a {
     }
     
     #landingPage h1, 
-        #introToPage h1 {
+        #introToMovies h1 {
         font-size: 7rem;
         width: 90%;
+        text-shadow: -1px -1px rgb(172, 48, 48), 1px -1px black, -1px 1px rgb(172, 48, 48), 1px 1px black;
     }
     
     #landingPage h2 {
         font-size: 5rem;
         width: 90%;
     }
+    
+    /*hide other choices on mobile to prevent scrolling*/    
         
     button #worstMovie {
         visibility: hidden;
@@ -159,23 +162,22 @@ a {
        visibility: hidden;
        opacity: 0%;
    }
-    
+   
+   /*make remaining button bigger*/
+        
     #goToBooleans, #makeChoice {
         font-size: 5rem;
         background-color: white;
         height: auto;
         width: 90%;
-    }
+        border: 2px solid rgb(172, 48, 48);
+        border-radius: 5px;
         
+    }
+   /*more space to click*/     
    #booleans .grid-item {
        padding-bottom: 4px;
        padding-top: 4px;
-    }
-        
-    aside,
-        .gretastake, 
-                #contact {
-        font-size: 3rem;
     }
     
     footer {
@@ -191,11 +193,11 @@ a {
         width: 90%;
     }
         
-    h1 #movieRecommendations .movies {
+    #movieRecommendations h1 {
         font-size: 6rem;
     }
     
-    h2 #movieRecommendations .movies {
+    #movieRecommendations h2 {
         font-size: 4rem;
     }
     
