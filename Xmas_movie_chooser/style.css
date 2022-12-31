@@ -133,7 +133,7 @@ a {
     body {
         background-image: url("./images/mobback3.jpeg");
         background-size: 800px;
-        width: 100%;
+        width: 90%;
         margin-left: 8%;
         margin-right: 8%;
         font-size: 16px;
@@ -141,12 +141,12 @@ a {
     
     #landingPage h1 {
         font-size: 7rem;
-        width: 100%;
+        width: 90%;
     }
     
     #landingPage h2 {
         font-size: 5rem;
-        width: 100%;
+        width: 90%;
     }
         
     button #worstMovie {
@@ -185,15 +185,15 @@ a {
         margin-right: 8%;
     }
         
-    #movieRec {
+    main #movieRec {
         width: 90%;
     }
         
-    #movieRecommendations .movies h1 {
+    h1 #movieRecommendations .movies {
         font-size: 6rem;
     }
     
-    #movieRecommendations .movies h2 {
+    h2 #movieRecommendations .movies {
         font-size: 4rem;
     }
     
