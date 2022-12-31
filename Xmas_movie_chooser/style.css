@@ -139,7 +139,8 @@ a {
         font-size: 16px;
     }
     
-    #landingPage h1 {
+    #landingPage h1, 
+        #introToPage h1 {
         font-size: 7rem;
         width: 90%;
     }
