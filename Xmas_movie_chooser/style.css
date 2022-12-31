@@ -141,13 +141,15 @@ a {
     
     #landingPage h1 {
         font-size: 7rem;
+        width: 100%;
     }
     
     #landingPage h2 {
         font-size: 5rem;
+        width: 100%;
     }
     
-    button, #goToBooleans {
+    #goToBooleans, #makeChoice, #perfectMovie, worstMovie {
         font-size: 5rem;
         background-color: white;
         height: auto;
@@ -155,8 +157,8 @@ a {
     }
         
    #booleans .grid-item {
-       padding-bottom: 2.5px;
-       padding-top: 2.5px;
+       padding-bottom: 4px;
+       padding-top: 4px;
     }
         
     aside,
@@ -178,7 +180,7 @@ a {
     }
     
     label {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     
     input[type='checkbox'] {
@@ -198,11 +200,6 @@ a {
         font-size: 5rem;
         width: 85%;    
     }
-
-    #movieChooser {
-        width: 85%;
-    }
-
 
     #movieChooser h1 {
         width: 90%;
