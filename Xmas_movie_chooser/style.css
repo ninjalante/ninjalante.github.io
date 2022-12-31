@@ -225,12 +225,12 @@ a {
     background: rgb(172, 48, 48);
     }
     
-    #movieChooser h1 {
+    #movieChooser h1, #allMoviesHeader h1 {
         width: 90%;
         font-size: 5rem;
     }
 
-    #movieChooser h2 {
+    #movieChooser h2, #allMoviesHeader h2 {
         font-size: 4rem;
     }
 
