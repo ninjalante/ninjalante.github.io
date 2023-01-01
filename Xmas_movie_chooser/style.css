@@ -174,16 +174,23 @@ a {
         font-size: .25rem;
    }
    
+   /*movie card formatting*/
+        
    #allMoviesHeader h1 {
         font-size: 7rem;
+        width: 90%;
    }
-   
         
-   /*change movie cards formatting*/
-   .moviecard h2 {
+   #allMovies .movieCard h2m .myscore {
        font-size: 3rem;
-       
-    }
+       width: 85%;
+   }
+        
+   #allMovies p {
+       font-size: 2.5rem;     
+   }    
+        
+        
    
    /*make remaining button bigger*/
         
