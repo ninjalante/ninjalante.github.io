@@ -31,7 +31,7 @@ function choosePerfectMovie() {
   for (let movie of perfectMovies) {
           movieOutput.innerHTML += '<h1>' + movie.title + '</h1>';
           movieOutput.innerHTML += '<h2>My score: ' + movie.myScore + '/100</h2>';
-          movieOutput.innerHTML += '<h2>Summary: ' + movie.summary + '</h2>';
+          movieOutput.innerHTML += '<h2>' + movie.summary + '</h2>';
         
       } 
     };
@@ -69,7 +69,7 @@ function chooseWorstMovie(){
   intro.innerHTML += '<h1>Don\'t say I didn\'t warn you...</h1>';
   movieOutput.innerHTML += '<h1> "' + worstMovie.title + '" is really one of the worst I\'ve ever seen.</h1>'
   movieOutput.innerHTML += '<h2>My score: ' + worstMovie.myScore + '/100</h2>';
-  movieOutput.innerHTML += '<h2>Summary: ' + worstMovie.summary + '</h2>';
+  movieOutput.innerHTML += '<h2>' + worstMovie.summary + '</h2>';
 
   worstMovies.splice(number, 1);
     
@@ -88,7 +88,7 @@ function oneMore() {
   let movieOutput = document.querySelector("#movieRecommendations");
   movieOutput.innerHTML += '<h1>..."' + worstMovie.title + '"?</h1>'
   movieOutput.innerHTML += '<h2>My score: ' + worstMovie.myScore + '/100</h2>';
-  movieOutput.innerHTML += '<h2>Summary: ' + worstMovie.summary + '</h2>';
+  movieOutput.innerHTML += '<h2>' + worstMovie.summary + '</h2>';
   worstMovies.splice(number, 1);
   } else {
     let movieOutput = document.querySelector("#movieRecommendations");
@@ -161,7 +161,7 @@ function chooseMovie(){
       
           movieOutput.innerHTML += '<h1>' + movie.title + '</h1>';
           movieOutput.innerHTML += '<h2>My score: ' + movie.myScore + '/100</h2>';
-          movieOutput.innerHTML += '<h2>Summary: ' + movie.summary + '</h2>';
+          movieOutput.innerHTML += '<h2>' + movie.summary + '</h2>';
     } 
  } 
 }
