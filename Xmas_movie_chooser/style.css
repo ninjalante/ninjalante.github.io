@@ -211,7 +211,7 @@ a {
        padding-top: 4px;
     }
     
-    #bigFooter {
+    footer {
         padding-bottom: 10px;
         padding-top: 5px;
         padding-left: 5px;
@@ -225,11 +225,16 @@ a {
     }
         
    #blog h1 {
-       font-size: 5rem;
+       font-size: 7rem;
    }
         
     #bloglist h2 {
         font-size: 3rem;
+    }
+    
+    #blogList h1 {
+        font-size: 4rem;
+        width: 90%;
     }
         
     main #movieRec {
