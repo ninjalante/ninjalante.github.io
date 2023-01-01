@@ -167,11 +167,16 @@ a {
        opacity: 0%;
    }
         
-   /*hide search terms on AllMovies page*/
-   #allMoviesHeader {
+   /*hide search on AllMovies page*/
+   #allMoviesHeader h2 {
         visibility: hidden;
         opacity: 0%;;
    }
+   
+   #allMoviesHeader h1 {
+        font-size: 7rem;
+   }
+   
         
    /*change movie cards formatting*/
    .moviecard h2 {
