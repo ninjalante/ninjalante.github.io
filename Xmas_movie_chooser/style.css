@@ -185,7 +185,7 @@ a {
         width: 90%;
    }
         
-   #allMovies h2, #allMovies .myscore {
+   #allMovies h2, #allMovies .myscore, #blog h2 {
        font-size: 3rem;
        width: 90%;
    }
@@ -221,7 +221,12 @@ a {
        
     a {
         color: whitesmoke;
+        text-shadow: -1px -1px rgb(172, 48, 48), 1px -1px black, -1px 1px rgb(172, 48, 48), 1px 1px black;
     }
+        
+   #blog h1 {
+       font-size: 5rem;
+   }
         
     #bloglist h2 {
         font-size: 3rem;
