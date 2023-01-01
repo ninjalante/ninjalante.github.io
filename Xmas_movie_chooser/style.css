@@ -181,12 +181,12 @@ a {
         width: 90%;
    }
         
-   #allMovies .movieCard h2, .myscore {
+   #allMovies h2, #allMovies .myscore {
        font-size: 3rem;
-       width: 85%;
+       width: 90%;
    }
         
-   #allMovies p {
+   #allMovies p, .gretastake {
        font-size: 2.5rem;     
    }    
         
