@@ -168,7 +168,7 @@ a {
    }
         
    /*hide search on AllMovies page*/
-   #allMoviesHeader h2, aside {
+   #allMoviesHeader h2, #allMoviesHeader aside {
         visibility: hidden;
         opacity: 0%;
         font-size: .25rem;
@@ -181,7 +181,7 @@ a {
         width: 90%;
    }
         
-   #allMovies .movieCard h2m .myscore {
+   #allMovies .movieCard h2, .myscore {
        font-size: 3rem;
        width: 85%;
    }
@@ -214,7 +214,7 @@ a {
         padding-top: 5px;
         padding-left: 5px;
         padding-right: 5px;
-        font-size: 2rem;
+        font-size: 3rem;
     }   
         
     main #movieRec {
