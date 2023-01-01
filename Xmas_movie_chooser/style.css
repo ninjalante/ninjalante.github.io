@@ -166,6 +166,18 @@ a {
        visibility: hidden;
        opacity: 0%;
    }
+        
+   /*hide search terms on AllMovies page*/
+   #allMoviesHeader {
+        visibility: hidden;
+        opacity: 0%;;
+   }
+        
+   /*change movie cards formatting*/
+   .moviecard h2 {
+       font-size: 3rem;
+       
+    }
    
    /*make remaining button bigger*/
         
