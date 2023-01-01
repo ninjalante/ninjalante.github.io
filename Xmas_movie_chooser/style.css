@@ -218,6 +218,14 @@ a {
         padding-right: 5px;
         font-size: 3rem;
     }
+        
+    footer #blogNow, 
+        footer #recommend, 
+            footer #more, 
+                footer #contact {
+        font-size: 3rem;
+        width: 90%;
+    }
        
     a {
         color: whitesmoke;
