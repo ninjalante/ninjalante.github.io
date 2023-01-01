@@ -150,7 +150,7 @@ function chooseMovie(){
 
  if (finalMovies.length === 0) {
   intro.innerHTML += '<h1>There is no movie that matches your search results.</h1><h2>Try refining your search.</h2>'
-  intro.innerHTML += '<h2>Or, view <a href="./allmovies.html">all movies</a> and pick one that looks good.</h2>'
+  intro.innerHTML += '<h2 id="recommend">Or, view <a href="./allmovies.html">all movies</a> and pick one that looks good.</h2>'
   //put the buttons here, but they need to be in their own container.
 } else {
   intro.innerHTML += '<h1>These movies are sure to fill you with holiday cheer!</h1>';
