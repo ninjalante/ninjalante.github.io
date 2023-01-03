@@ -31,3 +31,9 @@ class Tables():
     for each in list_of_tables:
       print(self.view_table(list_of_tables, each[0]))
     return 'Chart complete'
+  
+  def has_room(self, tables, guests_per_table):
+    for table in tables:
+      if len(tables) == guests_per_table:
+        return False
+      return True

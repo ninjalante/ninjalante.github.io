@@ -5,9 +5,9 @@ class Guest():
     self.hearts = hearts
     self.hates = hates
   
-  def get_guest_deets(self):
-    print('Guest name:' + self.name)
-    print('VIP level: ' + self.vip_level)
+  def get_deets(self):
+    print('Guest name: ' + self.name)
+    print('VIP level: ' + str(self.vip_level))
     if self.hearts:
       print(f'{self.name} wants to sit with:')
       for each in self.hearts:

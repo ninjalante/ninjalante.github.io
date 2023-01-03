@@ -19,14 +19,14 @@ christopher = wg.Guest('Christopher', 7, ['Sherry', 'Lorelai', 'Rory'], ['Luke']
 andrew = wg.Guest('Andrew', 7, [None], ['Gypsy'])
 taylor = wg.Guest('Taylor', 7, [None], ['Jess'])
 dave = wg.Guest('Dave Rygalski', 6, ['Lane'], ['Young Choo'])
-emily = wg.Guest('Emily', 10, ['Richard', 'Lorelai', 'Rory'])
+emily = wg.Guest('Emily', 3, ['Richard', 'Lorelai', 'Rory'])
 brian = wg.Guest('Brian', 5, ['Kyon', 'Zach'], ['Tristan'])
 babette = wg.Guest('Babette', 3, ['Maury', 'Miss Patty'])
 miss_patty = wg.Guest('Miss Patty', 3, ['Babette'])
 kirk = wg.Guest('Kirk', 4, ['Lulu', 'Taylor', 'Luke'])
 jackson = wg.Guest('Jackson', 1, ['Sookie'], [None])
 april = wg.Guest('April', 4, ['Luke'])
-sherry = wg.Guest('Sherry', 10, ['Christopher', 'Rory'], ['Lorelai'])
+sherry = wg.Guest('Sherry', 8, ['Christopher', 'Rory'], ['Lorelai'])
 zach = wg.Guest('Zach', 5, ['Lane', 'Brian'])
 logan = wg.Guest('Logan', 7, ['Rory'])
 tristan = wg.Guest('Tristan', 8, ['Rory'], ['Dean'])
@@ -51,7 +51,52 @@ hayden_forrester_wedding_guest_list += [crazy_carrie, lindsay, gypsy, marty, you
 def count_guests(guest_list):
     return len(guest_list)
 
-num_of_guests = count_guests(hayden_forrester_wedding_guest_list)
+def is_empty(guest_list):
+    if count_guests(guest_list) == 0:
+        return True
 
-test = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, 6)
-print(test.get_info())
+def conflict(guest1, guest2):
+    pass
+    #check guest's hates and hearts
+
+def make_a_seating_chart(tables_list_dict, guest_list_dict, seated_guests_dict=[]):
+    #if guest_list_dict is empty
+    if is_empty(guest_list_dict):
+        #return seating chart
+        return tables_list_dict.print_chart()
+    #look at the first guest - guest_list[0]
+        #look at guest name
+        #look at people they want to sit with
+        #check people they want to sit with for conflicts
+        #if there is a conflict:
+            #NO beats YES
+            #if two people both want to sit together but one of them is already seated:
+                #move them both to another table
+                #call MAKE_A_SEATED_CHART
+        #if there is no conflict:
+            #check if person is seated already
+            #if person is already seated:
+                #compare that guest's dislike list to guests already at table
+                #if there's no conflict
+                    #seat guest at that table
+                #if there is a conflict
+                    #compare VIP levels
+                    #if one VIP level is higher
+                        #that person gets the table
+                        #if winning person is not seated yet
+                            #add that person to seated list
+                            #return unseated person to guest list
+            #else:
+                #seat guest
+                #call MAKE_A_SEATING_CHART on desired guests
+        #pop guest off guest_list and add to seated_guests
+        #call MAKE_A_SEATING_CHART on remaining guest_list_dict
+
+#but if they both want to sit together and there's a conflict, they need to move to another table together. shit
+
+num_of_guests = count_guests(hayden_forrester_wedding_guest_list)
+guests_per_table = 6
+
+Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, guests_per_table)
+print(Hayden_Forrester.get_info())
+print(lorelai.get_deets())
