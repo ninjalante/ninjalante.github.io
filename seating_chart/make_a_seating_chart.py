@@ -95,8 +95,10 @@ def make_a_seating_chart(tables_list_dict, guest_list_dict, seated_guests_dict=[
 #but if they both want to sit together and there's a conflict, they need to move to another table together. shit
 
 num_of_guests = count_guests(hayden_forrester_wedding_guest_list)
-guests_per_table = 6
+num_of_tables = 6
 
-Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, guests_per_table)
+Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_of_tables)
 print(Hayden_Forrester.get_info())
-print(lorelai.get_deets())
+print(Hayden_Forrester.print_chart())
+
+Hayden_Forrester.seat_guest(lorelai, 3)

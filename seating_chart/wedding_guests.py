@@ -4,6 +4,8 @@ class Guest():
     self.vip_level = vip_level
     self.hearts = hearts
     self.hates = hates
+    self.table_number = None
+    self.seated = False
   
   def get_deets(self):
     print('Guest name: ' + self.name)
@@ -17,3 +19,8 @@ class Guest():
       for each in self.hates:
         print(f'--{each}')
     return '^^^'
+
+  def is_seated(self):
+    if self.seated:
+      return True
+    return False
