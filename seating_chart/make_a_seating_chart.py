@@ -101,4 +101,4 @@ Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_o
 print(Hayden_Forrester.get_info())
 print(Hayden_Forrester.print_chart())
 
-Hayden_Forrester.seat_guest(lorelai, 3)
+#Hayden_Forrester.seat_guest(lorelai, 3)

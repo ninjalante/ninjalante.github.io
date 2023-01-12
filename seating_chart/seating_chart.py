@@ -19,15 +19,16 @@ class Tables():
     print(f"Guests per table: {self.seats_per_table}")
     return "^^^"
 
-  def get_table_idx(self, target_table):
-    table_idx = target_table - 1
-    return table_idx
+  def get_table(self, target_table):
+    current_idx = target_table - 1
+    current_table = self.tables[current_idx]
+    return current_table
 
   def view_table(self, target_table):
-    current_idx = self.get_table_idx(target_table)
-    current_table = self.tables[current_idx][1]
-    print(f'\n{self.tables[current_idx][0]}')
-    for key, value in current_table.items():
+    current_table = self.get_table(target_table)
+    seats = current_table[1]
+    print(f'\n{current_table[0]}')
+    for key, value in seats.items():
       print(f'Seat{str(key)}: {value}')
     return '^^^'
 
@@ -39,30 +40,32 @@ class Tables():
 #^^ you fucked these right up AND THEN YOU FIXED THEM. well done
   
   def has_room(self, target_table):
-    current_idx = self.get_table_idx(target_table)
-    print(current_idx)
-    current_table = self.tables[current_idx]
-    print(current_table)
-    return self.view_table(table_number)
-    #make a loop for the dictionary? there must be an easier way to do this
+    current_table = self.get_table(target_table)
+    seats = current_table[1]
+    available_seats = []
+    for key, value in seats.items():
+      print(f'Looking at seat{key} -- seated: {value}')
+      if value is None:
+        available_seats.append({key: value})
+      elif value is not None:
+        continue
+    if len(available_seats) == 0:
+      return False
+    return True
 
-#^^^^ working on this one first
+#^^^^ well done, Winko
 
   def seat_guest(self, guest, target_table):
-    current_idx = self.get_table_idx(target_table)
-    current_table = self.tables[current_idx]
+    current_table = self.get_table(target_table)
     current_seat = 1
     for seats in current_table:
       if seats[current_seat] is None:
         seats[current_seat] = guest.name
     print(self.view_table(target_table))
-    #^^make this recursive?
-    #remember you also have to take into account the table numbers of the people they do/do not want to sit with
-    #AND then you need to assign table_numbers and is_seated
-    #this one is definitely last
+    #this should be simple; it will be used later for the BIG SHOW on the final page.
     
 
 
 test = Tables("test", 60, 12)
 #print(test.print_chart())
-print(test.has_room(1))
+#print(test.get_table(1))
