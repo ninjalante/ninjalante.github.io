@@ -18,6 +18,8 @@ class Guest():
       print(f'and does not want to sit with:')
       for each in self.hates:
         print(f'--{each}')
+    if self.table_number:
+      print(f'{self.name} is sitting at Table{self.table_number}.')
     return '^^^'
 
   def is_seated(self):

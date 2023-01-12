@@ -9,7 +9,7 @@ class Tables():
     for num in self.table_nums:
       self.tables += [['Table' + str(num), [None]]]
     for table in self.tables:
-      seats = [{seat: None} for seat in range(1, self.seats_per_table + 1)]
+      seats = {seat: None for seat in range(1, self.seats_per_table + 1)}
       table[1] = seats
 
   def get_info(self):
@@ -19,33 +19,50 @@ class Tables():
     print(f"Guests per table: {self.seats_per_table}")
     return "^^^"
 
+  def get_table_idx(self, target_table):
+    table_idx = target_table - 1
+    return table_idx
+
   def view_table(self, target_table):
-    for table in self.tables:
-      if table[0] == target_table:
-        print(table[0])
-        n = 1
-        for seats in table[1]:
-          print(seats[n])
-          n += 1
+    current_idx = self.get_table_idx(target_table)
+    current_table = self.tables[current_idx][1]
+    print(f'\n{self.tables[current_idx][0]}')
+    for key, value in current_table.items():
+      print(f'Seat{str(key)}: {value}')
     return '^^^'
-#^^ you fucked this right up. fix it!
 
   def print_chart(self):
-    for each in self.tables:
-      print(self.view_table(each[0]))
-    return 'Chart complete'
-  
-  def has_room(self, guests_per_table):
-    for table in self.tables:
-      if len(self.tables) == guests_per_table:
-        return False
-      return True
+    for each in range(1, len(self.tables) + 1):
+      self.view_table(each)
+    return '\nChart complete'
 
-  def seat_guest(self, guest, table_number):
-    table_number_idx = table_number - 1
-    current_table = self.tables[table_number_idx]
+#^^ you fucked these right up AND THEN YOU FIXED THEM. well done
+  
+  def has_room(self, target_table):
+    current_idx = self.get_table_idx(target_table)
+    print(current_idx)
+    current_table = self.tables[current_idx]
+    print(current_table)
+    return self.view_table(table_number)
+    #make a loop for the dictionary? there must be an easier way to do this
+
+#^^^^ working on this one first
+
+  def seat_guest(self, guest, target_table):
+    current_idx = self.get_table_idx(target_table)
+    current_table = self.tables[current_idx]
     current_seat = 1
     for seats in current_table:
       if seats[current_seat] is None:
         seats[current_seat] = guest.name
-    print(current_table)
+    print(self.view_table(target_table))
+    #^^make this recursive?
+    #remember you also have to take into account the table numbers of the people they do/do not want to sit with
+    #AND then you need to assign table_numbers and is_seated
+    #this one is definitely last
+    
+
+
+test = Tables("test", 60, 12)
+#print(test.print_chart())
+print(test.has_room(1))
