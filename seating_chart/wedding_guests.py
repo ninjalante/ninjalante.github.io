@@ -22,7 +22,13 @@ class Guest():
       print(f'{self.name} is sitting at Table{self.table_number}.')
     return '^^^'
 
+  def get_name(self):
+    return self.name
+
   def is_seated(self):
     if self.seated:
       return True
     return False
+
+  def seat_guest(self):
+    self.seated = True

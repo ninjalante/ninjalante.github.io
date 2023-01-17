@@ -42,30 +42,35 @@ class Tables():
   def has_room(self, target_table):
     current_table = self.get_table(target_table)
     seats = current_table[1]
-    available_seats = []
+    self.available_seats = []
+    #hey! you can declare a class variable within a method! and then you can use that in another method. isn't that cool? i think so
     for key, value in seats.items():
       print(f'Looking at seat{key} -- seated: {value}')
       if value is None:
-        available_seats.append({key: value})
+        self.available_seats.append({key: value})
       elif value is not None:
         continue
-    if len(available_seats) == 0:
+    if len(self.available_seats) == 0:
       return False
     return True
 
 #^^^^ well done, Winko
 
   def seat_guest(self, guest, target_table):
-    current_table = self.get_table(target_table)
-    current_seat = 1
-    for seats in current_table:
-      if seats[current_seat] is None:
-        seats[current_seat] = guest.name
-    print(self.view_table(target_table))
-    #this should be simple; it will be used later for the BIG SHOW on the final page.
+    if self.has_room(target_table):
+      print(f"\nThere is room for {guest.name} at Table {target_table}.")
+      current_table = self.get_table(target_table)
+      for key, value in self.available_seats[1].items():
+        if value is None:
+          current_table[1][key - 1] = guest.name
+          print(self.view_table(target_table))
+          return f"{guest.name} has been seated at Table {target_table}.\n"
+
+ #hot damn! you fixed that all by yourself. there was some Googling but everyone Googles. and there was no crying.  
     
 
 
 test = Tables("test", 60, 12)
-#print(test.print_chart())
-#print(test.get_table(1))
+print(test.has_room(4))
+#print(test.seat_guest({'name': 'Lorelai', 'seated': False}, 4))
+#print(test.seat_guest({'name': 'Luke', 'seated': False}, 4))

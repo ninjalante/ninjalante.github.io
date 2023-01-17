@@ -59,6 +59,11 @@ def conflict(guest1, guest2):
     pass
     #check guest's hates and hearts
 
+def view_guest_list(guest_list):
+    for each in guest_list:
+        print(each.name)
+    return 'Guest List complete^^^'
+
 def make_a_seating_chart(tables_list_dict, guest_list_dict, seated_guests_dict=[]):
     #if guest_list_dict is empty
     if is_empty(guest_list_dict):
@@ -92,13 +97,12 @@ def make_a_seating_chart(tables_list_dict, guest_list_dict, seated_guests_dict=[
         #pop guest off guest_list and add to seated_guests
         #call MAKE_A_SEATING_CHART on remaining guest_list_dict
 
-#but if they both want to sit together and there's a conflict, they need to move to another table together. shit
+#but if they both want to sit together and there's a conflict, they need to move to another table together
 
 num_of_guests = count_guests(hayden_forrester_wedding_guest_list)
 num_of_tables = 6
 
 Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_of_tables)
 print(Hayden_Forrester.get_info())
-print(Hayden_Forrester.print_chart())
-
-#Hayden_Forrester.seat_guest(lorelai, 3)
+#print(Hayden_Forrester.print_chart())
+print(Hayden_Forrester.seat_guest(lorelai, 1))
