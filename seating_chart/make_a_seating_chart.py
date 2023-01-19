@@ -48,61 +48,88 @@ hayden_forrester_wedding_guest_list += [andrew, taylor, dave, emily, brian, babe
 hayden_forrester_wedding_guest_list += [kirk, jackson, april, sherry, zach, logan, tristan, lulu, roon]
 hayden_forrester_wedding_guest_list += [crazy_carrie, lindsay, gypsy, marty, young_choo, jason, kyon, beau, doyle]
 
-def count_guests(guest_list):
-    return len(guest_list)
+class Wedding():
+    def __init__(self, table_list, guest_list):
+        self.wedding_name = table_list.wedding_name
+        self.guest_list = guest_list
 
-def is_empty(guest_list):
-    if count_guests(guest_list) == 0:
-        return True
+    def count_guests(self):
+        return len(self.guest_list)
 
-def conflict(guest1, guest2):
-    pass
-    #check guest's hates and hearts
+    def is_empty(self):
+        if self.count_guests() == 0:
+            return True
 
-def view_guest_list(guest_list):
-    for each in guest_list:
-        print(each.name)
-    return 'Guest List complete^^^'
+    def conflict(self, guest1, guest2):
+        pass
+        #check guest's hates and hearts
 
-def make_a_seating_chart(tables_list_dict, guest_list_dict, seated_guests_dict=[]):
-    #if guest_list_dict is empty
-    if is_empty(guest_list_dict):
-        #return seating chart
-        return tables_list_dict.print_chart()
-    #look at the first guest - guest_list[0]
-        #look at guest name
-        #look at people they want to sit with
-        #check people they want to sit with for conflicts
-        #if there is a conflict:
-            #NO beats YES
-            #if two people both want to sit together but one of them is already seated:
-                #move them both to another table
-                #call MAKE_A_SEATED_CHART
-        #if there is no conflict:
-            #check if person is seated already
-            #if person is already seated:
-                #compare that guest's dislike list to guests already at table
-                #if there's no conflict
-                    #seat guest at that table
-                #if there is a conflict
-                    #compare VIP levels
-                    #if one VIP level is higher
-                        #that person gets the table
-                        #if winning person is not seated yet
-                            #add that person to seated list
-                            #return unseated person to guest list
-            #else:
-                #seat guest
-                #call MAKE_A_SEATING_CHART on desired guests
-        #pop guest off guest_list and add to seated_guests
-        #call MAKE_A_SEATING_CHART on remaining guest_list_dict
+    def view_guest_list(self):
+        for each in self.guest_list:
+            print(each.name)
+        return 'Guest List complete^^^'
 
-#but if they both want to sit together and there's a conflict, they need to move to another table together
+    def make_a_seating_chart(self, seated_guests=[]):
+        #if guest_list_dict is empty
+        if len(self.guest_list) == len(seated_guests):
+            #return seating chart
+            return self.table_list.print_chart()
+        #look at the first guest - guest_list[0]
+        for guest in self.guest_list:
+            #look at guest name
+            print(f"Seating {guest.name}")
+            if guest.hearts:
+                #look at people they want to sit with
+                for heart in guest.hearts:
+                    pass
+                    #if guest.name in heart.hates:
+                        #continue
+                
+            if guest.hates:
+                print(f'{guest.name} does not want to sit with')
+                for hate in guest.hates:
+                    print(f'{hate}')
+            
+            #check people they want to sit with for conflicts
+            #if there is a conflict:
+                #NO beats YES
+                #if two people both want to sit together but one of them is already seated:
+                    #move them both to another table
+                    #call MAKE_A_SEATED_CHART
+            #if there is no conflict:
+                #check if person is seated already
+                #if person is already seated:
+                    #compare that guest's dislike list to guests already at table
+                    #if there's no conflict
+                        #seat guest at that table
+                    #if there is a conflict
+                        #compare VIP levels
+                        #if one VIP level is higher
+                            #that person gets the table
+                            #if winning person is not seated yet
+                                #add that person to seated list
+                                #return unseated person to guest list
+                #else:
+                    #seat guest
+                    #call MAKE_A_SEATING_CHART on desired guests
+            #add to seated_guests
+            
+            #call MAKE_A_SEATING_CHART on remaining guest_list_dict
 
-num_of_guests = count_guests(hayden_forrester_wedding_guest_list)
+    #but if they both want to sit together and there's a conflict, they need to move to another table together
+
+num_of_guests = 40
 num_of_tables = 6
 
 Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_of_tables)
 print(Hayden_Forrester.get_info())
+HF_Wedding = Wedding(Hayden_Forrester, hayden_forrester_wedding_guest_list)
+print(HF_Wedding.make_a_seating_chart())
+
+
 #print(Hayden_Forrester.print_chart())
-print(Hayden_Forrester.seat_guest(lorelai, 1))
+#print(Hayden_Forrester.seat_guest(lorelai, 1))
+#print(Hayden_Forrester.seat_guest(luke, 1))
+#print(Hayden_Forrester.seat_guest(rory, 1))
+#print(lorelai.seated)
+

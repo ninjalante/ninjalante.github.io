@@ -13,11 +13,11 @@ class Tables():
       table[1] = seats
 
   def get_info(self):
-    print(f"Here is the data for the {self.wedding_name} wedding:")
+    print(f"\nHere is the data for the {self.wedding_name} wedding:")
     print(f"Total number of guests: {self.num_of_guests}")
     print(f"Total number of tables: {self.num_of_tables}")
     print(f"Guests per table: {self.seats_per_table}")
-    return "^^^"
+    return "^^^\n"
 
   def get_table(self, target_table):
     current_idx = target_table - 1
@@ -63,6 +63,7 @@ class Tables():
       for key, value in self.available_seats[1].items():
         if value is None:
           current_table[1][key - 1] = guest.name
+          guest.seated = True
           print(self.view_table(target_table))
           return f"{guest.name} has been seated at Table {target_table}.\n"
 
@@ -70,7 +71,7 @@ class Tables():
     
 
 
-test = Tables("test", 60, 12)
-print(test.has_room(4))
+#test = Tables("test", 60, 12)
+#print(test.has_room(4))
 #print(test.seat_guest({'name': 'Lorelai', 'seated': False}, 4))
 #print(test.seat_guest({'name': 'Luke', 'seated': False}, 4))
