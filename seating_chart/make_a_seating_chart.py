@@ -1,5 +1,6 @@
 import seating_chart as sc
 import wedding_guests as wg
+import copy
 
 lorelai = wg.Guest('Lorelai', 1, ['Luke', 'Rory'], ['Christopher'])
 luke = wg.Guest('Luke', 1, ['Lorelai', 'Rory', 'April', 'Liz', 'Jess'], ['Jason', 'Christopher', 'Taylor', 'Bootsy'])
@@ -51,6 +52,7 @@ hayden_forrester_wedding_guest_list += [crazy_carrie, lindsay, gypsy, marty, you
 class Wedding():
     def __init__(self, table_list, guest_list):
         self.wedding_name = table_list.wedding_name
+        self.table_list = table_list
         self.guest_list = guest_list
 
     def count_guests(self):
@@ -80,8 +82,29 @@ class Wedding():
             print(f"Seating {guest.name}")
             if guest.hearts:
                 #look at people they want to sit with
+                #check people they want to sit with for conflicts
                 for heart in guest.hearts:
-                    pass
+                    for current_heart in self.guest_list:
+                        if heart == current_heart.name:
+                            print(f'{guest.name} wants to sit with {current_heart.name}')
+                            if current_heart.seated == True:
+                                ch_table = current_heart.get_table_number()
+                                self.table_list.seat_guest(guest, ch_table)
+                                popped_guest = copy.deepcopy(guest)
+                                seated_guests.append(popped_guest)
+                                #if person is already seated:
+                                    #compare that guest's dislike list to guests already at table
+                                        #if there's no conflict
+                                            #if two people both want to sit together but one of them is already seated:
+                                                #move them both to another table
+                                            #seat guest at that table
+                                        #if there is a conflict:
+                                            #NO beats YES
+                            else:
+                                self.table_list.seat_guest(guest)
+                                popped_guest = copy.deepcopy(guest)
+                                seated_guests.append(popped_guest)
+
                     #if guest.name in heart.hates:
                         #continue
                 
@@ -90,18 +113,11 @@ class Wedding():
                 for hate in guest.hates:
                     print(f'{hate}')
             
-            #check people they want to sit with for conflicts
-            #if there is a conflict:
-                #NO beats YES
-                #if two people both want to sit together but one of them is already seated:
-                    #move them both to another table
-                    #call MAKE_A_SEATED_CHART
+            
+            
             #if there is no conflict:
                 #check if person is seated already
-                #if person is already seated:
-                    #compare that guest's dislike list to guests already at table
-                    #if there's no conflict
-                        #seat guest at that table
+                
                     #if there is a conflict
                         #compare VIP levels
                         #if one VIP level is higher
@@ -123,7 +139,8 @@ num_of_tables = 6
 
 Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_of_tables)
 print(Hayden_Forrester.get_info())
-HF_Wedding = Wedding(Hayden_Forrester, hayden_forrester_wedding_guest_list)
+#HF_Wedding = Wedding(Hayden_Forrester, hayden_forrester_wedding_guest_list)
+HF_Wedding = Wedding(Hayden_Forrester, [lorelai, luke, rory, jess])
 print(HF_Wedding.make_a_seating_chart())
 
 

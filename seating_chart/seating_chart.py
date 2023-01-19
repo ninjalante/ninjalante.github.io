@@ -56,7 +56,9 @@ class Tables():
 
 #^^^^ well done, Winko
 
-  def seat_guest(self, guest, target_table):
+  def seat_guest(self, guest, target_table=1):
+    if target_table > self.num_of_tables:
+      return "There is no room left at the wedding. You done fucked up."
     if self.has_room(target_table):
       print(f"\nThere is room for {guest.name} at Table {target_table}.")
       current_table = self.get_table(target_table)
@@ -64,8 +66,14 @@ class Tables():
         if value is None:
           current_table[1][key - 1] = guest.name
           guest.seated = True
+          guest.table_number = target_table
           print(self.view_table(target_table))
           return f"{guest.name} has been seated at Table {target_table}.\n"
+    else:
+      target_table += 1
+      self.seat_guest(guest, target_table)
+
+    
 
  #hot damn! you fixed that all by yourself. there was some Googling but everyone Googles. and there was no crying.  
     

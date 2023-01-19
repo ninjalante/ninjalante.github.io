@@ -25,10 +25,10 @@ class Guest():
   def get_name(self):
     return self.name
 
+  def get_table_number(self):
+    return self.table_number
+
   def is_seated(self):
     if self.seated:
       return True
     return False
-
-  def seat_guest(self):
-    self.seated = True
