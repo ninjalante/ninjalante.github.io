@@ -32,3 +32,6 @@ class Guest():
     if self.seated:
       return True
     return False
+
+  def get_vip_level(self):
+    return self.vip_level

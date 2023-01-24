@@ -69,9 +69,7 @@ class Tables():
           guest.table_number = target_table
           print(self.view_table(target_table))
           return f"{guest.name} has been seated at Table {target_table}.\n"
-    else:
-      target_table += 1
-      self.seat_guest(guest, target_table)
+    
 
     
 
