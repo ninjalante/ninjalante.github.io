@@ -2,8 +2,8 @@ import seating_chart as sc
 import wedding_guests as wg
 import copy
 
-lorelai = wg.Guest('Lorelai', 1, ['Luke', 'Rory'], ['Christopher'])
-luke = wg.Guest('Luke', 1, ['Lorelai', 'Rory', 'April', 'Liz', 'Jess'], ['Jason', 'Christopher', 'Taylor', 'Bootsy'])
+lorelai = wg.Guest('Lorelai', 1, ['Luke', 'Rory'], ['Christopher', 'Beau', 'Roon'])
+luke = wg.Guest('Luke', 1, ['Lorelai', 'Rory', 'April', 'Liz', 'Jess'], ['Jason', 'Christopher', 'Taylor', 'Bootsy', 'Crazy Carrie'])
 rory = wg.Guest('Rory', 1, ['Lorelai', 'Logan'], ['Tristan'])
 jess = wg.Guest('Jess', 3, ['Rory'], ['Dean', 'Logan'])
 liz = wg.Guest('Liz', 3, ['Luke', 'TJ', 'Jess'])
@@ -63,26 +63,39 @@ class Wedding():
             return True
 
     def conflict(self, guest1, guest2):
-        #why isn't this line working when it works at the bottom?
-        if guest1.name in guest2.hates or guest1.name in guest2.hates:
-            print(f'{guest1} and {guest2} will not sit together.')
-        shared_hearts = []
-        shared_hates = []
-        for each in guest1, guest2:
-            if each.hearts:
-                print(f'{each.name} wants to sit with')
-                for heart in each.hearts:
-                    print(f'--{heart}')
-                    shared_hearts.append(heart)
-            if each.hates:
-                print(f'{each.name} does not want to sit with')
-                for hate in each.hates:
-                    print(f'--{hate}')
-                    shared_hates.append(hate)
-            for heart in shared_hearts:
-                for hate in shared_hates:
-                    if heart == hate:
-                        return f'{hate} cannot sit at this table.'
+        for each in guest1.hates:
+            if each == guest2.name:
+                return f'{guest1.name} does not want to sit with {guest2.name}.'
+        for each in guest1.hearts:
+            if each == guest2.name: 
+                return f'{guest1.name} would like to sit with {guest2.name}.'
+        #this thing
+        for each in guest1.hates and guest2.hates:
+            print(each)
+            if each != guest2.name and each != guest1.name:
+                return 'There is no conflict.'
+                
+
+    def look_for_seats(self, guest1, guest2):
+        if guest1.vip_level <= guest2.vip_level:
+            print(f'{guest1.name} is seated first.')
+            print(guest1.get_hearts())
+            print(guest1.get_hates())
+            print(f'{guest2.name} is seated next.')
+            print(guest2.get_hearts())
+            print(guest2.get_hates())
+            self.conflict(guest1, guest2)
+        elif guest2.vip_level < guest1.vip_level:
+            print(f'{guest2.name} is seated first.')
+            print(guest2.get_hearts())
+            print(guest2.get_hates())
+            print(f'{guest1.name} is seated next.')
+            print(guest1.get_hearts())
+            print(guest1.get_hates())
+            self.conflict(guest2, guest1)
+
+    def logic_gate_test(self, guest_list):
+        pass
 
     def view_guest_list(self):
         for each in self.guest_list:
@@ -91,24 +104,13 @@ class Wedding():
 
     def make_a_seating_chart(self, seated_guests=[]):
         #if all guests are seated
-        if len(self.guest_list) == len(seated_guests):
+        if len(self.guest_list) == 0:
             #return seating chart
             return self.table_list.print_chart()
         #look at the first guest - guest_list[0]
         for guest in self.guest_list:
             #look at guest name
             print(f"Seating {guest.name}")
-            if guest.hearts:
-                print(f'{guest.name} wants to sit with')
-                for heart in guest.hearts:
-                    print(f'{heart}')
-                    for current_heart in self.guest_list:
-                        if heart == current_heart.name:
-                            pass
-            if guest.hates:
-                print(f'{guest.name} does not want to sit with')
-                for hate in guest.hates:
-                    print(f'{hate}')
                 #look at people they want to sit with
                 #check people they want to sit with for conflicts
                 ##add a while loop
@@ -157,8 +159,12 @@ Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_o
 print(Hayden_Forrester.get_info())
 #HF_Wedding = Wedding(Hayden_Forrester, hayden_forrester_wedding_guest_list)
 HF_Wedding = Wedding(Hayden_Forrester, [lorelai, luke, rory, jess])
-print(HF_Wedding.conflict(lorelai, christopher))
-print(christopher.name in lorelai.hates)
+print(HF_Wedding.conflict(luke, kirk))
+a = 5
+b = 7
+c = 9
+d = 10
+print(a != b or b != c)
 
 
 
