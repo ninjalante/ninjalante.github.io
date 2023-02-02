@@ -18,14 +18,23 @@ class Question {
         return this.value;
     }
 
+    /**
+     * @param {any} value
+     */
     set a(value) {
         this.a = value;
     }
 
+    /**
+     * @param {any} value
+     */
     set b(value) {
         this.b = value;
     }
 
+    /**
+     * @param {any} value
+     */
     set c(value) {
         this.c = value;
     }
