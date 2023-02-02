@@ -1,0 +1,17 @@
+body {
+    font-size: 16px;
+    background-image: url("images/background_img.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+h1 {
+    color: rgb(239, 223, 204);
+    font-size: 10rem;
+    font-family: "Sacramento", cursive;
+    text-shadow: rgb(44, 41, 42) 1px 0 15px;
+}
