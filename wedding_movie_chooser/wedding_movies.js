@@ -13,7 +13,7 @@ class Question {
         this.b;
         this.c;
     }
-
+//might not need this
     get input() {
         return this.value;
     }
