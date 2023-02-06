@@ -84,5 +84,8 @@ footer {
     body {
         font-size: 12px;
         background-image: url("./images/mobile_bgd.JPG");
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
