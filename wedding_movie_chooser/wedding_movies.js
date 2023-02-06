@@ -3,43 +3,48 @@ class WeddingMovie {
         this.value = value;
         this.deets = deets;
     }
+
+    get deets() {
+        return this.value.toUpperCase() + "\n" + this.deets.summary + "\nRated:" + this.deets.rated;
+    }
 };
 
 class Question {
-    constructor(value, name) {
+    constructor(value, name, a = undefined, b = undefined, c = undefined, d = undefined) {
         this.value = value;
         this.name = name;
-        this.a;
-        this.b;
-        this.c;
+        this.a = a;
+        this.b = b;
+        this.c = c;
+        this.d = d;
     }
 //might not need this
-    get input() {
+    get value() {
         return this.value;
     }
 
-    /**
-     * @param {any} value
-     */
-    set a(value) {
-        this.a = value;
+    get name() {
+        return this.name;
     }
 
-    /**
-     * @param {any} value
-     */
-    set b(value) {
-        this.b = value;
+    get a() {
+        return this.a;
     }
 
-    /**
-     * @param {any} value
-     */
-    set c(value) {
-        this.c = value;
+    get b() {
+        return this.b;
+    }
+
+    get c() {
+        return this.c;
+    }
+
+    get d() {
+        return this.d;
     }
 };
 
+//  MOVIES //
 let dresses27 = new WeddingMovie("27 Dresses", {"summary": "A young woman who's been a bridesmaid 27 times is forced to serve as maid of honor as her capricious little sister marries the man she's in love with.", "rated": "PG-13"});
 
 let sexCity = new WeddingMovie("Sex and the City: The Movie", {"summary": "When Carrie suffers a devastating emotional setback, Charlotte, Miranda, and Samantha are there to help her write a book about it.", "rated": "R"});
@@ -105,3 +110,8 @@ let monsoon = new WeddingMovie("Monsoon Wedding", {"summary": "A large Indian fa
 let weddingSeason = new WeddingMovie("Wedding Season", {"summary": "A young woman under pressure from her family to get married makes a deal with an eligible bachelor to be each others' dates for the upcoming wedding season.", "rated": "PG"});
 
 let youPeople = new WeddingMovie("You People", {"summary": "A white Jewish man and a Black Muslim woman fall in love, but planning a wedding - with THEIR families??? - feels impossible.", "rated": "R"});
+
+let palmSprings = new WeddingMovie("Palm Springs", {"summary": "A carefree young man happily seduces the maid of honor at a wedding - but when she follows him into a desert cave, she's pulled into his time loop.", "rated": "R"});
+
+//  QUESTIONS //
+let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Male", "Female", "Both!")
