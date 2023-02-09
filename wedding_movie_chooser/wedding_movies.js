@@ -4,9 +4,10 @@ class WeddingMovie {
         this.deets = deets;
     }
 
-    get deets() {
+    returnDeets() {
         return this.value.toUpperCase() + "\n" + this.deets.summary + "\nRated:" + this.deets.rated;
     }
+
 };
 
 class Question {
@@ -17,30 +18,35 @@ class Question {
         this.b = b;
         this.c = c;
         this.d = d;
+        this.comment = undefined;
+        this.children = [];
     }
-//might not need this
-    get value() {
+    seeValue() {
         return this.value;
     }
 
-    get name() {
+    seeName() {
         return this.name;
     }
 
-    get a() {
+    seeA() {
         return this.a;
     }
 
-    get b() {
+    seeB() {
         return this.b;
     }
 
-    get c() {
+    seeC() {
         return this.c;
     }
 
-    get d() {
+    seeD() {
         return this.d;
+    }
+
+    seeComment() {
+        return this.comment;
     }
 };
 
@@ -114,4 +120,11 @@ let youPeople = new WeddingMovie("You People", {"summary": "A white Jewish man a
 let palmSprings = new WeddingMovie("Palm Springs", {"summary": "A carefree young man happily seduces the maid of honor at a wedding - but when she follows him into a desert cave, she's pulled into his time loop.", "rated": "R"});
 
 //  QUESTIONS //
-let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Male", "Female", "Both!")
+let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Root question", "Male", "Female", "Both!");
+let ensemble = new Question("Are you looking for...", "More than one protagonist", "A single pair of protagonists", "An ensemble cast");
+let maleProtag = new Question("Got it. Do you want something that's...", "Male protagonist", "Family-friendly", "As family-UNfriendly as you can");
+let femaleProtag = new Question("Female leads it is! Do you want...", "Female protagonist", "A fun, family-friendly movie", "Something more adult and risque");
+rootQ.comment = "Unfortunately I have not found any wedding movies with non-binary and/or trans protagonists. Please @ me if you have one!";
+rootQ.children.push(maleProtag);
+rootQ.children.push(femaleProtag);
+rootQ.children.push(ensemble);

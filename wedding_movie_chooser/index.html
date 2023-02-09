@@ -9,23 +9,22 @@
    <script src="wedding_movie_chooser.js"></script>
    <script src="wedding_movies.js"></script>
 </head>
-<body class="fadeIn">
+<body >
     <div id="landingPage">
-    <h1>Are you ready for wedding season?</h1>
+    <h1 class="fadeIn">Are you ready for wedding season?</h1>
         <div class="fadeIn">
-            <h2 class="fadeIn" id="sayYes" onclick=sayYes() onmouseover="">Say Yes</h2>
+            <h2 class="fadeIn" id="sayYes" onclick="sayYes()" onmouseover="">Say Yes</h2>
         </div>
     </div>
-    <div class="fadeIn" id="questionButton">
-        <h1 id="banter">Let's begin.</h1>
-        <h2 id="question"></h2>
+    <div id="questionButton">
+        <h2 id="questionValue"></h2>
         <div class="answers">
             <button id="a" value="a" onclick=answerQuestion(value)></button>
             <button id="b" value="b" onclick=answerQuestion(value)></button>
             <button id="c" value="c" onclick=answerQuestion(value)></button>
             <button id="d" value="d" onclick=answerQuestion(value)></button>
+            <br><aside id="comment"></aside>
         </div>
-        <aside>Unfortunately I have not found any wedding movies with non-binary and/or trans protagonists. Please @ me if you have!</aside>
     </div>
 </body>
 <footer>

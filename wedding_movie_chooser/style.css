@@ -20,7 +20,6 @@ h1 {
 h2 {
     font-size: 6rem;
     font-family: "Sacramento", cursive;
-    font-style: italic;
     text-shadow: rgb(44, 41, 42) 1px 0 15px;
     padding-left: 10%;
     padding-right: 10%;
@@ -29,12 +28,22 @@ h2 {
     margin-bottom: 2%;
 }
 
+#landingPage {
+    opacity: 100%;
+    transition: opacity 1s ease-out 15ms;
+    visibility: visible;
+}
+
 aside {
     font-family: "Cookie", cursive;
     font-size: 2rem;
-    padding-top: 1%;
+    padding-top: 10%;
     text-shadow: rgb(44, 41, 42) 1px 0 15px;
     color: rgb(237, 229, 219);
+}
+
+#sayYes {
+    font-style: italic;
 }
 
 #sayYes:hover,
@@ -52,11 +61,12 @@ aside {
 }
 
 #questionButton {
+    opacity: 0%;
     position: absolute;
     visibility: hidden;
     top: 0;
-    transition: opacity 2s ease-in 2s;
-    transition: visibility 2s ease-in 0s;
+    transition: opacity 1s ease-in 1s;
+    margin-top: 5%;
 }
 
 button {
@@ -65,14 +75,13 @@ button {
     font-family: "Cookie", cursive;
     font-size: 4rem;
     width: auto;
-    background: rgb(206, 197, 203);
+    background: rgb(208, 191, 202);
     border-style: hidden;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgb(44, 41, 42);
     padding: 5px 15px;
     margin-left: 1%;
     margin-right: 1%;
-    visibility: hidden;
 }
 
 footer {
@@ -88,5 +97,10 @@ footer {
         margin-left: 15%;
         margin-right: 15%;
         font-style: normal;
+    }
+
+    #sayYes {
+        border-style: solid;
+        border-radius: 15px;
     }
 }
