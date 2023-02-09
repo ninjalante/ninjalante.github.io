@@ -82,6 +82,7 @@ button {
     padding: 5px 15px;
     margin-left: 1%;
     margin-right: 1%;
+    margin-top: 5%;
 }
 
 footer {
@@ -94,13 +95,27 @@ footer {
         font-size: 12px;
         background-image: url("./images/mobile_bgd.JPG");
         margin-top: 30%;
-        margin-left: 15%;
+        margin-left: 30%;
         margin-right: 15%;
         font-style: normal;
+        align-items: center;
     }
 
     #sayYes {
         border-style: solid;
         border-radius: 15px;
+        padding: 15% 15%;
+    }
+
+    #questionButton h2 {
+        margin-top: 30%;
+    }
+
+    #questionButton h2, button, #landingPage h1, #landingPage h2, #questionButton aside {
+        font-family: "Handlee", normal;
+    }
+
+    button {
+        font-size: 4rem;
     }
 }
