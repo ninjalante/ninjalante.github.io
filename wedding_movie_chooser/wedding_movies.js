@@ -5,7 +5,7 @@ class WeddingMovie {
     }
 
     returnDeets() {
-        return this.value.toUpperCase() + "\n" + this.deets.summary + "\nRated:" + this.deets.rated;
+        return "<h2>" + this.value + "</h2>" + "<p>" + this.deets.summary + "</p>" + "/nRated:" + this.deets.rated;
     }
 
 };
@@ -19,7 +19,7 @@ class Question {
         this.c = c;
         this.d = d;
         this.comment = undefined;
-        this.children = [];
+        this.children = {};
     }
     seeValue() {
         return this.value;
@@ -29,12 +29,30 @@ class Question {
         return this.name;
     }
 
+    seeComment() {
+        return this.comment;
+    }
+
+    seeChildren() {
+        if (this.children) {
+            this.children.a.seeValue();
+            this.children.b.seeValue();
+            if (this.children.c) {
+                this.children.c.seeValue();
+            }
+            if (this.children.d) {
+                this.children.d.seeValue();
+            }
+        }
+    }
+
     seeA() {
         return this.a;
     }
 
     seeB() {
         return this.b;
+
     }
 
     seeC() {
@@ -45,9 +63,6 @@ class Question {
         return this.d;
     }
 
-    seeComment() {
-        return this.comment;
-    }
 };
 
 //  MOVIES //
@@ -121,10 +136,19 @@ let palmSprings = new WeddingMovie("Palm Springs", {"summary": "A carefree young
 
 //  QUESTIONS //
 let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Root question", "Male", "Female", "Both!");
-let ensemble = new Question("Are you looking for...", "More than one protagonist", "A single pair of protagonists", "An ensemble cast");
 let maleProtag = new Question("Got it. Do you want something that's...", "Male protagonist", "Family-friendly", "As family-UNfriendly as you can");
 let femaleProtag = new Question("Female leads it is! Do you want...", "Female protagonist", "A fun, family-friendly movie", "Something more adult and risque");
-rootQ.comment = "Unfortunately I have not found any wedding movies with non-binary and/or trans protagonists. Please @ me if you have one!";
-rootQ.children.push(maleProtag);
-rootQ.children.push(femaleProtag);
-rootQ.children.push(ensemble);
+let ensemble = new Question("Are you looking for...", "More than one protagonist", "A single pair of protagonists", "An ensemble cast");
+rootQ.comment = "Unfortunately I have not found any wedding movies with non-binary and/or trans protagonists. Please <a href='mailto:gretacwink@gmail.com'>@ me</a> if you have one!";
+rootQ.children.a = maleProtag;
+rootQ.children.b = femaleProtag;
+rootQ.children.c = ensemble;
+
+let mFF = new Question("Would you prefer a classic movie that might be in black and white, or something more modern?", "Family-friendly", "Ooo, hit me with a classic", "Oh, something modern");
+let mNotFF = new Question("Kids shouldn't be allowed at weddings anyway. Do you want...", "Not family-friendly", "A buddy comedy", "Something else");
+maleProtag.children.a = mFF;
+maleProtag.children.a = mNotFF;
+let fFF = new Question("Cool. You have some good options. Are you looking for...", "Family-friendly", "Something nostalgic", "Something fresh and new");
+let fNotFF = new Question("You've got some very different options. Do you want...", "Not family-friendly", "A story with interesting characters and conflicts", "A story with unnecessary amounts of GLAMOUR and DRAMA");
+femaleProtag.children.a = fFF;
+femaleProtag.children.b = fNotFF;

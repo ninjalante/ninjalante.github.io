@@ -1,5 +1,4 @@
-//click anywhere for YES
-//fade in/fade out for questions
+
 //buttons lead to the next step
 //find another movie? // reset
 
@@ -11,7 +10,7 @@ function sayYes() {
     document.querySelector("#questionButton").style.opacity = "100%";
     document.querySelector("#questionButton").style.visibility = "visible";
     document.querySelector("#sayYes:hover").style.cursor = "default";
-    firstQuestion = document.querySelector("#questionValue");
+    let firstQuestion = document.querySelector("#questionValue");
     firstQuestion.innerHTML += rootQ.seeValue();
     let rootA = document.querySelector("#a");
     rootA.innerHTML += rootQ.seeA();
@@ -24,35 +23,102 @@ function sayYes() {
     comment.innerHTML += rootQ.seeComment();
 };
 
+function askQuestion(answer, nextQuestion = rootQ) {       
+    if (nextQuestion instanceof WeddingMovie) {
+        let announcement = document.querySelector("#announcement");
+        announcement.innerHTML = "I have the perfect movie for you!";
+        let movieRec = document.querySelector("#movieTitle");
+        movieRec.innerHTML += nextQuestion.value();
+    } else {
+        if (answer === "a") {
+            console.log("It's a!");
+            nextQuestion = nextQuestion.children.a;
+        } else if (answer === "b") {
+            console.log("It's b!");
+            nextQuestion = nextQuestion.children.b;
+        } else if (answer === "c") {
+            console.log("It's c!");
+            nextQuestion = nextQuestion.children.c;
+        } else if (answer === "d") {
+            console.log("It's d!");
+            nextQuestion = nextQuestion.children.d;
+        };
+        path.push(nextQuestion.seeName());
+        console.log(path);
+        console.log(nextQuestion.seeValue());
+        console.log(nextQuestion.seeA());
+        console.log(nextQuestion.seeB());
+        currentQuestion = document.querySelector("#questionValue");
+        currentQuestion.innerHTML = nextQuestion.seeValue();
+        if (nextQuestion.a != undefined) {
+            let optionA = document.querySelector("#a");
+            optionA.innerHTML = nextQuestion.seeA();
+        }
+        if (nextQuestion.b != undefined) {
+            let optionB = document.querySelector("#b");
+            optionB.innerHTML = nextQuestion.seeB();
+        }
+        if (nextQuestion.c != undefined) {
+            let optionC = document.querySelector("#c");
+            optionC.innerHTML = nextQuestion.seeC();
+        }
+        if (nextQuestion.d != undefined) {
+            optionD = document.querySelector("#d");
+            optionD.innerHTML = nextQuestion.seeD();
+        };
+        }
+    };
+/*
 function askQuestion(question) {
-    currentQuestion = document.querySelector("questionValue");
-    currentQuestion.innerHTML += question.seeValue();
+    currentQuestion = document.querySelector("#questionValue");
+    currentQuestion.innerHTML = question.seeValue();
     if (question.a != undefined) {
-        optionA = document.querySelector("a").innerHTML;
-        optionA += question.seeA();
-        document.querySelector("a").style.visibility = "visible";
-        document.querySelector("a").style.opacity = "100%";
-        console.log(question.a);
+        optionA = document.querySelector("#a").innerHTML;
+        optionA = question.seeA();
     }
     if (question.b != undefined) {
-        document.querySelector("b").innerHTML += question.seeB();
-        document.querySelector("b").style.visibility = "visible";
-        document.querySelector("b").style.opacity = "100%";
+        optionB = document.querySelector("#b").innerHTML;
+        optionB = question.seeB();
     }
     if (question.c != undefined) {
-        document.querySelector("c").innerHTML += question.seeC();
-        document.querySelector("c").style.visibility = "visible";
-        document.querySelector("c").style.opacity = "100%";
+        optionC = document.querySelector("#c").innerHTML;
+        optionC = question.seeC();
     }
     if (question.d != undefined) {
-        document.querySelector("d").innerHTML += question.seeC();
-        document.querySelector("d").style.visibility = "visible"
-        document.querySelector("d").style.opacity = "100%";
-    }
-    path.push(question.seeName())
-}
+        optionD = document.querySelector("#d").innerHTML;
+        optionD = question.seeD();
+    };
+    
+};
 
-function answerQuestion(answer) {
-    console.log("They answered the question!")
-    console.log(answer)
-}
+function answerQuestion(answer, movieTree = rootQ) {
+    console.log("They answered the question!");
+    if (answer instanceof WeddingMovie) {
+        return revealMovie(answer);
+    } else {
+        if (answer === "a") {
+            console.log("It's a!");
+            let nextQuestion = movieTree.children.a;
+        } else if (answer === "b") {
+            console.log("It's b!");
+            let nextQuestion = movieTree.children.b;
+        } else if (answer === "c") {
+            console.log("It's c!");
+            let nextQuestion = movieTree.children.c;
+        } else if (answer === "d") {
+            console.log("It's d!");
+            let nextQuestion = movieTree.children.d;
+        };
+        path.push(nextQuestion.seeName());
+        console.log(path);
+        console.log(nextQuestion.seeValue());
+        console.log(nextQuestion.seeA());
+        console.log(nextQuestion.seeB());
+        askQuestion(answer, nextQuestion);
+    }
+};
+
+function revealMovie() {
+    console.log("here it is!");
+};
+*/

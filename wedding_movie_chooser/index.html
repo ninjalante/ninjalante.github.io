@@ -13,18 +13,21 @@
     <div id="landingPage">
     <h1 class="fadeIn">Are you ready for wedding season?</h1>
         <div class="fadeIn">
-            <h2 class="fadeIn" id="sayYes" onclick="sayYes()" onmouseover="">Say Yes</h2>
+            <h2 class="fadeIn" id="sayYes" onmouseover="" onclick=sayYes()>Say Yes</h2>
         </div>
     </div>
     <div id="questionButton">
         <h2 id="questionValue"></h2>
-        <div class="answers">
-            <button id="a" value="a" onclick=answerQuestion(value)></button>
-            <button id="b" value="b" onclick=answerQuestion(value)></button>
-            <button id="c" value="c" onclick=answerQuestion(value)></button>
-            <button id="d" value="d" onclick=answerQuestion(value)></button>
+        <div class="answers fadeIn">
+            <button id="a" value="a" onclick=askQuestion(value)></button>
+            <button id="b" value="b" onclick=askQuestion(value)></button>
+            <button id="c" value="c" onclick=askQuestion(value)></button>
+            <button id="d" value="d" onclick=askQuestion(value)></button>
             <br><aside id="comment"></aside>
         </div>
+    </div>
+    <div id="recommendation">
+        
     </div>
 </body>
 <footer>
