@@ -2,7 +2,7 @@
 //buttons lead to the next step
 //find another movie? // reset
 
-let path = [];
+//let path = []
 
 function sayYes() {
     console.log("They said yes!");
@@ -11,7 +11,7 @@ function sayYes() {
     document.querySelector("#questionButton").style.visibility = "visible";
     document.querySelector("#sayYes:hover").style.cursor = "default";
     let firstQuestion = document.querySelector("#questionValue");
-    firstQuestion.innerHTML += rootQ.seeValue();
+    firstQuestion.innerHTML += rootQ.seeQuestion();
     let rootA = document.querySelector("#a");
     rootA.innerHTML += rootQ.seeA();
     let rootB = document.querySelector("#b");
@@ -23,36 +23,50 @@ function sayYes() {
     comment.innerHTML += rootQ.seeComment();
 };
 
-function askQuestion(answer, nextQuestion = rootQ) {       
+let path = [];
+//OLD function that kind of works
+function askQuestion(answer, nextQuestion = rootQ, path = [rootQ.seeName()]) {       
     if (nextQuestion instanceof WeddingMovie) {
         let announcement = document.querySelector("#announcement");
         announcement.innerHTML = "I have the perfect movie for you!";
-        let movieRec = document.querySelector("#movieTitle");
-        movieRec.innerHTML += nextQuestion.value();
+        let movieRec = document.querySelector("#movieRec");
+        movieRec.innerHTML += nextQuestion.returnDeets();
     } else {
         if (answer === "a") {
             console.log("It's a!");
-            nextQuestion = nextQuestion.children.a;
+            rootQ = nextQuestion.children.a;
         } else if (answer === "b") {
             console.log("It's b!");
-            nextQuestion = nextQuestion.children.b;
+            rootQ = nextQuestion.children.b;
         } else if (answer === "c") {
             console.log("It's c!");
-            nextQuestion = nextQuestion.children.c;
+            rootQ = nextQuestion.children.c;
         } else if (answer === "d") {
             console.log("It's d!");
-            nextQuestion = nextQuestion.children.d;
+            rootQ = nextQuestion.children.d;
         };
-        path.push(nextQuestion.seeName());
+        if (nextQuestion instanceof Question) {
+            path += [nextQuestion.seeName()];
+        };
         console.log(path);
-        console.log(nextQuestion.seeValue());
+        console.log(nextQuestion.seeQuestion());
         console.log(nextQuestion.seeA());
         console.log(nextQuestion.seeB());
+
+        if (nextQuestion.children.c) {
+            console.log(nextQuestion.seeC());
+        };
+        if (nextQuestion.children.d) {
+            console.log(nextQuestion.seeD());
+        };
+
         currentQuestion = document.querySelector("#questionValue");
-        currentQuestion.innerHTML = nextQuestion.seeValue();
+        currentQuestion.innerHTML = nextQuestion.seeQuestion();
+
         if (nextQuestion.a != undefined) {
             let optionA = document.querySelector("#a");
             optionA.innerHTML = nextQuestion.seeA();
+
         }
         if (nextQuestion.b != undefined) {
             let optionB = document.querySelector("#b");
@@ -68,57 +82,3 @@ function askQuestion(answer, nextQuestion = rootQ) {
         };
         }
     };
-/*
-function askQuestion(question) {
-    currentQuestion = document.querySelector("#questionValue");
-    currentQuestion.innerHTML = question.seeValue();
-    if (question.a != undefined) {
-        optionA = document.querySelector("#a").innerHTML;
-        optionA = question.seeA();
-    }
-    if (question.b != undefined) {
-        optionB = document.querySelector("#b").innerHTML;
-        optionB = question.seeB();
-    }
-    if (question.c != undefined) {
-        optionC = document.querySelector("#c").innerHTML;
-        optionC = question.seeC();
-    }
-    if (question.d != undefined) {
-        optionD = document.querySelector("#d").innerHTML;
-        optionD = question.seeD();
-    };
-    
-};
-
-function answerQuestion(answer, movieTree = rootQ) {
-    console.log("They answered the question!");
-    if (answer instanceof WeddingMovie) {
-        return revealMovie(answer);
-    } else {
-        if (answer === "a") {
-            console.log("It's a!");
-            let nextQuestion = movieTree.children.a;
-        } else if (answer === "b") {
-            console.log("It's b!");
-            let nextQuestion = movieTree.children.b;
-        } else if (answer === "c") {
-            console.log("It's c!");
-            let nextQuestion = movieTree.children.c;
-        } else if (answer === "d") {
-            console.log("It's d!");
-            let nextQuestion = movieTree.children.d;
-        };
-        path.push(nextQuestion.seeName());
-        console.log(path);
-        console.log(nextQuestion.seeValue());
-        console.log(nextQuestion.seeA());
-        console.log(nextQuestion.seeB());
-        askQuestion(answer, nextQuestion);
-    }
-};
-
-function revealMovie() {
-    console.log("here it is!");
-};
-*/

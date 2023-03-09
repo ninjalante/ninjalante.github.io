@@ -132,7 +132,7 @@ a {
 }
     
 /* -------- mobile optimization changed 12/10/2022 ------------*/
-    @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
+    @media screen and (print) and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     
     body {
         background-image: url("./images/mobback3.jpeg");

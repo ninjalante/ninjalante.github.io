@@ -1,18 +1,18 @@
 class WeddingMovie {
-    constructor(value, deets={}) {
-        this.value = value;
+    constructor(movie, deets={}) {
+        this.movie = movie;
         this.deets = deets;
     }
 
     returnDeets() {
-        return "<h2>" + this.value + "</h2>" + "<p>" + this.deets.summary + "</p>" + "/nRated:" + this.deets.rated;
+        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "</p>" + "/nRated:" + this.deets.rated;
     }
 
 };
 
 class Question {
-    constructor(value, name, a = undefined, b = undefined, c = undefined, d = undefined) {
-        this.value = value;
+    constructor(question, name, a = undefined, b = undefined, c = undefined, d = undefined) {
+        this.question = question;
         this.name = name;
         this.a = a;
         this.b = b;
@@ -21,8 +21,8 @@ class Question {
         this.comment = undefined;
         this.children = {};
     }
-    seeValue() {
-        return this.value;
+    seeQuestion() {
+        return this.question;
     }
 
     seeName() {
@@ -34,16 +34,14 @@ class Question {
     }
 
     seeChildren() {
-        if (this.children) {
-            this.children.a.seeValue();
-            this.children.b.seeValue();
-            if (this.children.c) {
-                this.children.c.seeValue();
-            }
-            if (this.children.d) {
-                this.children.d.seeValue();
-            }
+        for (let q in this.children) {
+            console.log(this.children[q].seeQuestion());
         }
+    }
+
+    getChild(child) {
+        console.log(this.children[child].seeQuestion());
+        return this.children[child];
     }
 
     seeA() {
@@ -135,7 +133,7 @@ let youPeople = new WeddingMovie("You People", {"summary": "A white Jewish man a
 let palmSprings = new WeddingMovie("Palm Springs", {"summary": "A carefree young man happily seduces the maid of honor at a wedding - but when she follows him into a desert cave, she's pulled into his time loop.", "rated": "R"});
 
 //  QUESTIONS //
-let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Root question", "Male", "Female", "Both!");
+let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Ready for wedding season", "Male", "Female", "Both!");
 let maleProtag = new Question("Got it. Do you want something that's...", "Male protagonist", "Family-friendly", "As family-UNfriendly as you can");
 let femaleProtag = new Question("Female leads it is! Do you want...", "Female protagonist", "A fun, family-friendly movie", "Something more adult and risque");
 let ensemble = new Question("Are you looking for...", "More than one protagonist", "A single pair of protagonists", "An ensemble cast");
@@ -147,8 +145,138 @@ rootQ.children.c = ensemble;
 let mFF = new Question("Would you prefer a classic movie that might be in black and white, or something more modern?", "Family-friendly", "Ooo, hit me with a classic", "Oh, something modern");
 let mNotFF = new Question("Kids shouldn't be allowed at weddings anyway. Do you want...", "Not family-friendly", "A buddy comedy", "Something else");
 maleProtag.children.a = mFF;
-maleProtag.children.a = mNotFF;
+maleProtag.children.b = mNotFF;
+
 let fFF = new Question("Cool. You have some good options. Are you looking for...", "Family-friendly", "Something nostalgic", "Something fresh and new");
 let fNotFF = new Question("You've got some very different options. Do you want...", "Not family-friendly", "A story with interesting characters and conflicts", "A story with unnecessary amounts of GLAMOUR and DRAMA");
 femaleProtag.children.a = fFF;
 femaleProtag.children.b = fNotFF;
+
+let somethingNew = new Question("Do you want a lot of singing and dancing?", "Nostalgic", "Yes! Sweep me away!", "No, calm down");
+fFF.children.a = somethingNew;
+fFF.children.b = somethingNew;
+somethingNew.children.a = mammaMia;
+mammaMia.name = "Here I go again";
+let bodySwap = new Question("Are you into body swap hijinks?", "No musicals", "Heck yeah, let's swap!", "I prefer characters who learn to be comfortable in their own skin without shenanigans.");
+bodySwap.children.a = freakyFriday;
+freakyFriday.name = "Body swap!";
+bodySwap.children.b = bFatGreek;
+bFatGreek.name = "Character growth without shenanigans";
+let italianOrIndian = new Question("Okay. You're ordering food to watch with your movie. Which do you order?", "Something new", "Indian!", "No, Italian!");
+somethingNew.children.b = italianOrIndian;
+italianOrIndian.children.a = weddingSeason;
+weddingSeason.name = "Indian";
+italianOrIndian.children.b = royalTreat;
+royalTreat.name = "Italian";
+
+let substance = new Question("How much substance are you looking for? Do you want a movie that's...", "Not Family-Friendly", "Easy, breezy, and light-hearted", "Full of flawed characters and difficult situations");
+fNotFF.children.a = substance;
+let easyBreezy = new Question("Great. All you need to do is choose your leading man!", "Easy breezy fun", "Matthew McConaghey", "James Marsden", "Neither");
+substance.children.b = rachel;
+rachel.name = "Something with substance";
+substance.children.a = easyBreezy;
+easyBreezy.a = weddingPlanner;
+weddingPlanner.name = "McConaghey";
+easyBreezy.b = dresses27;
+dresses27.name = "Marsden";
+easyBreezy.c = muriels;
+muriels.name = "Give me Toni Collette or nothing";
+
+let drama = new Question("Are you hoping to indulge in some really obscene opulence?", "Here for the drama", "Yes, smother me with capitalist fantasy", "No, I want to be reminded how poor I am");
+fNotFF.children.b = drama;
+drama.children.b = bridesmaids;
+bridesmaids.name = "Help me, I'm poor";
+let obscene = new Question("Message received. Only one thing left to ask. Are you...", "Obscene consumerism", "a Carrie", "a Samantha", "a Miranda", "a Charlotte");
+drama.children.a = obscene;
+obscene.children.a = sexCity;
+obscene.children.b = sexCity;
+obscene.children.c = sexCity;
+sexCity.name = "One woman's trash is another woman's treasure";
+obscene.children.d = crazyRichA;
+crazyRichA.name = "No one loves free stuff more than rich people";
+
+let classic = new Question("Last question. How do you feel about musicals?", "Classic", "Love 'em!", "Not tonight.");
+mFF.children.a = classic;
+classic.children.a = sevenBrides;
+sevenBrides.name = "Musical";
+classic.children.b = oneNight;
+oneNight.name = "Not a musical";
+mFF.children.b = fatherBride;
+fatherBride.name = "Modern";
+
+let buddy = new Question("There's a couple fun buddy comedies. We can do this quickly. Do you want a movie with...", "Buddy comedy", "Actors who are easily recognized from TV", "Older actors your mom is weird about");
+mNotFF.children.a = buddy;
+let youngFolks = new Question("Got it.\nDo you enjoy Ed Helms?", "TV-friendly faces", "Yes! He's great", "Not so much");
+buddy.children.a = youngFolks;
+let edHelms = new Question("How raunchy do you like it?", "Ed Helms", "As raunchy as possible", "I prefer my raunch on the side, thank you");
+youngFolks.children.a = edHelms;
+let crash = new Question("I've only got two movies left. I guess...do you want to watch something you've already seen, or something you slept on?", "No Ed Helms", "Give me what I came here expecting", "I'm open to trying something new");
+edHelms.children.b = crash;
+crash.children.a = crashers;
+crashers.name = "I came here so someone would tell me it was okay to watch Wedding Crashers again.";
+crash.children.b = loveYouMan;
+loveYouMan.name = "Paul Rudd is People's Sexiest Man Alive 2021";
+
+edHelms.children.a = hangover;
+hangover.name = "Drenched in raunch";
+edHelms.children.b = tag;
+tag.name = "Raunch on the side";
+
+buddy.children.b = inLaws;
+inLaws.name = "Older actors can still be funny buddies";
+
+let sandler = new Question("Do you like Adam Sandler?", "Not a buddy comedy", "LOVE Adam Sandler!", "Who?");
+mNotFF.children.b = sandler;
+let nineties = new Question("Good for you. Which is your favorite Adam Sandler manifestation?", "I Stan-dler Adam Sandler", "1990s Adam Sandler", "2010s Adam Sandler");
+sandler.children.a = nineties;
+nineties.children.a = weddingSinger;
+weddingSinger.name = "I like good Adam Sandler movies";
+let matureSandler = new Question("Amazingly you have two options here. Which flavor of 2010s Sandler wets your whistle?", "I really enjoy Adam Sandler's more recent comedies", "Mature Adam Sandler", "Immature Adam Sandler");
+nineties.children.b = matureSandler;
+matureSandler.children.a = weekOf;
+weekOf.name = "Adam Sandler was born in 1966. He probably watched the Moon Landing on TV.";
+matureSandler.b = myBoy;
+myBoy.name = "Adam Sandler was born in 1966. He was in college when the Challenger exploded.";
+
+let timeline = new Question("That's fine. How do you feel about timeline wackiness?", "I don't give A-damn S-damn-dler", "Love timeline stuff, so fun", "No thanks");
+sandler.children.b = timeline;
+let time = new Question("Awesome. A time loop like Groundhog Day, or alternate timelines like Sliding Doors?", "Timeline wackiness", "Groundhog Day time loop", "Sliding Doors alts");
+time.children.a = naked;
+naked.name = "Groundhog Day time loop";
+time.children.b = repeat;
+repeat.name = "Sliding Doors timelines";
+
+let stiller = new Question("Ok, no Sandler, no timeline stuff. Who do you prefer as a leading man?", "Normal time stuff", "Ben Stiller", "Ryan Reynolds");
+timeline.children.b = stiller;
+stiller.children.a = parents;
+parents.name = "Ben Stiller";
+stiller.children.b = proposal;
+proposal.name = "Ryan Reynolds";
+
+let nostalgicOrModern = new Question("I've got some ideas. Do you want...", "Two protagonists", "A nostalgic classic", "Something more modern");
+let hiddenGem = new Question("I think I've got it. Do you want...", "Ensemble cast", "An instantly recognizable classic", "A hidden gem I've never heard of");
+ensemble.children.a = nostalgicOrModern;
+ensemble.children.b = hiddenGem;
+hiddenGem.a = fourWeddingsFuneral;
+fourWeddingsFuneral.name = "An instantly recognizable classic";
+hiddenGem.b = monsoon;
+monsoon.name = "A hidden gem that I will LOVE";
+
+nostalgicOrModern.children.a = princess;
+princess.name = "A nostalgic classic";
+let cynical = new Question("Are you feeling...", "Something new", "a somewhat cynical, but ultimately sweet, and certainly more realistic, look at relationships", "a 100% bonkers fairy tale");
+nostalgicOrModern.children.b = cynical;
+cynical.children.b = marryMe;
+marryMe.name = "A love story so unbelievable that I can't help but enjoy it";
+
+let cringe = new Question("I think I've got something, but I have to know, do you like topically-relevant cringe comedy?", "More cynical, sweet, and realistic", "no thank you", "BRING ON THE CRINGE");
+cynical.children.a = cringe;
+cringe.children.b = youPeople;
+youPeople.name = "I want to curl into a ball from cringing so hard";
+
+let howRealistic = new Question("Low cringe, ok.\n But like, HOW realistic?", "No cringe please", "No shenanigans, all reality", "I wouldn't mind some wackiness");
+cringe.children.a = howRealistic;
+howRealistic.children.a = destination;
+destination.name = "No wackiness please, I'm a very serious person";
+howRealistic.children.b = palmSprings;
+palmSprings.name = "I'm still able to draw life lessons from movies that use fun devices";
