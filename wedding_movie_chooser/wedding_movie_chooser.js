@@ -21,64 +21,82 @@ function sayYes() {
     document.querySelector("#d").style.visibility = "hidden";
     let comment = document.querySelector("#comment");
     comment.innerHTML += rootQ.seeComment();
+    console.log(rootQ);
+
 };
 
 let path = [];
 //OLD function that kind of works
-function askQuestion(answer, nextQuestion = rootQ, path = [rootQ.seeName()]) {       
-    if (nextQuestion instanceof WeddingMovie) {
+function askQuestion(answer, nextQ = rootQ) { //the rootQ is going in TWICE before it's answered.       
+    if (rootQ instanceof WeddingMovie) {
         let announcement = document.querySelector("#announcement");
-        announcement.innerHTML = "I have the perfect movie for you!";
+        announcement.innerHTML += "I have the perfect movie for you!";
         let movieRec = document.querySelector("#movieRec");
-        movieRec.innerHTML += nextQuestion.returnDeets();
+        movieRec.innerHTML += nextQ.returnDeets();
     } else {
+        path.push(nextQ.seeName());
+        console.log(path);
+        console.log(nextQ);
         if (answer === "a") {
             console.log("It's a!");
-            rootQ = nextQuestion.children.a;
+            rootQ = nextQ.children.a;
         } else if (answer === "b") {
             console.log("It's b!");
-            rootQ = nextQuestion.children.b;
+            rootQ = nextQ.children.b;
         } else if (answer === "c") {
             console.log("It's c!");
-            rootQ = nextQuestion.children.c;
+            rootQ = nextQ.children.c;
         } else if (answer === "d") {
             console.log("It's d!");
-            rootQ = nextQuestion.children.d;
+            rootQ = nextQ.children.d;
         };
-        if (nextQuestion instanceof Question) {
-            path += [nextQuestion.seeName()];
-        };
-        console.log(path);
-        console.log(nextQuestion.seeQuestion());
-        console.log(nextQuestion.seeA());
-        console.log(nextQuestion.seeB());
+        console.log(nextQ.seeQuestion());
+        console.log(nextQ.seeA());
+        console.log(nextQ.seeB());
+        console.log("This is ask Question.")
 
-        if (nextQuestion.children.c) {
-            console.log(nextQuestion.seeC());
+        if (nextQ.children.c) {
+            console.log(nextQ.seeC());
         };
-        if (nextQuestion.children.d) {
-            console.log(nextQuestion.seeD());
+        if (nextQ.children.d) {
+            console.log(nextQ.seeD());
         };
 
         currentQuestion = document.querySelector("#questionValue");
-        currentQuestion.innerHTML = nextQuestion.seeQuestion();
+        currentQuestion.innerHTML = nextQ.seeQuestion();
 
-        if (nextQuestion.a != undefined) {
-            let optionA = document.querySelector("#a");
-            optionA.innerHTML = nextQuestion.seeA();
+        let optionA = document.querySelector("#a");
+        let optionB = document.querySelector("#b");
+        let optionC = document.querySelector("#c");
+        let optionD = document.querySelector("#d");
 
+        if (nextQ.a != undefined) {
+            optionA.innerHTML = nextQ.seeA();
         }
-        if (nextQuestion.b != undefined) {
-            let optionB = document.querySelector("#b");
-            optionB.innerHTML = nextQuestion.seeB();
+        if (nextQ.b != undefined) {
+            optionB.innerHTML = nextQ.seeB();
         }
-        if (nextQuestion.c != undefined) {
-            let optionC = document.querySelector("#c");
-            optionC.innerHTML = nextQuestion.seeC();
+        if (nextQ.c != undefined) {
+            optionC.style.visibility = "visible";
+            optionC.style.opacity = "100%";
+            optionC.style.width = "auto";
+            optionC.innerHTML = nextQ.seeC();
+
+        } else if (nextQ.c == undefined) {
+            optionC.style.visibility = "hidden";
+            optionC.style.opacity = "0%";
+            optionC.style.width = "0%";
         }
-        if (nextQuestion.d != undefined) {
-            optionD = document.querySelector("#d");
-            optionD.innerHTML = nextQuestion.seeD();
-        };
+        if (nextQ.d != undefined) {
+            optionD.style.visibility = "visible";
+            optionD.style.opacity = "100%";
+            optionD.style.width = "auto";
+            optionD.innerHTML = nextQ.seeD();
+
+        } else if (nextQ.d == undefined) {
+            optionD.style.visibility = "hidden";
+            optionD.style.opacity = "0%";
+            optionD.style.width = "0%";
         }
+    };
     };

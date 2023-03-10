@@ -152,10 +152,12 @@ let fNotFF = new Question("You've got some very different options. Do you want..
 femaleProtag.children.a = fFF;
 femaleProtag.children.b = fNotFF;
 
-let somethingNew = new Question("Do you want a lot of singing and dancing?", "Nostalgic", "Yes! Sweep me away!", "No, calm down");
-fFF.children.a = somethingNew;
+let nostalgic = new Question("Do you want a lot of singing and dancing?", "Nostalgic", "Yes! Sweep me away!", "No, calm down");
+let somethingNew = new Question("Something New", "Something New", "something New", "something New");
+//this is wrong
+fFF.children.a = nostalgic;
 fFF.children.b = somethingNew;
-somethingNew.children.a = mammaMia;
+nostalgic.children.a = mammaMia;
 mammaMia.name = "Here I go again";
 let bodySwap = new Question("Are you into body swap hijinks?", "No musicals", "Heck yeah, let's swap!", "I prefer characters who learn to be comfortable in their own skin without shenanigans.");
 bodySwap.children.a = freakyFriday;
@@ -163,7 +165,7 @@ freakyFriday.name = "Body swap!";
 bodySwap.children.b = bFatGreek;
 bFatGreek.name = "Character growth without shenanigans";
 let italianOrIndian = new Question("Okay. You're ordering food to watch with your movie. Which do you order?", "Something new", "Indian!", "No, Italian!");
-somethingNew.children.b = italianOrIndian;
+nostalgic.children.b = italianOrIndian;
 italianOrIndian.children.a = weddingSeason;
 weddingSeason.name = "Indian";
 italianOrIndian.children.b = royalTreat;
@@ -255,6 +257,7 @@ proposal.name = "Ryan Reynolds";
 
 let nostalgicOrModern = new Question("I've got some ideas. Do you want...", "Two protagonists", "A nostalgic classic", "Something more modern");
 let hiddenGem = new Question("I think I've got it. Do you want...", "Ensemble cast", "An instantly recognizable classic", "A hidden gem I've never heard of");
+
 ensemble.children.a = nostalgicOrModern;
 ensemble.children.b = hiddenGem;
 hiddenGem.a = fourWeddingsFuneral;
