@@ -287,6 +287,11 @@ a {
         font-size: 4rem;
     }
        
-
- }
+}
     
+/*print links and stuff*/
+@media print {
+    a[href^="http"]:after {
+        content: " (" attr(href) ")";
+    }
+}
