@@ -32,7 +32,7 @@ h1 {
 }
 
 #footer {
-    background: linear-gradient(rgba(242,234,239,1) 85%, #6c3f8b 50%);
+    background: linear-gradient(rgba(242,234,239,1) 85%, var(--sabine-blue) 50%);
 }
 
 header,
@@ -54,7 +54,7 @@ button {
     padding: 10px 20px 10px 20px;
     align-items: center;
     margin: 10px 30px;
-    background-color: var(--sabine-blue);
+    background-color: var(--sabine-purple);
     color: var(--sabine-offwhite);
     border: 2px solid var(--sabine-lime);
     border-radius: 5px;
@@ -121,7 +121,7 @@ p {
 }
 
 section {
-    background-color:var(--sabine-blue);
+    background-color:var(--sabine-purple);
     color:rgba(243, 249, 246, 0.845);
     border: 2px solid var(--sabine-lime);
     border-radius: 5px;
