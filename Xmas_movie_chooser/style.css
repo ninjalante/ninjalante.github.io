@@ -35,9 +35,14 @@ button {
     margin-bottom: 10px;
 }
 
+input:hover {
+    cursor: pointer;
+}
+
 button:hover {
     color: rgb(172, 48, 48);
     border: 4px solid rgb(172, 48, 48);
+    cursor: pointer;
   }
   
 #landingPage {
