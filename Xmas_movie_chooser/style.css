@@ -1,6 +1,7 @@
 body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: 16px;
+    background:rgb(30, 60, 29);
     background-image: url("./images/back4.jpeg");
     color: whitesmoke;
     text-shadow: -1px -1px rgb(30, 60, 29), 1px -1px black, -1px 1px rgb(30, 60, 29), 1px 1px black;
@@ -39,7 +40,7 @@ input:hover {
     cursor: pointer;
 }
 
-button:hover {
+button:hover, input:focus {
     color: rgb(172, 48, 48);
     border: 4px solid rgb(172, 48, 48);
     cursor: pointer;
@@ -130,6 +131,7 @@ a {
     font-size: 2rem;
     color: whitesmoke;
     height: 4rem;
+    padding-bottom: 5%;
 }
 
 #blogList h1 {

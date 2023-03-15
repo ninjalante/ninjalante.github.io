@@ -18,7 +18,7 @@
       <h2 class="landing">You're in the right place.</h2>
       <button id="goToBooleans" onclick="clickTheButton()">Find a Christmas movie</button>
     </header>
-    <main id="movieChooser">
+    <main id="movieChooser" aria-hidden="true">
       <h1>Select the elements you want to see in a Christmas movie.</h1>
      <div id="booleans" class="grid-container">
        <div class="grid-item">
@@ -70,7 +70,7 @@
       <button id="perfectMovie" onclick="choosePerfectMovie()">Nothing but the best for me</button>
       <button id="worstMovie" onclick="chooseWorstMovie()">GIVE ME YOUR WORST.</button>
     </main><br>
- <main id="movieRec">
+ <main id="movieRec" aria-hidden="true">
     <div id="introToMovies">
     <!-- movie intro piece here -->
     </div>
@@ -79,7 +79,7 @@
     </section>
     <br><button id="worstButton" onclick="oneMore()">I've seen that one.</button>
     <br><button onclick="window.location.reload()">Start over</button>
-<footer>
+<footer aria-hidden="true">
     <br>
     <aside id="recommend"><a href="./recommend.html">Recommend </a>a movie to me!</aside>
     <br><aside id="more">View <a href="./allmovies.html">all movies.</a></aside>
