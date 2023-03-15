@@ -6,6 +6,8 @@ function clickTheButton() {
     document.querySelector("#landingPage").style.opacity = "0%";
     document.querySelector("#movieChooser").style.opacity = "100%";
     document.querySelector("#movieChooser").style.visibility = "visible";
+    document.querySelector("#movieChooser").setAttribute("aria-hidden", "false");
+    document.querySelector("#landingPage").setAttribute("aria-hidden", "true");
     
    };
 
@@ -21,6 +23,7 @@ function choosePerfectMovie() {
   document.querySelector("#movieChooser").style.visibility = "hidden";
   document.querySelector("#movieRec").style.opacity = "100%";
   document.querySelector("#movieRec").style.visibility = "visible";
+  document.querySelector("footer").ariaHidden;
   
   let movieOutput = document.querySelector("#movieRecommendations");
 
@@ -60,6 +63,7 @@ function chooseWorstMovie(){
     document.querySelector("#movieRec").style.visibility = "visible";
     document.querySelector("#worstButton").style.opacity = "100%";
     document.querySelector("#worstButton").style.visibility = "visible";
+    document.querySelector("footer").ariaHidden;
 
   let movieOutput = document.querySelector("#movieRecommendations");
 
@@ -142,8 +146,11 @@ function chooseMovie(){
   };
   document.querySelector("#movieChooser").style.opacity = "0%";
   document.querySelector("#movieChooser").style.visibility = "hidden";
+  document.querySelector("#movieChooser").ariaHidden;
   document.querySelector("#movieRec").style.opacity = "100%";
   document.querySelector("#movieRec").style.visibility = "visible";
+  document.querySelector("#movieRec").ariaHidden;
+  document.querySelector("footer").ariaHidden;
 
   let movieOutput = document.querySelector("#movieRecommendations");
   let intro = document.querySelector("#introToMovies");
