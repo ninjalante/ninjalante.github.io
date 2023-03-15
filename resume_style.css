@@ -202,23 +202,28 @@ a:visited {
 
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
 
+    html {
+        font-size: 24px;
+    }
+
     h1 {
-        font-size: 6rem;  
+        font-size: 5rem;  
     }
 
     button {
         display: block;
-        font-size: 3rem;
-        width: 80%;
+        font-size: 4rem;
+        width: 90%;
      
     }
     
     header {
         align-items: center;
+        text-align: center;
     }
 
-    main {
-        width: 90%;
+    #mainContent {
+        width: 100%;
     }
 
     .links {
@@ -231,6 +236,10 @@ a:visited {
 
     #grid {
         display: block;
+    }
+
+    #footer {
+        padding-bottom: 20%;
     }
 
 }
