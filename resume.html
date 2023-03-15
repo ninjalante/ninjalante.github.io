@@ -5,12 +5,11 @@
     <link href="./resume_style.css" type="text/CSS" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f12f8ac6ae.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Tilt+Warp&display=swap" rel="stylesheet">    <script src="https://kit.fontawesome.com/f12f8ac6ae.js" crossorigin="anonymous"></script>
     <title>Greta C. Wink | Developer | Content Creator | Script Witch</title>
  </head>
  <body>
-   <header>
+   <header id="header">
       <h1>Greta C. Wink</h1>
       <nav>
          <button onclick="goHome()">Home</button>
@@ -32,7 +31,7 @@
          </section>
          <section id="right">
             <p>I have 25 years of professional experience in multiple fields, including customer service, restaurant management, production, and education.</p>
-            <p>In the past two years I've been studying for a career pivot into programming and digital transformation. I'm also an experienced screenplay analyst and writer.</p>
+            <p>Since 2020 I've been studying programming, web development, and digital transformation. I'm also an experienced screenplay analyst, writer, and public speaker.</p>
          </section>
       </div>
       <div id="bottom">
@@ -49,7 +48,7 @@
       let bottom = document.getElementById("bottom");
       function openDevelop() {
          console.log("developer");
-         greeting.innerHTML = "Education is the kindling of a flame, not the filling of a vessel.<br><small>Socrates</small>";
+         greeting.innerHTML = "Education is the kindling of a flame, not the filling of a vessel.";
          followUp.innerHTML = 'As a junior developer, I know I still have a lot to learn -- that\'s why I\'ve hit the ground running.'
          left.innerHTML = "<p>In the last eighteen months, I\'ve learned several programming languages as well as become a Service Now Certified System Administrator. I have over two decades of professional experience in fast-paced, on-your-feet food service and management as well as deliberate, contemplative curriculum development offices. Fifteen years as a script analyst has trained my eyes well to scan lines of code to find syntax, indentation, and naming errors.</p><p>My strongest crucible for problem-solving, patience, conflict resolution, and responsive design was my preschool classroom in South Korea, where I taught ESL to 4-year-olds. I also served as head teacher and liaison between administration and the staff.</p><p>When you teach young children, and regularly train and welcome staff who are new to a school and a country, you have to be humble, flexible, and optimistic. As an adult living and teaching in a foreign country where I don't speak the language, I've often had to rethink my questions in order to get the right answers -- especially when talking to someone who isn't even sure what the problem is.</p><p>I've always been passionate about creating things. As I began programming, that love branched from storytelling towards functionality. My most recent personal project is a website that recommends holiday movies based on desired tropes. My next project focuses on accessibility plugin for neurodiverse web users who find the small, homogeneous text on websites difficult to read. I am a strong believer in technology and automation making our lives easier, and I want to contribute to the solution.</p>";
          right.innerHTML = "<h3>Credentials</h3><ul><li>ServiceNow CSA: Rome</li></ul><h3>Technical Skills</h3><ul><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Python</li><li>Command Line</li><li>MS Office</li></ul><h3>Soft Skills</h3><ul><li>Time Management</li><li>Team Management</li><li>Outside-the-box thinking</li><li>Clear & Effective Communication</li><li>Documentation</li><li>Copyediting/Debugging</li></ul><h3>Projects</h3><ul><li><a href='https://ninjalante.github.io/Xmas_movie_chooser/index.html'>What Christmas Movie Should I Watch?</a></li><li><a href='https://ninjalante.github.io/sn_xmas.html'>ServiceNow Christmas Movie Custom Application</a></li><li><a href='https://ninjalante.github.io/waycooks.html'>The Waycooks</a></li></ul>";
@@ -73,10 +72,10 @@
       }
       function openCreate() {
          console.log("create");
-         greeting.innerHTML = "My greatest dream has been to create and tell stories with my friends.";
-         followUp.innerHTML = "And I've been lucky enough to do that.";
-         left.innerHTML = '<h2>As an entertainer, I\'ve hosted theater festivals, acted on stage and film, performed stand-up comedy, and most recently, written, directed, produced, and edited a fiction podcast called <a href="https://soundcloud.com/tightstheshow">TIGHTS</a>.</h2>';
-         right.innerHTML = "<p>TIGHTS was a culmination of dreams between myself and Barri Tsavaris (Pink Fong, 'Dali and the Cocky Prince', 2018 Olympics, 'Chimera'), Korea's leading American female voiceover artist. Voice-directed and produced by Barri in her home studio, we cast two dozen professional and amateur actors including Josh Kroot ('Swing Kids'), Daniel Kennedy ('Squid Game', 'The Silent Sea', 'Doom at Your Service'), and John D. Michaels ('Squid Game', 'Mr. Sunshine', 'Designated Survivor: 60 Days'). <p>The incredible talent we assembled brought my story to life. I have more ideas for further chapters in the TIGHTS story - both as a podcast and an animated series. I'm also available to write first drafts of story ideas that YOU have.</p>"
+         greeting.innerHTML = "My biggest dream has always been to create stories with my friends.";
+         followUp.innerHTML = "I'm lucky enough to do that.";
+         left.innerHTML = '<h2>As a performer, I\'ve hosted theater festivals, acted on stage and film, performed stand-up comedy, and - most recently - written, directed, produced, and edited a fiction podcast called <a href="https://soundcloud.com/tightstheshow">TIGHTS</a>.</h2>';
+         right.innerHTML = "<p>The TIGHTS production was a collaboration between myself and Barri Tsavaris (Pink Fong, 'Dali and the Cocky Prince', 2018 Olympics, 'Chimera'), Korea's leading American female voiceover artist. Voice-directed and produced by Barri in her home studio, we cast two dozen professional and amateur actors including Josh Kroot ('Swing Kids'), Daniel Kennedy ('Squid Game', 'The Silent Sea', 'Doom at Your Service'), and John D. Michaels ('Squid Game', 'Mr. Sunshine', 'Designated Survivor: 60 Days'). <p>I have more ideas for further chapters in the TIGHTS story - both as a podcast and an animated series.</p>"
          bottom.innerHTML = "<h3>Contact me to hear more about BADGES, MASKS, and TIGHTS: The Animated Series. <a href='mailto:gretacwink@gmail.com'>gretacwink@gmail.com</a></h3>"
       }
       function openWitch() {
@@ -90,7 +89,7 @@
    </script>   
  </body>
  <br>
- <footer> 
+ <footer id="footer"> 
    <a href="https://www.linkedin.com/in/greta-c-wink-8472bb1a8/" class="links"><i class="fab fa-linkedin"></i> Greta C. Wink</a>
    <a href="mailto:gretacwink@gmail.com" class="links"><i class="far fa-paper-plane"></i> gretacwink@gmail.com</a>
    <a href="https://www.instagram.com/thisgretasnaps/" class="links"><i class="fab fa-instagram-square"></i> thisgretasnaps</a>
