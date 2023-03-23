@@ -153,29 +153,32 @@ femaleProtag.children.a = fFF;
 femaleProtag.children.b = fNotFF;
 
 let nostalgic = new Question("Do you want a lot of singing and dancing?", "Nostalgic", "Yes! Sweep me away!", "No, calm down");
-let somethingNew = new Question("Something New", "Something New", "something New", "something New");
+let somethingNew = new Question("Okay. You're ordering food to watch with your movie. Which do you order?", "Something new", "Indian!", "No, Italian!");
 //this is wrong
 fFF.children.a = nostalgic;
 fFF.children.b = somethingNew;
 nostalgic.children.a = mammaMia;
 mammaMia.name = "Here I go again";
 let bodySwap = new Question("Are you into body swap hijinks?", "No musicals", "Heck yeah, let's swap!", "I prefer characters who learn to be comfortable in their own skin without shenanigans.");
+nostalgic.children.b = bodySwap;
 bodySwap.children.a = freakyFriday;
 freakyFriday.name = "Body swap!";
 bodySwap.children.b = bFatGreek;
 bFatGreek.name = "Character growth without shenanigans";
-let italianOrIndian = new Question("Okay. You're ordering food to watch with your movie. Which do you order?", "Something new", "Indian!", "No, Italian!");
-nostalgic.children.b = italianOrIndian;
-italianOrIndian.children.a = weddingSeason;
+somethingNew.children.a = weddingSeason;
 weddingSeason.name = "Indian";
-italianOrIndian.children.b = royalTreat;
+somethingNew.children.b = royalTreat;
 royalTreat.name = "Italian";
 
 let substance = new Question("How much substance are you looking for? Do you want a movie that's...", "Not Family-Friendly", "Easy, breezy, and light-hearted", "Full of flawed characters and difficult situations");
 fNotFF.children.a = substance;
 let easyBreezy = new Question("Great. All you need to do is choose your leading man!", "Easy breezy fun", "Matthew McConaghey", "James Marsden", "Neither");
-substance.children.b = rachel;
-rachel.name = "Something with substance";
+
+//no, something is still fucked up
+let howSerious = new Question("So, like, how <em>much</em> substance?", "Something with substance", "A really serious movie", "I'm here for petty drama");
+substance.children.b = howSerious;
+rachel.name = "Buckle up for some real serious shit";
+howSerious.a = rachel;
 substance.children.a = easyBreezy;
 easyBreezy.a = weddingPlanner;
 weddingPlanner.name = "McConaghey";
@@ -185,7 +188,8 @@ easyBreezy.c = muriels;
 muriels.name = "Give me Toni Collette or nothing";
 
 let drama = new Question("Are you hoping to indulge in some really obscene opulence?", "Here for the drama", "Yes, smother me with capitalist fantasy", "No, I want to be reminded how poor I am");
-fNotFF.children.b = drama;
+//trouble here
+howSerious.children.b = drama;
 drama.children.b = bridesmaids;
 bridesmaids.name = "Help me, I'm poor";
 let obscene = new Question("Message received. Only one thing left to ask. Are you...", "Obscene consumerism", "a Carrie", "a Samantha", "a Miranda", "a Charlotte");
