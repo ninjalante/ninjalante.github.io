@@ -5,14 +5,14 @@ class WeddingMovie {
     }
 
     returnDeets() {
-        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "</p>" + "/nRated:" + this.deets.rated;
+        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "</p>" + "<p>Rated:" + this.deets.rated + "</p>";
     }
 
 };
 
 class Question {
     constructor(question, name, a = undefined, b = undefined, c = undefined, d = undefined) {
-        this.question = question;
+        this.quest = question;
         this.name = name;
         this.a = a;
         this.b = b;
@@ -21,8 +21,12 @@ class Question {
         this.comment = undefined;
         this.children = {};
     }
-    seeQuestion() {
-        return this.question;
+    get quest() {
+        return this.quest;
+    }
+
+    set quest(newQuestion) {
+        return this.quest = newQuestion;
     }
 
     seeName() {
@@ -122,7 +126,7 @@ let destination = new WeddingMovie("Destination Wedding", {"summary": "Two talka
 
 let myBoy = new WeddingMovie("That's My Boy", {"summary": "A young groom finds his wedding day complicated by the reappearance of his dad, who raised him when he was only a teen.", "rated": "R"});
 
-let princess = new WeddingMovie("The Princess Bride", {"summary": "A kooky grandfather reads his favorite book to his cynical grandson while he's sick in bed."});
+let princess = new WeddingMovie("The Princess Bride", {"summary": "A kooky grandfather reads his favorite book to his cynical grandson while he's sick in bed.", "rated": "G"});
 
 let monsoon = new WeddingMovie("Monsoon Wedding", {"summary": "A large Indian family struggles personally and financially as their eldest daughter prepares to enter an arranged marriage.", "rated": "R"});
 
@@ -146,6 +150,14 @@ let mFF = new Question("Would you prefer a classic movie that might be in black 
 let mNotFF = new Question("Kids shouldn't be allowed at weddings anyway. Do you want...", "Not family-friendly", "A buddy comedy", "Something else");
 maleProtag.children.a = mFF;
 maleProtag.children.b = mNotFF;
+let classic = new Question("Last question. How do you feel about musicals?", "Classic", "Love 'em!", "Not tonight.");
+mFF.children.a = classic;
+classic.children.a = sevenBrides;
+sevenBrides.name = "Musical";
+classic.children.b = oneNight;
+oneNight.name = "Not a musical";
+mFF.children.b = fatherBride;
+fatherBride.name = "Modern";
 
 let fFF = new Question("Cool. You have some good options. Are you looking for...", "Family-friendly", "Something nostalgic", "Something fresh and new");
 let fNotFF = new Question("You've got some very different options. Do you want...", "Not family-friendly", "A story with interesting characters and conflicts", "A story with unnecessary amounts of GLAMOUR and DRAMA");
@@ -200,15 +212,6 @@ obscene.children.c = sexCity;
 sexCity.name = "One woman's trash is another woman's treasure";
 obscene.children.d = crazyRichA;
 crazyRichA.name = "No one loves free stuff more than rich people";
-
-let classic = new Question("Last question. How do you feel about musicals?", "Classic", "Love 'em!", "Not tonight.");
-mFF.children.a = classic;
-classic.children.a = sevenBrides;
-sevenBrides.name = "Musical";
-classic.children.b = oneNight;
-oneNight.name = "Not a musical";
-mFF.children.b = fatherBride;
-fatherBride.name = "Modern";
 
 let buddy = new Question("There's a couple fun buddy comedies. We can do this quickly. Do you want a movie with...", "Buddy comedy", "Actors who are easily recognized from TV", "Older actors your mom is weird about");
 mNotFF.children.a = buddy;

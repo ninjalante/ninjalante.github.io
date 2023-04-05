@@ -11,7 +11,7 @@ function sayYes() {
     document.querySelector("#questionButton").style.visibility = "visible";
     document.querySelector("#sayYes:hover").style.cursor = "default";
     let firstQuestion = document.querySelector("#questionValue");
-    firstQuestion.innerHTML += rootQ.seeQuestion();
+    firstQuestion.innerHTML += rootQ.quest();
     let rootA = document.querySelector("#a");
     rootA.innerHTML += rootQ.seeA();
     let rootB = document.querySelector("#b");
@@ -28,7 +28,15 @@ function sayYes() {
 let path = [];
 //OLD function that kind of works
 function askQuestion(answer, nextQ = rootQ) { //the rootQ is going in TWICE before it's answered.       
-    if (rootQ instanceof WeddingMovie) {
+    if (nextQ instanceof WeddingMovie) {
+        let disappear = document.querySelector("#questionButton");
+        disappear.style.visibility = "hidden";
+        disappear.style.opacity = "0%";
+        disappear.style.width = "0%";
+        let recommendation = document.querySelector("#recommendation");
+        recommendation.style.visibility = "visible";
+        recommendation.style.opacity = "100%";
+        recommendation.style.width = "auto";
         let announcement = document.querySelector("#announcement");
         announcement.innerHTML += "I have the perfect movie for you!";
         let movieRec = document.querySelector("#movieRec");
@@ -40,17 +48,21 @@ function askQuestion(answer, nextQ = rootQ) { //the rootQ is going in TWICE befo
         if (answer === "a") {
             console.log("It's a!");
             rootQ = nextQ.children.a;
+            answer = "a";
         } else if (answer === "b") {
             console.log("It's b!");
             rootQ = nextQ.children.b;
+            answer = "b";
         } else if (answer === "c") {
             console.log("It's c!");
             rootQ = nextQ.children.c;
+            answer = "c";
         } else if (answer === "d") {
             console.log("It's d!");
             rootQ = nextQ.children.d;
+            answer = "d";
         };
-        console.log(nextQ.seeQuestion());
+        console.log(nextQ.quest());
         console.log(nextQ.seeA());
         console.log(nextQ.seeB());
         console.log("This is ask Question.")
@@ -63,7 +75,7 @@ function askQuestion(answer, nextQ = rootQ) { //the rootQ is going in TWICE befo
         };
 
         currentQuestion = document.querySelector("#questionValue");
-        currentQuestion.innerHTML = nextQ.seeQuestion();
+        currentQuestion.innerHTML = nextQ.quest();
 
         let optionA = document.querySelector("#a");
         let optionB = document.querySelector("#b");
