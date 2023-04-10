@@ -21,30 +21,6 @@ class Question {
         this.d = d;
         this.children = {};
     }
-   /*
-    getQuestion() {
-        return this.question;
-    }
-
-    getName() {
-        return this.name;
-    }
-
-    getA() {
-        return this.a;
-    }
-
-    getB() {
-        return this.b;
-    }
-
-    getC() {
-        return this.c;
-    }
-
-    getD() {
-        return this.d;
-    } */
 
 };
 
@@ -117,18 +93,31 @@ let youPeople = new WeddingMovie("You People", {"summary": "A white Jewish man a
 
 let palmSprings = new WeddingMovie("Palm Springs", {"summary": "A carefree young man happily seduces the maid of honor at a wedding - but when she follows him into a desert cave, she's pulled into his time loop.", "rated": "R"});
 
+let ticket2Paradise = new WeddingMovie("Ticket to Paradise", {"summary": "A long-divorced couple reunites at their daughter's destination wedding with the shared goal of getting her to call it off.", "rated": "PG-13"});
+
+let roughNight = new WeddingMovie("Rough Night", {"summary": "A bride-to-be's worlds collide when she brings together her best friends for a wild party -- and manslaughter.", "rated": "R"});
+
+let bachelorette = new WeddingMovie("Bachelorette", {"summary": "Three former high school mean girls are drafted as bridesmaids for someone they used to bully.", "rated": "R"});
+
+let corpseBride = new WeddingMovie("Corpse Bride", {"summary": "On the eve of his wedding, a hapless groom accidentally reanimates a long-dead spinster who insists that they are now man and wife.", "rated": "PG"});
+
+let peopleWeHate = new WeddingMovie("The People We Hate at the Wedding", {"summary": "Two bickering siblings make things worse in the week of celebrations before their half-sister's wedding.", "rated": "R"});
+
+let shotgun = new WeddingMovie("Shotgun Wedding", {"summary": "A couple's perfect destination wedding is ruined when priates take the guests hostage.", "rated": "R"});
+
 //  QUESTIONS //
 let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Ready for wedding season", "Male", "Female", "Both!");
 let maleProtag = new Question("Got it. Do you want something that's...", "Male protagonist", "Family-friendly", "As family-UNfriendly as you can");
 let femaleProtag = new Question("Female leads it is! Do you want...", "Female protagonist", "A fun, family-friendly movie", "Something more adult and risque");
 let ensemble = new Question("Are you looking for...", "More than one protagonist", "A single pair of protagonists", "An ensemble cast");
 let rootQComment = "Unfortunately I have not found any wedding movies with non-binary and/or trans protagonists. Please <a href='mailto:gretacwink@gmail.com'>@ me</a> if you have one!";
+
 rootQ.comment = rootQComment;
 rootQ.children.a = maleProtag;
 rootQ.children.b = femaleProtag;
 rootQ.children.c = ensemble;
 
-//////////YOU ARE AROUND HERE/////////
+//////////YOU ARE HERE/////////
 
 let mFF = new Question("Would you prefer a classic movie that might be in black and white, or something more modern?", "Family-friendly", "Ooo, hit me with a classic", "Oh, something modern");
 let mNotFF = new Question("Kids shouldn't be allowed at weddings anyway. Do you want...", "Not family-friendly", "A buddy comedy", "Something else");
