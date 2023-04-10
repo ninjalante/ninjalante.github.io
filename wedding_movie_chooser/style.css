@@ -1,4 +1,4 @@
-/*debug css
+/*
 * {
     outline: 1px solid red;
 } 
@@ -81,8 +81,13 @@ a {
     margin-top: 2%;
 }
 
-h1 #announcement {
-    font-size: 3rem;
+#announcement {
+    font-size: 6rem;
+}
+
+#movieRec h2 {
+    font-family: 'Handlee', cursive;
+    font-size: 5rem;
 }
 
 #movieRec p {

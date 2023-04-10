@@ -1,7 +1,8 @@
 class WeddingMovie {
-    constructor(movie, deets={}) {
+    constructor(movie, deets={}, name = null) {
         this.movie = movie;
         this.deets = deets;
+        this.name = name;
     }
 
     returnDeets() {
@@ -238,11 +239,16 @@ proposal.name = "Ryan Reynolds";
 let nostalgicOrModern = new Question("I've got some ideas. Do you want...", "Two protagonists", "A nostalgic classic", "Something more modern");
 let hiddenGem = new Question("I think I've got it. Do you want...", "Ensemble cast", "An instantly recognizable classic", "A hidden gem I've never heard of");
 
-ensemble.children.a = nostalgicOrModern;
+let stopMotion = new Question("Next question! Do you want...", "One couple", "a whismical stop-motion piece that's fun for the whole family", "Literally anything else");
+
+ensemble.children.a = stopMotion;
+stopMotion.children.a = corpseBride;
+corpseBride.name = "Hand-animated whimsy";
+stopMotion.children.b = nostalgicOrModern;
 ensemble.children.b = hiddenGem;
-hiddenGem.a = fourWeddingsFuneral;
+hiddenGem.children.a = fourWeddingsFuneral;
 fourWeddingsFuneral.name = "An instantly recognizable classic";
-hiddenGem.b = monsoon;
+hiddenGem.children.b = monsoon;
 monsoon.name = "A hidden gem that I will LOVE";
 
 nostalgicOrModern.children.a = princess;
