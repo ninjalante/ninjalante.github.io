@@ -133,7 +133,7 @@ oneNight.name = "Not a musical";
 mFF.children.b = fatherBride;
 fatherBride.name = "Modern";
 
-let fFF = new Question("Cool. You have some good options. Are you looking for...", "Family-friendly", "Something nostalgic", "Something fresh and new");
+let fFF = new Question("Cool. You have some fun options. Are you looking for...", "Family-friendly", "Something nostalgic", "Something fresh and new");
 let fNotFF = new Question("You've got some very different options. Do you want...", "Not family-friendly", "A story with interesting characters and conflicts", "A story with unnecessary amounts of GLAMOUR and DRAMA");
 femaleProtag.children.a = fFF;
 femaleProtag.children.b = fNotFF;

@@ -42,7 +42,7 @@ h2 {
 }
 
 aside {
-    font-family: "Cookie", cursive;
+    font-family: "Handlee", cursive;
     font-size: 2rem;
     padding-top: 10%;
     text-shadow: rgb(44, 41, 42) 1px 0 15px;
@@ -113,6 +113,7 @@ button {
 
 footer {
     visibility: hidden;
+    
 }
 
 /*-- mobile optimization --*/
@@ -143,5 +144,9 @@ footer {
 
     button {
         font-size: 4rem;
+        
     }
 }
+
+/*add some height and width for the button, fix the font and the left border
+maybe change the background? the font should definitely not be script for mobile, it's too hard to read*/
