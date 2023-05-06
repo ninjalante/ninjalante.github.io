@@ -134,9 +134,9 @@ footer {
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
     body {
         font-size: 12px;
-        background-image: url("./images/mobile_bgd.JPG");
+        background-image: url("./images/mob_bk2.jpeg");
         margin-top: 30%;
-        margin-left: 30%;
+        margin-left: 15%;
         margin-right: 15%;
         font-style: normal;
         align-items: center;
@@ -152,13 +152,29 @@ footer {
         margin-top: 30%;
     }
 
-    #questionButton h2, button, #landingPage h1, #landingPage h2, #questionButton aside {
+    #questionButton h2, #landingPage h1, #landingPage h2, #questionButton aside {
         font-family: "Handlee", normal;
+        color: #815a8d;
+        text-shadow: #e9ecf5 1px 0 10px;
+    }
+
+    #recommendation {
+        color: #815a8d;
+        text-shadow: #e9ecf5 1px 0 10px;
+    }
+
+    #path {
+        visibility: hidden;
+        opacity: 0%;
+        display: none;
     }
 
     button {
         font-size: 4rem;
-        
+        background: rgba(231,231,243,255);
+        color: #815a8d;
+        font-family: "Handlee", normal;
+        text-shadow: #e9ecf5 1px 0 10px;
     }
 }
 
