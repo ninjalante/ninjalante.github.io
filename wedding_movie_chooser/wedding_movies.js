@@ -280,7 +280,7 @@ nineties.children.b = matureSandler;
 //^
 matureSandler.children.a = weekOf;
 weekOf.name = "Adam Sandler was born in 1966. He probably watched the Moon Landing on TV.";
-matureSandler.b = myBoy;
+matureSandler.children.b = myBoy;
 myBoy.name = "Adam Sandler was born in 1966. He was in college when the Challenger exploded.";
 //^^
 let timeline = new Question("That's fine. How do you feel about timeline wackiness?", "I don't give A-damn S-damn-dler", "Love timeline stuff, so fun", "No thanks");

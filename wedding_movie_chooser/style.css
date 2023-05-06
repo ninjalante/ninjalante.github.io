@@ -136,8 +136,8 @@ footer {
         font-size: 12px;
         background-image: url("./images/mob_bk2.jpeg");
         margin-top: 30%;
-        margin-left: 15%;
-        margin-right: 15%;
+        margin-left: 10%;
+        margin-right: 10%;
         font-style: normal;
         align-items: center;
     }
@@ -175,6 +175,11 @@ footer {
         color: #815a8d;
         font-family: "Handlee", normal;
         text-shadow: #e9ecf5 1px 0 10px;
+        width: 50%;
+    }
+
+    #sayYes {
+        background: rgba(231,231,243,255);
     }
 }
 
