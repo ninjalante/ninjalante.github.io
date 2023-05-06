@@ -6,7 +6,7 @@ class WeddingMovie {
     }
 
     returnDeets() {
-        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "</p>" + "<p>Rated:" + this.deets.rated + "</p>";
+        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "</p>" + "<p>Rated: " + this.deets.rated + "</p>";
     }
 
 
@@ -289,6 +289,7 @@ sandler.children.b = timeline;
 //^
 let time = new Question("Awesome. A time loop like Groundhog Day, or alternate timelines like Sliding Doors?", "Timeline wackiness", "Groundhog Day time loop", "Sliding Doors alts");
 //^
+timeline.children.a = time;
 time.children.a = naked;
 naked.name = "Groundhog Day time loop";
 time.children.b = repeat;

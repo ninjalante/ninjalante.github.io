@@ -1,13 +1,13 @@
 /*
 * {
     outline: 1px solid red;
-} 
-*/
+} */
+
 
 
 body {
     font-size: 16px;
-    background-image: url("images/background_img2.jpeg");
+    background-image: url("images/bgrd_1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -33,6 +33,13 @@ h2 {
     color: rgb(237, 229, 219);
     margin-top: 2%;
     margin-bottom: 2%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-family: "Sacramento", cursive;
+    color: rgb(237, 229, 219);
+    text-shadow: rgb(44, 41, 42) 1px 0 15px;
 }
 
 #landingPage {
@@ -82,7 +89,7 @@ a {
 }
 
 #announcement {
-    font-size: 6rem;
+    font-size: 7rem;
 }
 
 #movieRec h2 {
@@ -100,8 +107,8 @@ button {
     text-shadow: rgb(44, 41, 42) 1px 0 10px;
     font-family: "Handlee", cursive;
     font-size: 4rem;
-    width: auto;
-    background: rgb(208, 191, 202);
+    max-width: 70%;
+    background: #c9d7e4;
     border-style: hidden;
     border-radius: 15px;
     box-shadow: 1px 1px 10px rgb(44, 41, 42);
@@ -111,8 +118,15 @@ button {
     margin-top: 1%;
 }
 
+#recommendation button {
+    font-size: 3rem;
+    font-family: "Handlee", cursive;
+    
+}
+
 footer {
     visibility: hidden;
+    text-align: center;
     
 }
 
