@@ -1,0 +1,12 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-image: url("./images/tattooine_desktop.jpeg");
+    background-color: #FCE5B3;
+    color: #FCE5B3;
+    font-family: "Bungee Inline", cursive;
+}
+
+h1 {
+    font-size: 5rem;
+}
