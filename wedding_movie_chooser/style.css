@@ -135,7 +135,7 @@ footer {
     body {
         font-size: 12px;
         background-image: url("./images/mob_bk2.jpeg");
-        margin-top: 30%;
+        margin-top: 15%;
         margin-left: 10%;
         margin-right: 10%;
         font-style: normal;
@@ -158,9 +158,10 @@ footer {
         text-shadow: #e9ecf5 1px 0 10px;
     }
 
-    #recommendation {
+    #recommendation, #announcement, #movieRec {
         color: #815a8d;
         text-shadow: #e9ecf5 1px 0 10px;
+        font-family: "Lobster Two", cursive;
     }
 
     #path {
