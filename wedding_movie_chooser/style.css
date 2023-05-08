@@ -1,19 +1,24 @@
 /*
 * {
     outline: 1px solid red;
-} */
+} 
+*/
 
-
+html {
+    margin-bottom: 0;
+}
 
 body {
     font-size: 16px;
     background-image: url("images/bgrd_1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: #c9d7e4;
     text-align: center;
     margin-top: 0%;
     margin-left: 15%;
     margin-right: 15%;
+    margin-bottom: 0%;
 }
 
 h1 {
@@ -30,6 +35,7 @@ h2 {
     text-shadow: rgb(44, 41, 42) 1px 0 15px;
     padding-left: 10%;
     padding-right: 10%;
+    width: auto;
     color: rgb(237, 229, 219);
     margin-top: 2%;
     margin-bottom: 2%;
@@ -51,7 +57,8 @@ h3 {
 aside {
     font-family: "Handlee", cursive;
     font-size: 2rem;
-    padding-top: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
     text-shadow: rgb(44, 41, 42) 1px 0 15px;
     color: rgb(237, 229, 219);
 }
@@ -124,11 +131,16 @@ button {
     
 }
 
-footer {
-    visibility: hidden;
-    text-align: center;
-    
+#startOver {
+    padding: none;
+    text-align: end;
+    font-size: 4rem;
 }
+
+#startOver:hover {
+    cursor: pointer;
+}
+
 
 /*-- mobile optimization --*/
 @media only screen and (min-width: 320px) and (max-width: 480px), (orientation: portrait) {
@@ -149,16 +161,16 @@ footer {
     }
 
     #questionButton h2 {
-        margin-top: 30%;
+        margin-top: 20%;
     }
 
-    #questionButton h2, #landingPage h1, #landingPage h2, #questionButton aside {
+    #questionButton h2, #questionButton aside {
         font-family: "Handlee", normal;
         color: #815a8d;
         text-shadow: #e9ecf5 1px 0 10px;
     }
 
-    #recommendation, #announcement, #movieRec {
+    #recommendation, #announcement, #movieRec h2, #landingPage h1, #landingPage h2 {
         color: #815a8d;
         text-shadow: #e9ecf5 1px 0 10px;
         font-family: "Lobster Two", cursive;
@@ -179,10 +191,17 @@ footer {
         width: 50%;
     }
 
-    #sayYes {
+    #sayYes, #startOver {
         background: rgba(231,231,243,255);
+    }
+
+    #startOver h2{
+        align-self: center;
+        font-family: "Lobster Two", cursive;
+        color: #815a8d;
+        border: #c9d7e4;
+        border-style: solid;
+        border-radius: 15px;
     }
 }
 
-/*add some height and width for the button, fix the font and the left border
-maybe change the background? the font should definitely not be script for mobile, it's too hard to read*/

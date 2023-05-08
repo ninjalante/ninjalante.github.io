@@ -6,7 +6,7 @@ class WeddingMovie {
     }
 
     returnDeets() {
-        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "</p>" + "<p>Rated: " + this.deets.rated + "</p>";
+        return "<h2>" + this.movie + "</h2>" + "<p>" + this.deets.summary + "<br><em>Rated: " + this.deets.rated + "</em></p>";
     }
 
 

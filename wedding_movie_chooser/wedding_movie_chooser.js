@@ -18,6 +18,11 @@ function sayYes() {
 
 };
 
+function startOver() {
+    document.location.reload();
+    
+};
+
 let path = [];
 
 function askQuestion(answer) {
@@ -73,7 +78,6 @@ function askQuestion(answer) {
             optionD.style.visibility = "hidden";
             optionD.style.opacity = "0%";
             optionD.style.width = "0%";
-
         };
 
     } else {
