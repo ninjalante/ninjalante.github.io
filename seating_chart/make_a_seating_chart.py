@@ -152,6 +152,7 @@ class Wedding():
         for guest in self.guest_list:
             #look at guest name
             print(f"Seating {guest.name}")
+        return self.table_list.print_chart()
                 #look at people they want to sit with
                 #check people they want to sit with for conflicts
                 ##add a while loop
@@ -200,13 +201,14 @@ Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_o
 print(Hayden_Forrester.get_info())
 #HF_Wedding = Wedding(Hayden_Forrester, hayden_forrester_wedding_guest_list)
 HF_Wedding = Wedding(Hayden_Forrester, [lorelai, luke, rory, jess])
-print(lorelai.get_deets())
+#print(lorelai.get_deets())
 
 
 
-#print(Hayden_Forrester.print_chart())
-#print(Hayden_Forrester.seat_guest(lorelai, 1))
-#print(Hayden_Forrester.seat_guest(luke, 1))
-#print(Hayden_Forrester.seat_guest(rory, 1))
-#print(lorelai.seated)
-
+print(Hayden_Forrester.print_chart())
+print(Hayden_Forrester.seat_guest(lorelai, 1))
+print(Hayden_Forrester.seat_guest(luke, 1))
+print(Hayden_Forrester.seat_guest(rory, 1))
+print(lorelai.seated)
+print(Hayden_Forrester.seat_guest(taylor, 2))
+print(HF_Wedding.make_a_seating_chart(num_of_guests, [], [lorelai, luke, rory, jess]))
