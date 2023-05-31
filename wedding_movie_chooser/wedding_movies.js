@@ -106,6 +106,30 @@ let peopleWeHate = new WeddingMovie("The People We Hate at the Wedding", {"summa
 
 let shotgun = new WeddingMovie("Shotgun Wedding", {"summary": "A couple's perfect destination wedding is ruined when priates take the guests hostage.", "rated": "R"});
 
+let bestMan = new WeddingMovie("The Best Man", {"summary": "On the eve of his wedding, a groom learns all about his bride's past...from his best man.", "rated": "R",});
+
+let plusOne = new WeddingMovie("Plus One", {"summary": "Two college friends - one happily single, one reeling from a breakup - agree to be each other's dates for a summer of college friends' weddings.", "rated": "R"});
+
+let somethingBorrowed = new WeddingMovie("Something Borrowed", {"summary": "A timid young woman regrets letting her best friend swoop on the guy she likes...but when they get engaged, her feelings get stronger.", "rated": "PG"});
+
+let runaway = new WeddingMovie("Runaway Bride", {"summary": "A journalist who's fired for printing an erroneous story about a three-time altar-dumping bride hunts the woman down to coax out her real story and get his job back.", "rated": "PG"});
+
+let sideways = new WeddingMovie("Sideways", {"summary": "An insecure man takes a former soap opera star on a picturesque trip through wine country for his stag do, but the groom's behavior complicates his friend's plans.", "rated": "R"});
+
+let madeHonor = new WeddingMovie("Made of Honor", {"summary": "A womanizer realizes his feelings for his female best friend after she gets engaged.", "rated": "PG-13"});
+
+let brideWars = new WeddingMovie("Bride Wars", {"summary": "Two lifelong best friends schedule their dream weddings at the Plaza on the same day at the same time - and set out to ruin each other's big day.", "rated": "PG"});
+
+let bestFriends = new WeddingMovie("My Best Friend's Wedding", {"summary": "When a young woman discovers her 'marriage deal' with her best friend won't go through because he recently got engaged to a younger woman, she sets out to destroy their relationship.", "rated": "PG-13"});
+
+let weddingDate = new WeddingMovie("The Wedding Date", {"summary": "Desperate to impress her ex-fiance at her sister's wedding, a young woman hires a handsome and confident escort to pose as her boyfriend.", "rated": "PG-13"});
+
+let politeSociety = new WeddingMovie("Polite Society", {"summary": "A young woman obsessed with martial arts movies sets out to 'rescue' her sister from her upcoming marriage.", "rated": "PG-13"});
+
+let because = new WeddingMovie("Because I Said So", {"summary": "A divorced mom of three daughters worries that her youngest doesn't take relationships seriously enough, and secretly sets her up with a series of men she's personally vetted.", "rated": "PG-13"});
+
+let monster = new WeddingMovie("Monster-in-Law", {"summary": "A wealthy mother recovering from a mental breakdown target the young woman that her son brings home to introduce to her.", "rated": "PG-13"});
+
 //  QUESTIONS //
 let rootQ = new Question("Are you looking for a movie with a male or female protagonist?", "Ready for wedding season", "Male", "Female", "Both!");
 //^
@@ -182,17 +206,42 @@ let substance = new Question("But, like, HOW complicated and difficult?", "Somet
 //^
 fNotFF.children.a = substance;
 //^
-let plane15 = new Question("All you need to do is choose your leading man!", "Watched on a plane 15 years ago", "Matthew McConaghey", "James Marsden");
+let plane15 = new Question("All you need to do is choose your leading man!", "Watched on a plane 15 years ago", "Matthew McConaghey", "James Marsden", "Dermot Mulroney");
 //^
 let drama = new Question("Which of these storylines appeals to you more?", "Drama-rama", "A recovering addict sees her family for the first time in years", "Former high school classmates see each other for the first time in years");
 //^
-let moreFun = new Question("How much do you want to be disgusted by capitalist propaganda and consumer culture?", "Melodramatic but fun", "I want an obscene capitalist fantasy", "I want to be reminded how poor I am");
+let moreFun = new Question("Do you want to hate the protagonist?", "More fun please", "Yes, I want to feel the hate flowing through me", "No, I'd rather have someone likable");
 //^
+let hate = new Question("Which character are you?", "Filled with hate", "Carrie", "Miranda", "Samantha", "Charlotte");
+let romp = new Question("Do you want a <em>rom</em> com or a <em>romp</em> com?", "A likable protagonist", "Rom com please", "Romp com?! Absolutely");
+let romCom = new Question("How much do you want to indulge in obscene capitalist fantasy?", "I don't like rom-com-related wordplay", "As much as humanly possible", "Help me, I'm poor");
+romCom.children.a = crazyRichA;
+crazyRichA.name = "No one likes free stuff more than rich people";
+romCom.children.b = bridesmaids;
+bridesmaids.name = "Help me, I'm poor";
+romp.children.a = romCom;
+romp.children.b = politeSociety;
+politeSociety.name = "Time to romp it up!"
 let easyToConsume = new Question("I don't blame you. Do you want...", "Easy to consume", "Something you probably watched on a plane 15 years ago", "Something that's probably new to you");
 //^
 fNotFF.children.b = easyToConsume;
 //^
-let newToYou = new Question("One more question. Do you want a movie that's...", "New to me", "Laugh-out-loud outrageous", "Sweet and comforting");
+let newToYou = new Question("How do you feel about meddling moms?", "New to me", "Sounds good! Hits close to home", "Sounds AWFUL. Hits TOO close to home");
+easyToConsume.children.a = plane15;
+//^
+easyToConsume.children.b = newToYou;
+meddlingMoms = new Question("Pick a feminist icon.", "Moms be a-meddlin'", "Jane Fonda", "Diane Keaton");
+newToYou.children.a = meddlingMoms;
+meddlingMoms.children.a = monster;
+monster.name = "Jane Fonda";
+meddlingMoms.children.b = because;
+because.name = "Diane Keaton";
+laughSweet = new Question("Final question. Do you want something that's laugh-out-loud outrageous, or sweet and comforting?", "No manipulative parents please", "Laugh-out-loud outrageous", "Sweet and comforting");
+newToYou.children.b = laughSweet;
+laughSweet.children.a = roughNight;
+roughNight.name = "outRAgeous!";
+laughSweet.children.b = muriels;
+muriels.name = "Toni Collette forever";
 //^
 substance.children.a = drama;
 //^
@@ -200,39 +249,31 @@ drama.children.a = rachel;
 rachel.name = "Recovering alcoholic";
 //^
 substance.children.b = moreFun;
+moreFun.children.a = hate;
+moreFun.children.b = romp;
 //^
-moreFun.children.b = bridesmaids;
-bridesmaids.name = "Help me, I'm poor";
+
 //^
-easyToConsume.children.a = plane15;
-//^
-easyToConsume.children.b = newToYou;
-//^
-newToYou.children.a = roughNight;
-roughNight.name = "Laugh-out-loud funny";
-newToYou.children.b = muriels;
-muriels.name = "Sweet and feel-good";
 //^^
 plane15.children.a = weddingPlanner;
 weddingPlanner.name = "McConaghey";
 plane15.children.b = dresses27;
 dresses27.name = "Marsden";
+plane15.children.c = weddingDate;
+weddingDate.name = "Mulroney -- wow, really?!";
 //^^
 drama.children.b = bachelorette;
 bachelorette.name = "Recovering high schoolers";
 //^
-
-let obscene = new Question("Message received. Only one thing left to ask. Are you...", "Obscene consumerism", "a Carrie", "a Samantha", "a Miranda", "a Charlotte");
-//^
-moreFun.children.a = obscene;
-//^
-obscene.children.a = sexCity;
-obscene.children.b = sexCity;
-obscene.children.c = sexCity;
+hate.children.a = bestFriends;
+bestFriends.name = "I literally can't stomach this movie. Good luck";
+hate.children.b = sexCity;
+hate.children.c = sexCity;
+hate.children.d = sexCity;
 sexCity.name = "One woman's trash is another woman's treasure";
-obscene.children.d = crazyRichA;
-crazyRichA.name = "No one loves free stuff more than rich people";
 //^
+
+
 let buddy = new Question("There's some fun buddy comedies. Do you want a movie with...", "Buddy comedy", "Actors who are easily recognized from TV", "Older actors your mom is weird about");
 //^
 mNotFF.children.a = buddy;
@@ -245,7 +286,7 @@ let edHelms = new Question("How raunchy do you like it?", "Ed Helms", "As raunch
 //^
 youngFolks.children.a = edHelms;
 //^
-let crash = new Question("I've only got two movies left. I guess...do you want to watch something you've already seen, or something you slept on?", "No Ed Helms", "Give me what I came here expecting", "I'm open to trying something new");
+let crash = new Question("I've only got two movies left. I guess...do you want to watch something you've already seen, or something you slept on?", "No Ed Helms", "Give me what I came here expecting", "I'm open to trying something new", "Give me something amazing");
 //^
 youngFolks.children.b = crash;
 //^
@@ -253,6 +294,8 @@ crash.children.a = crashers;
 crashers.name = "I came here so someone would tell me it was okay to watch Wedding Crashers again.";
 crash.children.b = loveYouMan;
 loveYouMan.name = "Paul Rudd is People's Sexiest Man Alive 2021";
+crash.children.c = sideways;
+sideways.name = "There is full-frontal male nudity pressed up against a window. Get ready for that";
 //^^
 
 edHelms.children.a = hangover;
@@ -295,7 +338,7 @@ naked.name = "Groundhog Day time loop";
 time.children.b = repeat;
 repeat.name = "Sliding Doors timelines";
 //^
-let stiller = new Question("Ok, no Sandler, no timeline stuff. Who do you prefer as a leading man?", "Normal time stuff", "Ben Stiller", "Ryan Reynolds");
+let stiller = new Question("Ok, no Sandler, no timeline stuff. Who do you prefer as a leading man?", "Normal time stuff", "Ben Stiller", "Ryan Reynolds", "Patrick Dempsey");
 //^
 timeline.children.b = stiller;
 //^
@@ -303,10 +346,12 @@ stiller.children.a = parents;
 parents.name = "Ben Stiller";
 stiller.children.b = proposal;
 proposal.name = "Ryan Reynolds";
+stiller.children.c = madeHonor;
+madeHonor.name = "Patrick Dempsey";
 //^^
 let nostalgicOrModern = new Question("I've got some ideas. Do you want...", "Live-action", "A nostalgic classic", "Something more modern");
 //^
-let hiddenGem = new Question("I think I've got it. Do you want...", "Ensemble cast", "An instantly recognizable classic", "A hidden gem I've never heard of");
+let hiddenGem = new Question("I think I've got it. Do you want...", "Ensemble cast", "An instantly recognizable classic", "A hidden gem I've never heard of", "Something I'm not expecting");
 //^
 let stopMotion = new Question("Next question! Do you want...", "One couple", "a whismical stop-motion piece that's fun for the whole family", "Literally anything else");
 //^
@@ -325,22 +370,33 @@ fourWeddingsFuneral.name = "An instantly recognizable classic";
 hiddenGem.children.b = monsoon;
 monsoon.name = "A hidden gem that I will LOVE";
 //^
+ensemble.children.c = bestMan;
+bestMan.name = "Something you aren't expecting"
 
 nostalgicOrModern.children.a = princess;
 princess.name = "A nostalgic classic";
 //^
 let cynical = new Question("Are you feeling...", "Something new", "a somewhat cynical, but ultimately sweet, and certainly more realistic, look at relationships", "a 100% bonkers fairy tale");
 //^
-let fairyTale = new Question("One more question! What kind of fantasy do you need today?", "100% bonkers fairy tale", "A non-stop and ridiculous thrill ride", "A romance that will endear itself to you more than you expect");
+let fairyTale = new Question("Who's the princess in your fairy tale?\nIs it J.Lo?", "A 100% bonkers fairy tale", "Of COURSE", "No, someone less objectively talented");
 //^
 nostalgicOrModern.children.b = cynical;
 //^
 cynical.children.b = fairyTale;
 //^
-fairyTale.children.a = shotgun;
-shotgun.name = "Something ridiculous and adventure-y";
-fairyTale.children.b = marryMe;
-marryMe.name = "A love story so unbelievable that I can't help but enjoy it";
+let jLO = new Question("Last question.\nDo you want...", "J.Lo", "A non-stop and very ridiculous thrill ride", "An improbable romance that will endear itself to you more than you expect");
+fairyTale.children.a = jLO;
+let someoneElse = new Question("All right, it's your movie night.\nWhich leading lady appeals to you most?", "Not J.Lo, for some reason", "Julia Roberts", "Anne Hathaway", "Ginnifer Goodwin");
+fairyTale.children.b = someoneElse;
+jLO.children.a = shotgun;
+jLO.children.b = marryMe;
+someoneElse.children.a = runaway;
+runaway.name = "Julia Roberts";
+someoneElse.children.b = brideWars;
+brideWars.name = "Actually, she prefers Annie";
+someoneElse.children.c = somethingBorrowed;
+somethingBorrowed.name = "Ginnifer Goodwin";
+
 //^^
 
 let cringe = new Question("I think I've got something, but I have to know, do you like topically-relevant cringe comedy?", "More cynical, sweet, and realistic", "no thank you", "BRING ON THE CRINGE");
@@ -354,7 +410,7 @@ let howRealistic = new Question("Low cringe, ok.\n But like, HOW realistic?", "N
 //^
 cringe.children.a = howRealistic;
 //^
-let baggage = new Question("What kind of couple appeals to you?", "Mostly realistic", "Exes with baggage,", "Strangers with baggage", "Siblings with baggage");
+let baggage = new Question("What kind of couple appeals to you?", "Mostly realistic", "Exes with baggage,", "Strangers with baggage", "Siblings with baggage", "Friends with 100% no baggage, really!");
 //^
 howRealistic.children.a = baggage;
 //^
@@ -364,6 +420,8 @@ baggage.children.b = destination;
 destination.name = "Strangers with baggage";
 baggage.children.c = peopleWeHate;
 peopleWeHate.name = "Siblings with baggage";
+baggage.children.d = plusOne;
+plusOne.name = "Friends with no baggage at all";
 //^^^
 howRealistic.children.b = palmSprings;
 palmSprings.name = "I'm still able to draw life lessons from movies that use fun devices";
