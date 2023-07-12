@@ -1,0 +1,44 @@
+html {
+    --revolution-yellow: #e5bf43;
+    --shit-brown: #3b2d11;
+    --acab-purple: #6e43e5;
+    --phlegm-green: #59e543;
+}
+
+* {
+    background-color: var(--shit-brown);
+    color: var(--phlegm-green);
+}
+
+body {
+    font-family: 'Iceland', sans-serif;
+}
+
+h1 {
+    font-family: 'Bungee Shade', sans-serif;
+    background-color: var(--shit-brown);
+}
+
+.purple {
+    background-color: var(--acab-purple);
+}
+
+header img {
+    height: 200px;
+    width: 200px;
+}
+
+body img {
+    height: 200px;
+    width: 200px;
+}
+
+#cover {
+    object-fit: cover;
+    height: 375px;
+    width: 100%;
+}
+
+.who {
+    height: 200px;
+}
