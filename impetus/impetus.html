@@ -12,66 +12,80 @@
         <section class="purple">
             <img src="./images/splash.jpeg" alt="A yellow background says 'eat the rich'" id="cover">
             <h1>Memesville Horndogs HQ</h1>
-            <nav>
-                <a>What We Do</a>
-                <a>Why We Do It</a>
-                <a>Who We Are</a>
-                <a>Contact Us</a>
+            <nav class="container">
+                <a href="#what">What We Do</a>
+                <a href="#why">Why We Do It</a>
+                <a href="#who">Who We Are</a>
+                <a href="#contact">Contact Us</a>
             </nav>
         </section>
     </header>
     <body>
         <div>
-            <h2>What We Do</h2>
+            <h2 id="what">What We Do</h2>
             <div class="container">
-                <img src="./images/meme2.jpeg">
-                <h3>Recreation</h3>
-                <p></p>
-                <img src="./images/meme12.jpeg">
-                <h3>Recommendation</h3>
-                <p></p>
-                <img src="./images/meme8.jpeg">
-                <h3>Revolution</h3>
-                <p></p>
+                <div class="container cards purple">
+                    <img src="./images/meme2.jpeg">
+                    <div class="block">
+                        <h3>Recreation</h3>
+                        <p>We tell stories to make you feel seen, heard, and felt.</p>
+                    </div>
+                </div>
+                <div class="container cards purple">
+                    <img src="./images/meme12.jpeg">
+                    <div>
+                        <h3>Recommendation</h3>
+                        <p>We recommend experiences to make you feel thoughtful, angry, and horny.</p>
+                    </div>
+                </div>
+                <div class="container cards purple">
+                    <img src="./images/meme8.jpeg">
+                    <div class="block">
+                        <h3>Revolution</h3>
+                        <p>We're too old to be the children of the next revolution, so instead, we'll be the fun uncles.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <img src="./images/meme13.jpeg"><img src="./images/meme5.jpeg">
-            <div class="block">
-                <h2>Why We Do It</h2>
+        <h2 id="why">Why We Do It</h2>
+        <div class="container purple">
+            <img src="./images/meme13.jpeg" class="purple"><img src="./images/meme5.jpeg" class="purple">
+            <div class="block cards">
                 <h3>We like to chill.<br>We like to chat.<br>We like to burn shit down.</h3>
             </div>
-            <img src="./images/meme4.jpeg"><img src="./images/meme3.jpeg">
+            <img src="./images/meme4.jpeg" class="purple"><img class="purple" src="./images/meme3.jpeg">
         </div>
-        <h2>Who We Are</h2>
+        <h2 id="who">Who We Are</h2>
         <div class="container">
-            <div>
+            <div class="cards purple">
                 <img class="who" src="./images/meme11.jpeg">
-                <h4>Skullcracker</h4>
-                <p></p>
+                <h3>Skullcracker</h3>
+                <p>Will force-feed you cherries.</p>
             </div>
-            <div>
+            <div class="cards purple">
                 <img class="who" src="./images/meme7.jpeg">
-                <h4>Cornballer</h4>
-                <p></p>
+                <h3>Cornballer</h3>
+                <p>Will hurt your feelings.</p>
             </div>
-            <div>
+            <div class="cards purple">
                 <img class="who" src="./images/meme10.jpeg">
-                <h4>Peechupeechu</h4>
-                <p></p>
+                <h3>Peechupeechu</h3>
+                <p>Will beat you at every game.</p>
             </div>
-            <div>
+            <div class="cards purple">
                 <img class="who" src="./images/meme14.jpeg">
-                <h4>Pussysparker</h4>
-                <p></p>
+                <h3>Pussysparker</h3>
+                <p>Will fall face-first on your crotch.</p>
             </div>
         </div>
     </body>
     <footer class="container">
-        <h3>Contact Us<br>If You Dare</h3>
-        <a id="email"></a>
-        <a id="facebook"></a>
-        <a id="instagram"></a>
-        <a id="threads"></a>
+        <h3 id="contact">Contact Us, If You Dare</h3>
+        <nav class="container">
+            <a id="email">horndogs@memesville.org</a>
+            <a id="facebook">Memesville Horndogs</a>
+            <a id="instagram">@memes.horn.ville.dogs</a>
+            <a id="threads">@memes.horn.ville.dogs</a>
+        </nav>
     </footer>
 </html>
