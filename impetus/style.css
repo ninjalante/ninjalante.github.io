@@ -45,6 +45,7 @@ p {
     background-color: var(--acab-purple);
     padding: 15px 10px;
     border: var(--revolution-yellow) 2px solid;
+    min-height: 200px;
 }
 
 nav.container {
@@ -88,5 +89,71 @@ div.container {
 
 .cards {
     width: 100%;
-    height: auto;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 576px), (orientation: portrait) {
+    html {
+        max-width: max-content;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    div.container, .purple {
+        display: block;
+    }
+
+    .container .cards .purple {
+        display: inline-flex;
+    }
+
+    .container .purple {
+
+    }
+
+    .cards .purple {
+        
+
+    }
+
+    h1 {
+        max-width: 80%;
+    }
+
+    #cover {
+        object-fit: cover;
+        object-position: center;
+        
+    }
+    
+
+}
+    /*
+    
+    body {
+        width: 100%;
+        min-height: 500px;
+        margin: none;
+    }
+
+    div.container, .purple {
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 8em;
+    }
+
+    header {
+        margin: 0 0;
+    }
+
+    header img {
+        width: max-content;
+    }
+*/
