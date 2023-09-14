@@ -50,10 +50,10 @@ p {
 
 nav.container {
     display: inline-flex;
-    font-size: 2em;
+    font-size: 3em;
 }
 
-a {
+nav a {
     padding: 0px 20px;
 }
 
@@ -81,27 +81,35 @@ div.container {
     object-fit: cover;
     height: 375px;
     width: 100%;
-}
-
-.who {
-    height: 200px;
-}
+} 
 
 .cards {
     width: 100%;
 }
 
+footer {
+    margin-top: 25px;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+i {
+    margin-right: 5px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 576px), (orientation: portrait) {
     html {
-        max-width: max-content;
         display: flex;
         text-align: center;
         align-items: center;
         font-size: 16px;
     }
 
-    div.container, .purple {
+    div.container {
         display: block;
+        width: 100%;
     }
 
     .container .cards .purple {
@@ -109,51 +117,17 @@ div.container {
     }
 
     .container .purple {
-
+        background-color: none;
     }
 
     .cards .purple {
-        
+        background-color: none;
 
     }
 
     h1 {
-        max-width: 80%;
-    }
-
-    #cover {
-        object-fit: cover;
-        object-position: center;
-        
+        max-width: 100%;
     }
     
 
 }
-    /*
-    
-    body {
-        width: 100%;
-        min-height: 500px;
-        margin: none;
-    }
-
-    div.container, .purple {
-        display: inline-flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    h1 {
-        font-size: 8em;
-    }
-
-    header {
-        margin: 0 0;
-    }
-
-    header img {
-        width: max-content;
-    }
-*/
