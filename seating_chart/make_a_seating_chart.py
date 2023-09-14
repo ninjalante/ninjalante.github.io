@@ -201,14 +201,11 @@ Hayden_Forrester = sc.Tables('Gigi Hayden-Clara Forrester', num_of_guests, num_o
 print(Hayden_Forrester.get_info())
 #HF_Wedding = Wedding(Hayden_Forrester, hayden_forrester_wedding_guest_list)
 HF_Wedding = Wedding(Hayden_Forrester, [lorelai, luke, rory, jess])
-#print(lorelai.get_deets())
 
-
+test = wg.Guest('Fart Butt', 5, [lorelai], [luke])
 
 print(Hayden_Forrester.print_chart())
-print(Hayden_Forrester.seat_guest(lorelai, 1))
-print(Hayden_Forrester.seat_guest(luke, 1))
-print(Hayden_Forrester.seat_guest(rory, 1))
-print(lorelai.seated)
-print(Hayden_Forrester.seat_guest(taylor, 2))
-print(HF_Wedding.make_a_seating_chart(num_of_guests, [], [lorelai, luke, rory, jess]))
+print(lorelai.get_vip_level())
+print(jess.vip_level)
+
+

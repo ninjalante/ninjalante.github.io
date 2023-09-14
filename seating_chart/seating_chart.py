@@ -75,9 +75,3 @@ class Tables():
 
  #hot damn! you fixed that all by yourself. there was some Googling but everyone Googles. and there was no crying.  
     
-
-
-#test = Tables("test", 60, 12)
-#print(test.has_room(4))
-#print(test.seat_guest({'name': 'Lorelai', 'seated': False}, 4))
-#print(test.seat_guest({'name': 'Luke', 'seated': False}, 4))
