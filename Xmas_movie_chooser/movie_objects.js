@@ -360,6 +360,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Best. Christmas. Ever!",
+        myScore: 75,
+        summary: "",
+        comments: "",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: true
+    },
+    {
         title: "Bridget Jones's Diary",
         myScore: 80,
         summary: "Finding herself single on another Christmas, a young woman who specializes in making a fool of herself finds that things start to go her way once she embraces it.",
