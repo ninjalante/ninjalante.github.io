@@ -718,9 +718,9 @@ let XmasMovies = [
     },
     {
         title: "Die Hard",
-        myScore: 95,
+        myScore: 100,
         summary: "A vacationing NYPD officer flies to L.A. to reconcile with his estranged wife, only to find her workplace Christmas party overrun by terrorists.",
-        comments: "It's a perfect movie but it doesn't exactly get me into the Christmas spirit.",
+        comments: "After introspection and prayer I have recently changed my opinion about the Christmassy nature of this movie. As it's about upsetting tables and raging against the machine, I think our Lord and Savior Jesus Christ would approve. 100/100!",
         romance: false,
         musical: false,
         mistakenIdentity: true,
