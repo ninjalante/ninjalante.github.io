@@ -21,6 +21,24 @@ let XmasMovies = [
         childActor: true,
         familyFriendly: false
     },
+    {
+        title: "A Brush With Christmas",
+        myScore: 48,
+        summary: "A reluctant chef finds herself pulled back into her passion for painting after an architectural illlustrator submits her unfinished painting to a local contest.",
+        comments: "As someone who uses both a brush and a pencil to create art, I find several scenes of this movie personally offensive. Are there painters who really do detail as they go???? That's insane!!!!!!!!!! Right? It's not just me, right?! This isn't a paint-by-numbers (which is fine to do if you like to do them). Start with the lightest color and the least defined shapes and go on from there. Right???? Oh and also NEVER close your eyes when you're painting or drawing. That's the opposite of how it works",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: false,
+        grief: true
+    },
     {   title: "A California Christmas",
         myScore: 43,
         summary: "In order to win his mother's approval, a lawyer poses as a farm hand in order to coerce a struggling farmess into selling her land.",
@@ -123,6 +141,25 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Christmas on Mistletoe Farm",
+        myScore: 62,
+        summary: "An overwhelmed widower needs to sell an inherited farm and nail a marketing pitch - but his five young kids have different plans.",
+        comments: "A bunch of British actors doing a hoedown isn't the *most* appropriated thing I've ever seen in a Netflix movie, but it's pretty painful. Kids will like it, probably.",
+        romance: true,
+        musical: true,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true,
+        grief: true,
+        forKids: true
+    },
+    {
         title: "A Christmas Prince",
         myScore: 56,
         summary: "A journalist breaks into a foreign royal family's home and poses as a new employee so she can get the scoop on the heir's plans to take the throne...or not.",
@@ -171,8 +208,8 @@ let XmasMovies = [
         famousActor: true,
         childActor: false,
         familyFriendly: true
-        },
-        {
+},        
+{
         title: "A Christmas Story",
         myScore: 100,
         summary: "A man recounts the Christmas that he asked his parents for an air rifle, beat up the school bully, and discovered that prizes are pieces of junk.",
@@ -239,6 +276,7 @@ let XmasMovies = [
         famousActor: true,
         childActor: false,
         familyFriendly: true,
+        forKids: true
     },
     {
         title: 'A Kindhearted Christmas',
@@ -255,6 +293,23 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: true,
+        familyFriendly: true
+    },
+    {
+        title: "A Merry Christmas Wish",
+        myScore: 68,
+        summary: "A successful career woman who's tasked as the executor of her great uncle's estate is surprised to learn that she inherited his farm.",
+        comments: "This was just...meh. Nothing spectacular, but nothing really bad either. Easy to watch but forgettable.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
         familyFriendly: true
     },
     {
@@ -309,6 +364,24 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "About a Boy",
+        myScore: 88,
+        summary: "A 30something man-child who's never had a real job discovers that dating single moms is easy if he pretends to be a single dad -- until one of their kids catches him in the lie and blackmails him into being his father figure.",
+        comments: "Despite growing up in the 90s, I had never liked Hugh Grant -- until I saw this movie. Dude got stuck in rom-coms after doing Four Weddings and Sense&Sensi back-to-back and this was his way out. Goddamn. The final talent show scene always destroys me. Also -- the soundtrack slaps. All original music. Thank you, Badly Drawn Boy. CW: depression, attempted suicide",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: false,
+        holiday: "New Year's Eve"
+    },
+    {
         title: "Alien Xmas",
         myScore: 85,
         summary: "An alien learns the true meaning of Christmas when he comes to Earth and is mistaken for a child's toy.",
@@ -323,7 +396,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: false,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        forKids: true
     },
     {
         title: "Angels in the Snow",
@@ -360,10 +434,45 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Baking All The Way",
+        myScore: 58,
+        summary: "A celebrity pastry chef finds the perfect gingerbread recipe for her new cookbook - but the owner of the recipe is reluctant to give up a family secret when his bakery's future is on the line.",
+        comments: "This one felt like the leads had never met before their first scene and in between takes they would try to get to know each other to create some chemistry but they had nothing in common and grew to hate each other more and more. And then the movie was filmed in three days.  Colin Mochrie, though, is an absolute delight",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: true,
+        realMagic: false,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: true,
+        grief: true
+    },
+    {
+        title: "Batman Returns",
+        myScore: 73,
+        summary: "A caped crimefighter tries to undo the havoc wrought by a mistreated penguin, a vengeful cat, and a standard-issue bad guy.",
+        comments: "I'll admit that I've only seen this once. I guess I...just am not that into the Burtonverse anymore. I remember being overwhelmed by the Penguin's backstory because it's frigging sad, and genuinely hating the bad guy for how he treats Selina. There is one more thing I remember: when the bad guy dies, there's an over-the-top reveal of the body that made me laugh out loud. Campy, kind of Christmassy fun",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: false
+    },
+    {
         title: "Best. Christmas. Ever!",
         myScore: 75,
-        summary: "",
-        comments: "",
+        summary: "A woman disappointed with her picture-imperfect life spends the holidays with a college friend who seems to have everything going right.",
+        comments: "Beatrix's data analysis finds that the only correlation between anything and how many presents a kid gets has to do with their parents' financial security, not with anyone being naughty or nice. So she decides to keep digging, and all signs point towards Santa not being real. But then a frigging REAL SANTA shows up out of NOWHERE, which doesn't undo her data analysis, but DOES suggest that only rich kids are nice. What an unnecessary thing to throw in there. Good lord",
         romance: false,
         musical: false,
         mistakenIdentity: false,
@@ -394,6 +503,24 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "B&B Merry",
+        myScore: 64,
+        summary: "A travel vlogger is invited to stay at a struggling inn for free at the same time that she's supposed to be reviewing their corporate rival.",
+        comments: "I've gotta hand it to the actors on this one; they're really doing a lot with very little, especially Kate Twa and Shelly Williams as the mom and aunt. They were a delight to see on screen. It also made me notice how much GAC casts their male roles. It's...disturbing. The story was fine, but the production values made it feel as bland as the corporate hotel room Tracey has to stay in. (Let's talk about the extras who clearly had to do their own makeup in that scene. Painful. Sorry, guys.)",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: true,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true,
+        grief: true
+    },
+    {
         title: "Candlenights 2022",
         myScore: 74,
         summary: "The stars of MY BROTHER, MY BROTHER, AND ME bring together a bevy of celebrity guest stars to sing songs, tell tales, and showcase sketches - with all proceeds going to a local charity.",
@@ -402,6 +529,23 @@ let XmasMovies = [
         musical: true,
         mistakenIdentity: false, 
         charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
+        title: "Catering Christmas",
+        myScore: 65,
+        summary: "A struggling caterer is offered a career-making job by an influential old-money family because the current heir takes a liking to her.",
+        comments: "I actually didn't mind this one at all until I watched the last 14 minutes with my husband playing on his phone beside me, and I could feel his boredom and dismissal XD It was then that I realized it wasn't exactly a masterpiece. But for GAF, not bad. Give us the gays, Gay American Family!",
+        romance: true,
+        musical: false,
+        mistakenIdentity: true, 
+        charmingInn: true,
         royalFairyTale: false,
         familyIsNumber1: false,
         countryVsCity: false,
@@ -683,6 +827,24 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Dan in Real Life",
+        myScore: 80, 
+        summary: "After running into each other on a cancelled flight, two former high school classmates stranded in the midwest team up to get back to their hometown for Christmas.",
+        comments: "I really like that Lina recognizes that her life is full and happy, but that she'd be even happier if he were a part of it; and that her caring about helping people so much through her job causes her to neglect herself. This one was...good?",
+        romance: true,
+        musical: true,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: false,
+        holiday: 'Thanksgiving'
+    },
+    {
         title: "Dash and Lily",
         myScore: 83,
         summary: "In the week leading up to Christmas, two lonely teenagers set character-building dares by leaving a notebook for each other in iconic locations around New Year's East Village.",
@@ -754,7 +916,7 @@ let XmasMovies = [
         title: "El Camino Christmas",
         myScore: 52,
         summary: "When a gas station robbery goes bad, the robbers, the cops, and the hostages have to decide what to do next.",
-        comments: "SO depressing and mismarketed. It has a great cast and great acting, and the trailer makes it look like a romp, but there's very little comic relief.",
+        comments: "SO depressing and mismarketed. It has a great cast and great acting, and the trailer makes it look like a romp, but there's very little comic relief. CW: police violence",
         romance: false,
         musical: false,
         mistakenIdentity: false, 
@@ -802,6 +964,23 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Family Switch",
+        myScore: 67,
+        summary: "Six family members who don't see eye-to-eye find themselves magically inside each other's bodies after a once-in-a-milennium planetary alignment. Also, it's Christmas",
+        comments: "I expected this to be awful, but honestly, it was pretty decent. It's nice to see Lindsay Lohan again, and in a grown-up role; though there is a little Mean Girls Easter egg when she starts to sing 'Jingle Bell Rock'.",
+        romance: true,
+        musical: true,
+        mistakenIdentity: true,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: true,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true
+    },
+    {
         title: "Father Christmas Is Back",
         myScore: 53,
         summary: "Four bickering sisters are thrown for a loop when they learn the youngest and wildest among them has invited their long-estranged father over for Christmas.",
@@ -819,6 +998,24 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "For Your Consideration",
+        myScore: 71,
+        summary: "When a tiny indie movie about a gay daughter returning home for Purim gets The Academy's attention, the filmmakers feel the pressure.",
+        comments: "I love the storyline, but it gets overwhelmed by too many side characters. Look at THIS guy!",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: false,
+        holiday: 'Purim'
+    },
+    {
         title: "Four Christmases",
         myScore: 78,
         summary: "A couple with divorced parents is forced to spend time with all four of their extended families after their self-serving vacation plans are exposed.",
@@ -834,6 +1031,24 @@ let XmasMovies = [
         famousActor: true,
         childActor: true,
         familyFriendly: false
+    },
+    {
+        title: "Ghostbusters 2",
+        myScore: 75,
+        summary: "When a river of negatively-charged ectoplasm is found beneath the city, there's only four or five men and a couple women and one statue who can stop the spirit of a mad conqueror from stepping out of his painting and into the world.",
+        comments: "I went through a time, obviously a tough time, when I was watching this at least once a week. It's got some great lines, it features a killer song, and personally I love the good vibes it promotes. But it's not perfect",
+        romance: true,
+        musical: true,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: false,
+        holiday: 'New Year\'s Eve'
     },
     {
         title: "Gingerbread Miracle",
@@ -870,10 +1085,28 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "Hannah and her Sisters",
+        myScore: 79,
+        summary: "Three sisters stumble through their messy lives when one begins an affair with her brother-in-law.",
+        comments: "Woody Allen is a monster and he doesn't need your money. Use Pirate Bay if you decide to watch. CW: suicide attempt",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: false,
+        holiday: 'Thanksgiving'
+    },
+    {
         title: "Happiest Season",
         myScore: 85,
         summary: "A young woman is invited to her girlfriend's home for Christmas, hoping to propose - only to discover that her girlfriend's family thinks they're 'roommates.'",
-        comments: "For being one of the first LGBTQ-centered Christmas movies, it features a lot of the usual Christmas movie shenanigans: a grown-up child star (Kristen Stewart), a quirky dysfunctional family, TWO hometown exes (Aubrey Plaza and that guy), deception and mistaken identity, and a bunch of slapstick. I am a *bit* annoyed that no one confronted Sloane about her clearly evil children, and would have loved to see more overt conflict there with Abby. Also Kristen Stewart is totally swoon-worthy and it was great to see her in a role so unlike what she's usually in. Also, she does have some really great jackets throughout. Re: family friendly...there's not a ton of bad language, but there is some mild innuendo (including a fully-dressed man in a ball gag). It says PG-13 but I don't remember that at all. ",
+        comments: "For being one of the first LGBTQ-centered Christmas movies, it features a lot of the usual Christmas movie shenanigans: a grown-up child star (Kristen Stewart), a quirky dysfunctional family, TWO hometown exes (Aubrey Plaza and that guy), deception and mistaken identity, and a bunch of slapstick. I am a *bit* annoyed that no one confronted Sloane about her clearly evil children, and would have loved to see more overt conflict there with Abby. Also Kristen Stewart is totally swoon-worthy and it was great to see her in a role so unlike what she's usually in. Also, she does have some really great jackets throughout. Re: family friendly...there's not a ton of bad language, but there is some mild innuendo (including a fully-dressed man in a ball gag). It says PG-13 but I don't remember that at all. CW: being in the closet",
         romance: true,
         musical: false,
         mistakenIdentity: true,
@@ -941,7 +1174,7 @@ let XmasMovies = [
         title: "Holiday Date",
         myScore: 52,
         summary: "After her boyfriend dumps her right before Christmas, an aspiring fashion designer impulsively agrees to let an actor pose as him for the week she's spending with her family.",
-        comments: "It soured my mouth how obsessed the actor is with being an actor, and how he can't think in terms of anything else. Woof. The brother-in-law and dad have a nice little arc, but it's so little, and  stakes and emotions just don't exist enough for people to do more than bite their lip.",
+        comments: "It soured my mouth how obsessed the actor is with being an actor, and how he can't think in terms of anything else. Woof. The brother-in-law and dad have a nice little arc, but it's so little, and the stakes and emotions just don't exist enough for people to do more than bite their lip.",
         romance: true,
         musical: false,
         mistakenIdentity: true,
@@ -1145,7 +1378,7 @@ let XmasMovies = [
         title: "It's a Wonderful Life",
         myScore: 100,
         summary: "A bankrupt banker is convinced not to take his own life by a bumbling angel-to-be.",
-        comments: "I have sobbed while describing the plot of this movie.",
+        comments: "I have sobbed while describing the plot of this movie. CW: suicide attempt",
         romance: true,
         musical: false,
         mistakenIdentity: true, 
@@ -1156,7 +1389,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "Jack Whitehall: Christmas with my Father",
@@ -1207,7 +1441,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "Just Friends",
@@ -1258,7 +1493,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: true,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "Let It Snow",
@@ -1377,7 +1613,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        holiday: "New Year's Eve"
     },
     {
         title: "Miracle on 34th Street",
@@ -1431,6 +1668,25 @@ let XmasMovies = [
         familyFriendly: true
     },
     {
+        title: "New Year's Eve",
+        myScore: 60,
+        summary: "A dozen New Yorkers experience New Year's Eve from a hospital, an elevator, a fabulous party, and Times Square.",
+        comments: "This movie has at least as many Oscar winners as FAST X, but I found FAST X waaaaaaayyy more fun. None of the characters' stories are very engaging, maybe because we only get to see each character for a few minutes at a time. I did find myself wondering who Josh Duhamel was going ot meet, only to be disappointed. Ugh. The only interesting or unique story was the 'Resolution Tour' story with Michelle Pfeiffer (3 Oscar noms, 1 BAFTA) and Zac Efron, of all people. ALWAYS love a Penny Marshall cameo, RIP queen. Hate that they made Russell Peters do an accent. Lea Michele is a monster, don't need any more of her. But, at least Til Schweiger is a total PILF. ",
+        romance: true,
+        musical: true,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: false,
+        grief: true,
+        holiday: "New Year's Eve"
+    },
+    {
         title: "Noelle",
         myScore: 82,
         summary: "When Santa dies, it's up to his son to continue his legacy - but when the newly-appointed Santa flees, his little sister has to find him in order to save Christmas.",
@@ -1463,6 +1719,44 @@ let XmasMovies = [
         famousActor: true,
         childActor: true,
         familyFriendly: true
+    },
+    {
+        title: "Pieces of April",
+        myScore: 81,
+        summary: "A young woman struggles to prepare a feast before her estranged family visits for Thanksgiving.",
+        comments: "If you see this DVD cover, you might be like, really? Katie Holmes? And I'll be like, yeah! Really!",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: true,
+        familyFriendly: false,
+        grief: true,
+        holiday: 'Thanksgiving'
+    },
+    {
+        title: "Planes, Trains, and Automobiles",
+        myScore: 81,
+        summary: "After a snowstorm cancels his flight from New York to Chicago, an uptight executive agrees to travel with a sloppy traveling salesman so they can get home in time for Thanksgiving.",
+        comments: "There's a lot of stress cringe here, so sometimes it's hard for me to enjoy. However, Steve Martin drying his face on John Candy's underwear will always, always be funny to me. If you haven't seen it, you should",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: true,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: true,
+        familyFriendly: false,
+        grief: true,
+        holiday: 'Thanksgiving'
     },
     {
         title: "Pottersville",
@@ -1581,7 +1875,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: false,
-        familyFriendly: false
+        familyFriendly: false,
+        grief: true
     },
     {
         title: "Sense, Sensibility, and Snowmen",
@@ -1618,7 +1913,7 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
-        title: "Sherlock Holmes: The Case of the Chrismtas Pudding",
+        title: "Sherlock Holmes: The Case of the Christmas Pudding",
         myScore: 81,
         summary: "Dr. Watson is concerned after a death row inmate who's threatened Sherlock Holmes escapes from prison without leaving any clues behind.",
         comments: "This was great fun - the chemistry between Holmes & Watson is perfect, and Watson is both capable and emotional. I won't spoil how the convict escapes, but it's very satisfying.",
@@ -1717,7 +2012,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: true,
-        familyFriendly: false
+        familyFriendly: false,
+        grief: true
     },
     {
         title: "Spider-Man: No Way Home",
@@ -1751,7 +2047,25 @@ let XmasMovies = [
         realMagic: true,
         famousActor: false,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        holiday: 'Life Day'
+    },
+    {
+        title: "A Storm for Christmas",
+        myScore: 86,
+        summary: "A million travelers from all over Europe are stuck at the Oslo airport on December 23rd -- all with places to be and no way to get there.",
+        comments: "I really liked this one. Unlike other 'intersecting lives' stories set around holidays, only one is a romance, and it was the most boring one (for me, anyway.) The Romantic and the Pilot just didn't have a lot of chemistry. *minor spoiler ahead* But the Popstar and Bobbie nearly burn a hole in the TV, and they've only got one short scene together. (Ah, THREE male (and zero non-male) writers. Well...I guess if you write a 'romantic' female character who posts on social media lot, then she's going to be kind of boring.)",
+        romance: true,
+        musical: true,
+        mistakenIdentity: false, 
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: false
     },
     {
         title: "Sugar Rush Christmas",
@@ -1801,7 +2115,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: true,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "The Christmas Contest",
@@ -1835,7 +2150,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: true,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: 'The Christmas House',
@@ -1869,7 +2185,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: true,
-        familyFriendly: false
+        familyFriendly: false,
+        grief: true
     },
     {
         title: "The Guardians of the Galaxy: Holiday Special",
@@ -1903,7 +2220,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: false,
-        familyFriendly: false
+        familyFriendly: false,
+        grief: true
     },
     {
         title: "The Holiday Calendar",
@@ -1954,7 +2272,8 @@ let XmasMovies = [
         realMagic: true,
         famousActor: true,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "The Nightmare Before Christmas",
@@ -1988,7 +2307,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: false,
-        familyFriendly: false
+        familyFriendly: false,
+        grief: true
     },
     {
         title: "The Princess Switch",
@@ -2056,7 +2376,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: false,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "The Santa Clause",
@@ -2090,7 +2411,26 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: true,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: false
+    },
+    {
+        title: "Star Trek: Generations",
+        myScore: 69,
+        summary: "A starship captain and his crew must stop a former refugee from returning to the interplanar space where you can live anywhere, anytime, with anyone.",
+        comments: "This is a movie about grief and how destructive it can be, if you let it. Soran is grieving, Picard is grieving, Kirk is grieving, and Data is a hot mess. I'm including this as a Christmas movie because Picard's grief is at the center of his character development, and when he is able to indulge in a life he was never able to have and is now grieving, his dream is to be with a large family on Christmas morning. Forever. That's also kind of my dream. Is there anything better than Christmas morning?! Come on. Also, I'm pretty sure we watched this every Christmas for a long time - it even came out mid-November, the perfect time to release a Christmas movie. If you're not a Trekkie like I am, then you will still enjoy it; it is a self-contained adventure.",
+        romance: false,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: true,
+        childActor: false,
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "Trading Places",
@@ -2127,6 +2467,24 @@ let XmasMovies = [
         familyFriendly: false
     },
     {
+        title: "When Harry Met Sally",
+        myScore: 85,
+        summary: "A man and woman spend a decade trying to figure out if they can be friends.",
+        comments: "Nora Ephron was a gem. This movie is so delightful and comforting, and has some of my favorite adlibbing of all time: 'But I\'d be proud to partake of your pecan pie!' Holiday-y? Oh yeah. There\'s two NYE scenes, and I\'m pretty sure they carry a Christmas tree together at some point.",
+        romance: true,
+        musical: false,
+        mistakenIdentity: false,
+        charmingInn: false,
+        royalFairyTale: false,
+        familyIsNumber1: false,
+        countryVsCity: false,
+        realMagic: false,
+        famousActor: false,
+        childActor: false,
+        familyFriendly: false,
+        holiday: 'New Year\'s Eve'
+    },
+    {
         title: "While You Were Sleeping",
         myScore: 81,
         summary: "A lonely young woman finds herself in the middle of a raucous, loving family when she accidentally tricks them into believing that she's engaged to their comatose son.",
@@ -2141,7 +2499,8 @@ let XmasMovies = [
         realMagic: false,
         famousActor: true,
         childActor: false,
-        familyFriendly: true
+        familyFriendly: true,
+        grief: true
     },
     {
         title: "White Christmas",
