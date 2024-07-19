@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Marquee';
+    src: url(./the_bold_font/the_bold_font.ttf);
+}
+
+:root {
+    --BrianBlue: #175C90;
+    --BarriRed: #BD392C;
+    --AllALorne: #D9D9D9;
+    background-color: var(--AllALorne);
+}
+
+/* troubleshooting */
+/*
+* {
+    border: 1px solid red;
+}
+*/
+
+body {
+    font-size: 16px;
+    font-family: 'Marquee', sans-serif;
+}
+
+nav {
+    background-color: var(--BrianBlue);
+    height: 50px;
+}
+
+h2 {
+    margin-top: -60px;
+}
+
+.nav-button {
+    text-align: center;
+    margin: 0.75% 1% 1% 1%;
+    font-family: 'Marquee';
+    font-size: 1.25em;
+    padding: 5px 5px 1px 5px;
+    border-radius: 5px;
+    background-color: var(--AllALorne);
+}
+
+/*messing with the banner*/
+
+#banner-title {
+    font-size: 100px;
+    padding-top: 0%;
+    color: var(--BarriRed);
+}
+
+#banner-logo {
+    max-height: 300px;
+    width: auto;
+}
+
+#banner-flex-container {
+    display: grid;
+    grid-template-columns: 1fr 4fr; 
+    height: 300px;
+}
+
+main {
+    height: 900px;
+    background-image: url(./images/mobile_header_transparent.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#banner-text {
+    grid-column-start: 2;
+    grid-column-end: auto;
+
+}
