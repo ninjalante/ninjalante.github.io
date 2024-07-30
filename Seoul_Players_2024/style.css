@@ -11,15 +11,16 @@
 }
 
 /* troubleshooting */
-/*
+
 * {
     border: 1px solid red;
 }
-*/
+
 
 body {
     font-size: 16px;
     font-family: 'Marquee', sans-serif;
+    color: black;
 }
 
 nav {
@@ -36,7 +37,7 @@ h2 {
     margin: 0.75% 1% 1% 1%;
     font-family: 'Marquee';
     font-size: 1.25em;
-    padding: 5px 5px 1px 5px;
+    padding: 5px 15px 1px 15px;
     border-radius: 5px;
     background-color: var(--AllALorne);
 }
@@ -45,7 +46,7 @@ h2 {
 
 #banner-title {
     font-size: 100px;
-    padding-top: 0%;
+    margin-top: 3%;
     color: var(--BarriRed);
 }
 
@@ -61,15 +62,45 @@ h2 {
 }
 
 main {
-    height: 900px;
-    background-image: url(./images/mobile_header_transparent.png);
-    background-size: cover;
-    background-position: center;
+    height: 500px;
+    background-image: url(./images/desktop_header_transparent.png);
+    background-size: 100%;
+    background-position: right;
     background-repeat: no-repeat;
+    padding-left: 20%;
+    padding-right: 20%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+a {
+    color: var(--BrianBlue);
+}
+
+h3 {
+    display: inline-block;
+    font-size: 6.4em;
+    margin-top: 15px;
+    text-align: right;
+    padding-right: 35px;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    padding-left: 20px;
 }
 
 #banner-text {
     grid-column-start: 2;
     grid-column-end: auto;
+}
 
+footer {
+    background-color: var(--BrianBlue);
+    height: 50px;
+    position: bottom;
+    padding-top: 15px;
+    color: var(--AllALorne);
+    font-size: 1.5em;
 }
