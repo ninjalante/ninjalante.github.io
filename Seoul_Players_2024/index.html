@@ -7,21 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/f12f8ac6ae.js" crossorigin="anonymous"></script>
-    <script src="./script.js"></script>
     <meta charset="UTF-8">
     <meta name="description" content="English-language theater in Seoul, South Korea">
     <meta name="keywords" content="theater, theatre, English, Seoul, Korea">
     <meta name="author" content="Seoul Players">
+    <script src="https://kit.fontawesome.com/f12f8ac6ae.js" crossorigin="anonymous"></script>
+    <script src="../smoothscroll.js"></script>
+    <script src="./script.js"></script>
+
 </head>
 <body>
     <header>
         <nav>
-            <button class="nav-button" onclick="aboutUs()">About Us</button>
-            <button class="nav-button" onclick="tenMPF()">Ten-Minute Play Festival</button>
-            <button class="nav-button" onclick="mainstage()">Mainstage</button>
-            <button class="nav-button" onclick="otherProjects()">Other Projects</button>
-            <button class="nav-button" onclick="join()">Join Our Team!</button>
+            <button class="nav-button" id="aboutUs" onclick="transition(aboutUs)">About Us</button>
+                <div class="nav-drop">
+                    <a>Who We Are</a>
+                    <a>Contact Us</a>
+                </div>
+            <button class="nav-button" id="tenMPF">Ten-Minute Play Festival</button>
+                <div class="nav-drop">
+                    <a>10MPF Auditions</a>
+                    <a>10MPF Writers</a>
+                    <a>10MPF Directors</a>
+                    <a>10MPF Actors</a>
+                    <a>The Venue</a>
+                    <a>Previous Festivals</a>
+                </div>
+            <button class="nav-button" id="mainstage">Mainstage</button>
+            <button class="nav-button" id="otherProjects">Other Projects</button>
+            <button class="nav-button" id="join">Join Our Team!</button>
         </nav>
         <div id="banner-flex-container">
             <img id="banner-logo" src="./images/SP_logo_transparent.png">
@@ -33,17 +47,18 @@
     </header>
     <main>
         <h3 id="main-title">10MPF <small id="main-title-small">Auditions</small></h3>
-        <p id="main-content"><strong>The 2024 Ten-Minute Play Festival is November 8th-10th & 16th.</strong>
+        <p id="main-content"><strong>The 2024 Ten-Minute Play Festival returns this November.</strong>
         <br>Have you ever wanted to try acting? Or you acted in the past, but feel a little rusty? The 10MPF is the perfect place to begin. <a href="./auditions.html"><strong>Read more</strong></a></p>      
     </main>
     <footer id="footer-flex-container">
         Find us online 
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-square-twitter"></i>
-        <i class="fa-brands fa-square-youtube"></i>
-        <i class="fa-regular fa-envelope"></i>
+        <a href="http://www.instagram.com/seoulplayers"><i class="fa-brands fa-instagram"></i></a>
+        <a href="http://www.facebook.com/SeoulPlayers"> <i class="fa-brands fa-square-facebook"></i></a>
+        <a href="http://www.x.com/seoulplayers"><i class="fa-brands fa-square-twitter"></i></a>
+        <a href="http://www.youtube.com/@seoulplayers"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="mailto: seoulplayers@gmail.com"><i class="fa-regular fa-envelope"></i></a>
         <i class="fa-solid fa-at"></i>SeoulPlayers
     </footer>
 </body>
+
 </html>

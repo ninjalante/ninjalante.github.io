@@ -8,13 +8,16 @@
     --BarriRed: #BD392C;
     --AllALorne: #D9D9D9;
     background-color: var(--AllALorne);
+    scroll-behavior: smooth !important;
 }
 
-/* troubleshooting */
+/* troubleshooting 
 
 * {
     border: 1px solid red;
 }
+
+*/
 
 
 body {
@@ -23,13 +26,32 @@ body {
     color: black;
 }
 
+h2 {
+    margin-top: -60px;
+    width: 70%;
+}
+
 nav {
     background-color: var(--BrianBlue);
     height: 50px;
+    position: relative; /*changed for dropdown*/
 }
 
-h2 {
-    margin-top: -60px;
+/*more dropdown changes*/
+
+.nav-drop {
+    display: none;
+    position: absolute;
+    background-color: var(--BrianBlue);
+}
+
+.nav-drop a {
+    color: var(--AllALorne);
+
+}
+
+.nav-drop a:hover {
+    background-color: black;
 }
 
 .nav-button {
@@ -38,16 +60,25 @@ h2 {
     font-family: 'Marquee';
     font-size: 1.25em;
     padding: 5px 15px 1px 15px;
+    border: 1px solid var(--AllALorne);
     border-radius: 5px;
     background-color: var(--AllALorne);
 }
 
+.nav-button:hover {
+    color: var(--BarriRed);
+}
+
 /*messing with the banner*/
 
-#banner-title {
+#banner-title, #detailed-title {
     font-size: 100px;
     margin-top: 3%;
     color: var(--BarriRed);
+}
+
+#detailed-title {
+    padding-top: 2%;
 }
 
 #banner-logo {
@@ -73,7 +104,18 @@ main {
     grid-template-columns: 2fr 2fr;
 }
 
-a {
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+}
+
+aside {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+main a, .big-black-box a {
     color: var(--BrianBlue);
 }
 
@@ -85,10 +127,25 @@ h3 {
     padding-right: 35px;
 }
 
-p {
+h4 {
+    font-size: 2em;
+}
+
+.big-black-box {
+    height: 1200px;
+    width: auto;
+    background: linear-gradient(black, var(--AllALorne)50%);
+    margin-top: -12px;
+    padding-top: 20%;
+    padding-left: 20%;
+    padding-right: 10%;
+}
+
+#main-content {
     font-size: 1.5em;
     font-family: 'Poppins', sans-serif;
     padding-left: 20px;
+    margin-top: 15px;
 }
 
 #banner-text {
@@ -103,4 +160,16 @@ footer {
     padding-top: 15px;
     color: var(--AllALorne);
     font-size: 1.5em;
+}
+
+footer a {
+    color: var(--AllALorne);
+}
+
+.nav-button a:hover {
+    background-color: var(--BarriRed);
+}
+
+footer a:visited {
+    color: var(--AllALorne);
 }
