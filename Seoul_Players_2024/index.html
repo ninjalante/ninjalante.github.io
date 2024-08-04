@@ -19,26 +19,36 @@
 <body>
     <header>
         <nav>
-            <button class="nav-button" id="aboutUs" onclick="transition(aboutUs)">About Us</button>
-                <div class="nav-drop">
-                    <a>Who We Are</a>
-                    <a>Contact Us</a>
+            <button class="nav-button" id="aboutUs">About Us</button>
+                <div class="nav-drop" id="about-drop">
+                    <a href="./who-we-are.html">Who We Are</a>
+                    <a href="./board-members">Board Members</a>
+                    <a href="./contact-us">Contact Us</a>
                 </div>
             <button class="nav-button" id="tenMPF">Ten-Minute Play Festival</button>
-                <div class="nav-drop">
-                    <a>10MPF Auditions</a>
-                    <a>10MPF Writers</a>
-                    <a>10MPF Directors</a>
-                    <a>10MPF Actors</a>
-                    <a>The Venue</a>
-                    <a>Previous Festivals</a>
+                <div class="nav-drop" id="tenMPF-drop">
+                    <a href="./auditions.html">10MPF Auditions</a>
+                    <a href="./writers.html">10MPF Writers</a>
+                    <a href="./directors.html">10MPF Directors</a>
+                    <a href="./actors.html">10MPF Actors</a>
+                    <a href="./venue.html">The Venue</a>
+                    <a href="./prev-fests.html">Previous Festivals</a>
                 </div>
             <button class="nav-button" id="mainstage">Mainstage</button>
+                <div class="nav-drop">
+                    <a href="./mainstage.html">Our latest mainstage production</a>
+                </div>
             <button class="nav-button" id="otherProjects">Other Projects</button>
+                <div class="nav-drop">
+                    <a href="./rocky-horror.html">2024 Rocky Horror Picture Show Halloween Shadowcast</a>
+                </div>
             <button class="nav-button" id="join">Join Our Team!</button>
+                <div class="nav-drop">
+                    <a href="./join-seoul-players.html">Become part of the show</a>
+                </div>
         </nav>
         <div id="banner-flex-container">
-            <img id="banner-logo" src="./images/SP_logo_transparent.png">
+            <a href="./index.html"><img id="banner-logo" src="./images/SP_logo_transparent.png" title="Go home"></a>
             <div id="banner-text">
                 <h1 id="banner-title">Seoul<br>Players</h1>
                 <h2>English-language theater in Seoul, South Korea</h2>
@@ -47,7 +57,7 @@
     </header>
     <main>
         <h3 id="main-title">10MPF <small id="main-title-small">Auditions</small></h3>
-        <p id="main-content"><strong>The 2024 Ten-Minute Play Festival returns this November.</strong>
+        <p id="main-content"><strong>The 2024 Ten-Minute Play Festival returns this November!</strong>
         <br>Have you ever wanted to try acting? Or you acted in the past, but feel a little rusty? The 10MPF is the perfect place to begin. <a href="./auditions.html"><strong>Read more</strong></a></p>      
     </main>
     <footer id="footer-flex-container">

@@ -20,6 +20,7 @@
 */
 
 
+
 body {
     font-size: 16px;
     font-family: 'Marquee', sans-serif;
@@ -37,21 +38,44 @@ nav {
     position: relative; /*changed for dropdown*/
 }
 
-/*more dropdown changes*/
+/*---------- more dropdown changes -----------*/
 
 .nav-drop {
     display: none;
     position: absolute;
     background-color: var(--BrianBlue);
+    width: 100%;
+    z-index: 1;
+    margin-top: -14px;
+    pointer-events: none;
+}
+
+.nav-drop > * {
+    pointer-events: auto;
+
 }
 
 .nav-drop a {
     color: var(--AllALorne);
+    padding: 12px 16px;
+    text-decoration: none;
+    font-size: 1.25em;
+    display: block;
+    border: 1px solid var(--AllALorne);
+}
 
+
+.nav-button:hover + .nav-drop {
+    display: block;
+}
+
+.nav-drop:hover .nav-drop, .nav-drop:hover {
+    max-height: 500px;
+    display: block;
 }
 
 .nav-drop a:hover {
-    background-color: black;
+    background-color: var(--BarriRed);
 }
 
 .nav-button {
@@ -65,9 +89,10 @@ nav {
     background-color: var(--AllALorne);
 }
 
-.nav-button:hover {
+.nav-button:hover, .nav-button:active {
     color: var(--BarriRed);
 }
+
 
 /*messing with the banner*/
 
@@ -135,7 +160,7 @@ h4 {
     height: 1200px;
     width: auto;
     background: linear-gradient(black, var(--AllALorne)50%);
-    margin-top: -12px;
+    margin-top: -16px;
     padding-top: 20%;
     padding-left: 20%;
     padding-right: 10%;

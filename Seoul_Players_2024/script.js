@@ -2,7 +2,8 @@ window.onload = function(){
     let readMore = document.getElementById('read-more');
 
     readMore.addEventListener('click', function(e){
-     smoothScroll({toElement: document.getElementById('myDiv'), duration: 1300 });
+     smoothScroll({toElement: document.getElementById('detailedTitle'), duration: 1300 });
+     console.log("It's the day of the show, y'all!")
 });
 }
 /*
