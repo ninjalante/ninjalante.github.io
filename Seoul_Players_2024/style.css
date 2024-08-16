@@ -20,7 +20,21 @@
 
 */
 
+/*toggle on and off as tickets are available
 
+#tickets {
+    display: none;
+    color: var(--Greta);
+}
+
+
+#tickets:hover {
+    color: var(--BarriRed);
+    background-color: var(--Greta);
+
+}
+
+*/
 
 body {
     font-size: 16px;
@@ -195,6 +209,10 @@ footer {
 
 footer a {
     color: var(--AllALorne);
+}
+
+footer a:hover, footer a:visited:hover {
+    color: var(--Greta);
 }
 
 .nav-button a:hover {
